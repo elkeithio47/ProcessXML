@@ -4,7 +4,7 @@ from lxml import etree  # Robust XML parser
 # Directory to start the search
 root_directory = "C:\\GIT\\automate\\qa\\Processes"
 output_directory = "C:\GIT\\automate\\qa\\Processes\\000_output"
-word_limit = 500000  # Word limit for each combined file
+word_limit = 10000  # Word limit for each combined file
 
 # Function to count words in an XML element
 def count_words(element):
@@ -12,7 +12,7 @@ def count_words(element):
 
 # Function to save a combined XML tree
 def save_combined_file(root, file_count):
-    output_file = os.path.join(output_directory, f"combined_output_{file_count}.xml")
+    output_file = os.path.join(output_directory, f"combined_output_{file_count}.txt")
     tree = etree.ElementTree(root)
     with open(output_file, "wb") as f:
         tree.write(f, encoding="utf-8", xml_declaration=True, pretty_print=True)

@@ -29,7 +29,7 @@ def change_file_extensions(directory, old_extension, new_extension):
 
 if __name__ == "__main__":
     # Specify the directory containing the files
-    target_directory = "C:\\GIT\\automate\\qa\\Processes\\000_output"
+    target_directory = "./../xml_files"
 
     # Change all .XML files to .TXT
     change_file_extensions(target_directory, '.xml', '.txt')

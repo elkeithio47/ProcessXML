@@ -2,9 +2,9 @@ import os
 from lxml import etree  # Robust XML parser
 
 # Directory to start the search
-root_directory = "C:\\GIT\\automate\\qa\\Processes"
-output_directory = "C:\GIT\\automate\\qa\\Processes\\000_output"
-word_limit = 10000  # Word limit for each combined file
+root_directory = "./../xml_files"
+output_directory = "./../xml_files/combined"
+word_limit = 15000  # Word limit for each combined file
 
 # Function to count words in an XML element
 def count_words(element):

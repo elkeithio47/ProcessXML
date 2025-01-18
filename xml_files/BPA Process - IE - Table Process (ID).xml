@@ -1,0 +1,492 @@
+﻿<process name="IE - Table Process (ID)" version="1.0" bpversion="7.3.0.8765" narrative="" byrefcollection="true" processrunningmessage="" disableversioning="false" preferredid="70371f26-6dd4-406c-90ff-a8204519bcda">
+  <view>
+    <camerax>-9</camerax>
+    <cameray>135</cameray>
+    <zoom version="2">1.25</zoom>
+  </view>
+  <preconditions />
+  <endpoint narrative="" />
+  <subsheet subsheetid="4e1b161b-b6fb-4ad6-8422-cf001fb94a37" type="Normal" published="False">
+    <name>HTML Table</name>
+    <view>
+      <camerax>34</camerax>
+      <cameray>375</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <stage stageid="6ac98396-9b86-4291-b3f7-a166a989daf3" name="Start" type="Start">
+    <display x="120" y="-105" />
+    <inputs>
+      <input type="flag" name="IE" stage="IE" />
+    </inputs>
+    <onsuccess>154243ae-097b-4ae1-9b47-84d34e30a0eb</onsuccess>
+  </stage>
+  <stage stageid="2b6f2fc8-b5e6-4944-b3cd-49171266aba9" name="End" type="End">
+    <display x="15" y="345" />
+  </stage>
+  <stage stageid="ba5e66f3-c2ba-41aa-80ec-10a1024e8017" name="Stage1" type="ProcessInfo">
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="4f9478b7-a20c-498d-bbad-d18d08505042" name="HTML Table" type="SubSheet">
+    <display x="15" y="210" w="90" h="60" />
+    <onsuccess>cda2b151-495e-489e-bc8a-f90b620cb373</onsuccess>
+    <processid>4e1b161b-b6fb-4ad6-8422-cf001fb94a37</processid>
+  </stage>
+  <stage stageid="1dd24afc-ea30-4721-95ac-81672f600afd" name="HTML Table" type="SubSheetInfo">
+    <subsheetid>4e1b161b-b6fb-4ad6-8422-cf001fb94a37</subsheetid>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="5a2af669-22b1-4b4a-8cc5-4a8705ecf78f" name="Start" type="Start">
+    <subsheetid>4e1b161b-b6fb-4ad6-8422-cf001fb94a37</subsheetid>
+    <display x="15" y="-105" />
+    <onsuccess>c0878e8b-d30b-45a1-a020-d328c96656b3</onsuccess>
+  </stage>
+  <stage stageid="0c8c09e9-a0f3-494f-b62c-fa4a6a729ec3" name="EdgeIEMode (HTML Path)::HTML Table-Navigate-HTMLClickCentre" type="Action">
+    <subsheetid>4e1b161b-b6fb-4ad6-8422-cf001fb94a37</subsheetid>
+    <display x="15" y="15" w="180" h="30" />
+    <onsuccess>6702e11b-0693-4456-8d1e-1c009aa305bf</onsuccess>
+    <resource object="EdgeIEMode (ID)" action="HTML Table-Navigate-HTMLClickCentre" />
+  </stage>
+  <stage stageid="d89b5249-f7ca-4b44-a6da-402e89ce053d" name="End1" type="End">
+    <subsheetid>4e1b161b-b6fb-4ad6-8422-cf001fb94a37</subsheetid>
+    <display x="15" y="915" />
+  </stage>
+  <stage stageid="95d6be9b-3697-4aa2-8c1e-3c9e2c347388" name="EdgeIEMode (HTML Path)::HTML Table-Navigate-HTMLDoubleClickCentre" type="Action">
+    <subsheetid>4e1b161b-b6fb-4ad6-8422-cf001fb94a37</subsheetid>
+    <display x="15" y="105" w="180" h="30" />
+    <onsuccess>58949832-2f97-40ed-a9b8-59bf230962e7</onsuccess>
+    <resource object="EdgeIEMode (ID)" action="HTML Table-Navigate-HTMLDoubleClickCentre" />
+  </stage>
+  <stage stageid="c0878e8b-d30b-45a1-a020-d328c96656b3" name="EdgeIEMode (HTML Path)::HTML Table-Navigate-Verify" type="Action">
+    <subsheetid>4e1b161b-b6fb-4ad6-8422-cf001fb94a37</subsheetid>
+    <display x="15" y="-30" w="180" h="30" />
+    <inputs>
+      <input type="flag" name="highlight" expr="True" />
+    </inputs>
+    <onsuccess>0c8c09e9-a0f3-494f-b62c-fa4a6a729ec3</onsuccess>
+    <resource object="EdgeIEMode (ID)" action="HTML Table-Navigate-Verify" />
+  </stage>
+  <stage stageid="55619b09-c278-4a91-80c4-41aa6ac659de" name="EdgeIEMode (HTML Path)::HTML Table-Read-GetElementBounds" type="Action">
+    <subsheetid>4e1b161b-b6fb-4ad6-8422-cf001fb94a37</subsheetid>
+    <display x="15" y="195" w="180" h="30" />
+    <outputs>
+      <output type="collection" name="GetElementBounds" stage="GetElementBounds" />
+    </outputs>
+    <onsuccess>3d0e7481-d6e1-46bb-bb70-d25d03809567</onsuccess>
+    <resource object="EdgeIEMode (ID)" action="HTML Table-Read-GetElementBounds" />
+  </stage>
+  <stage stageid="ae431eb7-dcd7-4f3b-8b54-986e34e48ff4" name="GetElementBounds" type="Collection">
+    <subsheetid>4e1b161b-b6fb-4ad6-8422-cf001fb94a37</subsheetid>
+    <display x="180" y="195" />
+    <datatype>collection</datatype>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="b8beeed9-eaa1-4e04-b4dd-92b455482328" name="EdgeIEMode (HTML Path)::HTML Table-Read-GetElementScreenBounds" type="Action">
+    <subsheetid>4e1b161b-b6fb-4ad6-8422-cf001fb94a37</subsheetid>
+    <display x="15" y="285" w="180" h="30" />
+    <outputs>
+      <output type="collection" name="GetElementScreenBounds" stage="GetElementScreenBounds" />
+    </outputs>
+    <onsuccess>8ed8bdd1-baee-431e-a34e-b28316703fd2</onsuccess>
+    <resource object="EdgeIEMode (ID)" action="HTML Table-Read-GetElementScreenBounds" />
+  </stage>
+  <stage stageid="85c9dfdd-c0e6-4655-9f54-79dbc009cc78" name="GetElementScreenBounds" type="Collection">
+    <subsheetid>4e1b161b-b6fb-4ad6-8422-cf001fb94a37</subsheetid>
+    <display x="180" y="285" />
+    <datatype>collection</datatype>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="e31f00aa-42f1-4a7c-b810-0c8144c6edb2" name="EdgeIEMode (HTML Path)::HTML Table-Read-GetHTMLIdentifier" type="Action">
+    <subsheetid>4e1b161b-b6fb-4ad6-8422-cf001fb94a37</subsheetid>
+    <display x="15" y="375" w="180" h="30" />
+    <inputs>
+      <input type="text" name="idname" expr="&quot;Tag Name&quot;" />
+    </inputs>
+    <outputs>
+      <output type="text" name="GetHTMLIdentifier" stage="GetHTMLIdentifier" />
+    </outputs>
+    <onsuccess>a594b7a4-2bd2-4c62-8230-f739d6e2bd81</onsuccess>
+    <resource object="EdgeIEMode (ID)" action="HTML Table-Read-GetHTMLIdentifier" />
+  </stage>
+  <stage stageid="785f43fb-b6c4-4bde-8bb6-b5b7dd0abece" name="GetHTMLIdentifier" type="Data">
+    <subsheetid>4e1b161b-b6fb-4ad6-8422-cf001fb94a37</subsheetid>
+    <display x="180" y="375" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="134e5a47-02c3-4745-b70f-5afaf301f1ea" name="EdgeIEMode (HTML Path)::HTML Table-Read-HTMLGetTable" type="Action">
+    <subsheetid>4e1b161b-b6fb-4ad6-8422-cf001fb94a37</subsheetid>
+    <display x="15" y="675" w="180" h="30" />
+    <outputs>
+      <output type="collection" name="HTMLGetTable" stage="HTMLGetTable" />
+    </outputs>
+    <onsuccess>1d1fbe19-c2e1-4d65-8301-443e50d0fc73</onsuccess>
+    <resource object="EdgeIEMode (ID)" action="HTML Table-Read-HTMLGetTable" />
+  </stage>
+  <stage stageid="3bb4e1ed-3de1-4447-a124-16f749d65ca7" name="HTMLGetTable" type="Collection">
+    <subsheetid>4e1b161b-b6fb-4ad6-8422-cf001fb94a37</subsheetid>
+    <display x="165" y="675" />
+    <datatype>collection</datatype>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="e06638f4-5ff7-412d-a13b-e23b272aa69e" name="EdgeIEMode (HTML Path)::HTML Table-Wait-CheckExists" type="Action">
+    <subsheetid>4e1b161b-b6fb-4ad6-8422-cf001fb94a37</subsheetid>
+    <display x="15" y="810" w="180" h="30" />
+    <inputs>
+      <input type="number" name="Timeout" expr="" />
+      <input type="flag" name="FlagValue" expr="" />
+    </inputs>
+    <onsuccess>6937ea50-ed8b-40c7-9cff-430eabf3d544</onsuccess>
+    <resource object="EdgeIEMode (ID)" action="HTML Table-Wait-CheckExists" />
+  </stage>
+  <stage stageid="1dafc86e-59f7-4dfd-b27b-5ba657c1be23" name="EdgeIEMode (HTML Path)::HTML Table-Wait-CheckHTMLIdentifier" type="Action">
+    <subsheetid>4e1b161b-b6fb-4ad6-8422-cf001fb94a37</subsheetid>
+    <display x="15" y="765" w="180" h="30" />
+    <inputs>
+      <input type="number" name="Timeout" expr="1" />
+      <input type="text" name="TextValue" expr="&quot;TABLE&quot;" />
+      <input type="text" name="idname" expr="&quot;Tag Name&quot;" />
+    </inputs>
+    <onsuccess>e06638f4-5ff7-412d-a13b-e23b272aa69e</onsuccess>
+    <resource object="EdgeIEMode (ID)" action="HTML Table-Wait-CheckHTMLIdentifier" />
+  </stage>
+  <stage stageid="6937ea50-ed8b-40c7-9cff-430eabf3d544" name="EdgeIEMode (HTML Path)::HTML Table-Wait-HTMLCheckExistsAndDocumentLoaded" type="Action">
+    <subsheetid>4e1b161b-b6fb-4ad6-8422-cf001fb94a37</subsheetid>
+    <display x="15" y="855" w="180" h="30" />
+    <inputs>
+      <input type="number" name="Timeout" expr="" />
+      <input type="flag" name="FlagValue" expr="" />
+    </inputs>
+    <onsuccess>d89b5249-f7ca-4b44-a6da-402e89ce053d</onsuccess>
+    <resource object="EdgeIEMode (ID)" action="HTML Table-Wait-HTMLCheckExistsAndDocumentLoaded" />
+  </stage>
+  <stage stageid="6714b9c2-16ee-4e51-bed7-c31110513edf" name="EdgeIEMode (HTML Path)::Application-Navigate-AttachApplication" type="Action">
+    <display x="15" y="135" w="180" h="30" />
+    <inputs>
+      <input type="collection" name="WindowTitlesCollection" expr="" />
+      <input type="text" name="WindowTitle" expr="[Window Title]" />
+      <input type="text" name="ProcessName" expr="&quot;iexplore&quot;" />
+      <input type="number" name="ProcessID" expr="" />
+      <input type="text" name="Username" expr="" />
+      <input type="number" name="ChildIndex" expr="0" />
+    </inputs>
+    <onsuccess>4f9478b7-a20c-498d-bbad-d18d08505042</onsuccess>
+    <resource object="EdgeIEMode (ID)" action="Application-Navigate-AttachApplication" />
+  </stage>
+  <stage stageid="204a6c84-7237-4577-b1c0-a19ec005b6ad" name="Launch IE " type="Action">
+    <display x="15" y="0" w="180" h="30" />
+    <inputs>
+      <input type="text" name="Arguments" narrative="Any arguments needed for the app" expr="[Application URL]" />
+      <input type="text" name="Application" narrative="The application or short cut to start" expr="&quot;C:\Program Files\Internet Explorer\iexplore.exe&quot;" />
+    </inputs>
+    <onsuccess>f9a99eb9-5343-4a7b-bfb2-38dc9792c4c6</onsuccess>
+    <resource object="Utility - Environment" action="Start Process" />
+  </stage>
+  <stage stageid="154243ae-097b-4ae1-9b47-84d34e30a0eb" name="IE?" type="Decision">
+    <display x="120" y="-45" />
+    <decision expression="[IE]=True" />
+    <ontrue>f38a855b-ea12-4c0a-be2b-8228a5f8b0d4</ontrue>
+    <onfalse>c074da1a-7e1e-480d-8d9d-f576332af079</onfalse>
+  </stage>
+  <stage stageid="8e8e2b16-899a-404c-9023-f4a44b1d828e" name="Launch Edge" type="Action">
+    <display x="225" y="0" w="180" h="30" />
+    <inputs>
+      <input type="text" name="Arguments" narrative="Any arguments needed for the app" expr="[Application URL]" />
+      <input type="text" name="Application" narrative="The application or short cut to start" expr="&quot;C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe&quot;" />
+    </inputs>
+    <onsuccess>896cfaff-0bbe-4d9a-b9fc-d2a00dbee9cb</onsuccess>
+    <resource object="Utility - Environment" action="Start Process" />
+  </stage>
+  <stage stageid="7f7879b4-2168-4a16-9aed-d7dab7ca5730" name="EdgeIEMode (HTML Path)::Application-Navigate-AttachApplication" type="Action">
+    <display x="225" y="135" w="180" h="30" />
+    <inputs>
+      <input type="collection" name="WindowTitlesCollection" expr="" />
+      <input type="text" name="WindowTitle" expr="[Window Title]" />
+      <input type="text" name="ProcessName" expr="&quot;msedge&quot;" />
+      <input type="number" name="ProcessID" expr="" />
+      <input type="text" name="Username" expr="" />
+      <input type="number" name="ChildIndex" expr="0" />
+    </inputs>
+    <onsuccess>4f9478b7-a20c-498d-bbad-d18d08505042</onsuccess>
+    <resource object="EdgeIEMode (ID)" action="Application-Navigate-AttachApplication" />
+  </stage>
+  <stage stageid="c074da1a-7e1e-480d-8d9d-f576332af079" name="Window Title" type="Calculation">
+    <display x="225" y="-45" />
+    <onsuccess>8e8e2b16-899a-404c-9023-f4a44b1d828e</onsuccess>
+    <calculation expression="[Window Title]&amp;&quot;*Edge&quot;" stage="Window Title" />
+  </stage>
+  <stage stageid="f38a855b-ea12-4c0a-be2b-8228a5f8b0d4" name="Window Title" type="Calculation">
+    <display x="15" y="-45" />
+    <onsuccess>204a6c84-7237-4577-b1c0-a19ec005b6ad</onsuccess>
+    <calculation expression="[Window Title]&amp;&quot; - Internet Explorer&quot;" stage="Window Title" />
+  </stage>
+  <stage stageid="f9a99eb9-5343-4a7b-bfb2-38dc9792c4c6" name="IE or Edge Win32::Attach" type="Action">
+    <display x="15" y="45" w="180" h="30" />
+    <font family="Segoe UI" size="10" style="Regular" color="0000FF" />
+    <inputs>
+      <input type="flag" name="IE" expr="True" />
+      <input type="text" name="Window Title" expr="[Window Title]" />
+    </inputs>
+    <onsuccess>0dc73b45-b60b-4746-84d1-17774d715e7c</onsuccess>
+    <resource object="IE or Edge Win32" action="Attach" />
+  </stage>
+  <stage stageid="896cfaff-0bbe-4d9a-b9fc-d2a00dbee9cb" name="IE or Edge Win32::Attach" type="Action">
+    <display x="225" y="45" w="180" h="30" />
+    <font family="Segoe UI" size="10" style="Regular" color="0000FF" />
+    <inputs>
+      <input type="flag" name="IE" expr="False" />
+      <input type="text" name="Window Title" expr="[Window Title]" />
+    </inputs>
+    <onsuccess>5d9c6b87-27d3-4001-9c8f-1d977754accb</onsuccess>
+    <resource object="IE or Edge Win32" action="Attach" />
+  </stage>
+  <stage stageid="0dc73b45-b60b-4746-84d1-17774d715e7c" name="IE or Edge Win32::Resize" type="Action">
+    <display x="15" y="90" w="180" h="30" />
+    <font family="Segoe UI" size="10" style="Regular" color="0000FF" />
+    <inputs>
+      <input type="flag" name="IE" expr="True" />
+      <input type="text" name="Window Title" expr="[Window Title]" />
+    </inputs>
+    <onsuccess>6714b9c2-16ee-4e51-bed7-c31110513edf</onsuccess>
+    <resource object="IE or Edge Win32" action="Resize" />
+  </stage>
+  <stage stageid="5d9c6b87-27d3-4001-9c8f-1d977754accb" name="IE or Edge Win32::Resize" type="Action">
+    <display x="225" y="90" w="180" h="30" />
+    <font family="Segoe UI" size="10" style="Regular" color="0000FF" />
+    <inputs>
+      <input type="flag" name="IE" expr="False" />
+      <input type="text" name="Window Title" expr="[Window Title]" />
+    </inputs>
+    <onsuccess>7f7879b4-2168-4a16-9aed-d7dab7ca5730</onsuccess>
+    <resource object="IE or Edge Win32" action="Resize" />
+  </stage>
+  <stage stageid="32602ec7-dcf8-489f-9dc1-734396624599" name="Application URL" type="Data">
+    <narrative>1) https://jkorpela.fi/www/testel.html
+2a) https://qa-webpages.azurewebsites.net/BPQATestSite/QAhome.html
+2b) http://localhost:1234/QAhome.html
+</narrative>
+    <display x="-195" y="-30" w="150" h="30" />
+    <datatype>text</datatype>
+    <initialvalue xml:space="preserve">https://qa-webpages.azurewebsites.net/BPQATestSiteForIEMode/QAhome.html</initialvalue>
+    <alwaysinit />
+  </stage>
+  <stage stageid="3ceb55ba-4606-4142-b727-d5c5cab09c58" name="Window Title" type="Data">
+    <narrative>1) Test display of HTML elements
+2) QATestSite</narrative>
+    <display x="-195" y="30" w="150" h="30" />
+    <datatype>text</datatype>
+    <initialvalue xml:space="preserve">QATestSite</initialvalue>
+    <alwaysinit />
+  </stage>
+  <stage stageid="19d6363b-05d3-4d78-8e07-714c8adc8af3" name="IE" type="Data">
+    <display x="-195" y="0" w="150" h="30" />
+    <datatype>flag</datatype>
+    <initialvalue>True</initialvalue>
+    <alwaysinit />
+  </stage>
+  <stage stageid="cda2b151-495e-489e-bc8a-f90b620cb373" name="IE or Edge Win32::Close" type="Action">
+    <display x="15" y="285" w="180" h="30" />
+    <font family="Segoe UI" size="10" style="Regular" color="0000FF" />
+    <inputs>
+      <input type="flag" name="IE" expr="[IE]" />
+    </inputs>
+    <onsuccess>2b6f2fc8-b5e6-4944-b3cd-49171266aba9</onsuccess>
+    <resource object="IE or Edge Win32" action="Close" />
+  </stage>
+  <stage stageid="6702e11b-0693-4456-8d1e-1c009aa305bf" name="EdgeIEMode (HTML Path)::HTML Element-Wait-CheckHTMLIdentifier" type="Action">
+    <subsheetid>4e1b161b-b6fb-4ad6-8422-cf001fb94a37</subsheetid>
+    <display x="15" y="60" w="180" h="30" />
+    <inputs>
+      <input type="number" name="Timeout" expr="" />
+      <input type="text" name="TextValue" expr="&quot;Click TABLE&quot;" />
+      <input type="text" name="idname" expr="&quot;Value&quot;" />
+    </inputs>
+    <onsuccess>95d6be9b-3697-4aa2-8c1e-3c9e2c347388</onsuccess>
+    <resource object="EdgeIEMode (ID)" action="HTML Element-Wait-CheckHTMLIdentifier" />
+  </stage>
+  <stage stageid="eaeec232-9e59-4828-8cfd-00214a301b37" name="ReadCurrentValue" type="Data">
+    <subsheetid>4e1b161b-b6fb-4ad6-8422-cf001fb94a37</subsheetid>
+    <display x="180" y="60" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="58949832-2f97-40ed-a9b8-59bf230962e7" name="EdgeIEMode (HTML Path)::HTML Element-Wait-CheckHTMLIdentifier" type="Action">
+    <subsheetid>4e1b161b-b6fb-4ad6-8422-cf001fb94a37</subsheetid>
+    <display x="15" y="150" w="180" h="30" />
+    <inputs>
+      <input type="number" name="Timeout" expr="" />
+      <input type="text" name="TextValue" expr="&quot;Double Click TABLE&quot;" />
+      <input type="text" name="idname" expr="&quot;Value&quot;" />
+    </inputs>
+    <onsuccess>55619b09-c278-4a91-80c4-41aa6ac659de</onsuccess>
+    <resource object="EdgeIEMode (ID)" action="HTML Element-Wait-CheckHTMLIdentifier" />
+  </stage>
+  <stage stageid="3d0e7481-d6e1-46bb-bb70-d25d03809567" name="GetElementBounds?" type="Decision">
+    <subsheetid>4e1b161b-b6fb-4ad6-8422-cf001fb94a37</subsheetid>
+    <display x="15" y="240" w="90" h="30" />
+    <decision expression="[GetElementBounds.Left]=171&#xA;AND [GetElementBounds.Right]=304&#xA;AND [GetElementBounds.Width]=133&#xA;AND [GetElementBounds.Height]=94" />
+    <ontrue>b8beeed9-eaa1-4e04-b4dd-92b455482328</ontrue>
+    <onfalse>5cae72db-c9e6-4666-9ae0-112585565773</onfalse>
+  </stage>
+  <stage stageid="5cae72db-c9e6-4666-9ae0-112585565773" name="Value Exception" type="Exception">
+    <subsheetid>4e1b161b-b6fb-4ad6-8422-cf001fb94a37</subsheetid>
+    <display x="180" y="240" w="90" h="30" />
+    <exception type="System Exception" detail="&quot;The GetElementBounds value is not as expected&quot;" />
+  </stage>
+  <stage stageid="8ed8bdd1-baee-431e-a34e-b28316703fd2" name="GetElementScreenBounds?" type="Decision">
+    <subsheetid>4e1b161b-b6fb-4ad6-8422-cf001fb94a37</subsheetid>
+    <display x="15" y="330" w="90" h="30" />
+    <decision expression="[GetElementScreenBounds.Left]=183&#xA;AND [GetElementScreenBounds.Right]=317&#xA;AND [GetElementScreenBounds.Width]=134&#xA;AND [GetElementScreenBounds.Height]=94" />
+    <ontrue>e31f00aa-42f1-4a7c-b810-0c8144c6edb2</ontrue>
+    <onfalse>eb9c8a15-95a9-4ff4-95ef-68ba173f76a1</onfalse>
+  </stage>
+  <stage stageid="eb9c8a15-95a9-4ff4-95ef-68ba173f76a1" name="Value Exception" type="Exception">
+    <subsheetid>4e1b161b-b6fb-4ad6-8422-cf001fb94a37</subsheetid>
+    <display x="180" y="330" w="90" h="30" />
+    <exception type="System Exception" detail="&quot;The GetElementScreenBounds value is not as expected&quot;" />
+  </stage>
+  <stage stageid="a594b7a4-2bd2-4c62-8230-f739d6e2bd81" name="GetHTMLIdentifier?" type="Decision">
+    <subsheetid>4e1b161b-b6fb-4ad6-8422-cf001fb94a37</subsheetid>
+    <display x="15" y="420" w="90" h="30" />
+    <decision expression="[GetHTMLIdentifier]=&quot;TABLE&quot;" />
+    <ontrue>e7917b29-a879-4ab3-8278-bf056307055c</ontrue>
+    <onfalse>569ede9f-790d-4d61-914c-5ec450850c36</onfalse>
+  </stage>
+  <stage stageid="569ede9f-790d-4d61-914c-5ec450850c36" name="Value Exception" type="Exception">
+    <subsheetid>4e1b161b-b6fb-4ad6-8422-cf001fb94a37</subsheetid>
+    <display x="180" y="420" w="90" h="30" />
+    <exception type="System Exception" detail="&quot;The button value is not as expected&quot;" />
+  </stage>
+  <stage stageid="e7917b29-a879-4ab3-8278-bf056307055c" name="EdgeIEMode (HTML Path)::HTML Table-Read-HTMLGetOuterHTML" type="Action">
+    <subsheetid>4e1b161b-b6fb-4ad6-8422-cf001fb94a37</subsheetid>
+    <display x="15" y="465" w="180" h="30" />
+    <outputs>
+      <output type="text" name="HTMLGetOuterHTML" stage="HTMLGetOuterHTML" />
+    </outputs>
+    <onsuccess>d80677d9-0487-40be-8f5b-71a54bf4ba61</onsuccess>
+    <resource object="EdgeIEMode (ID)" action="HTML Table-Read-HTMLGetOuterHTML" />
+  </stage>
+  <stage stageid="07e9c2a5-65e4-4e0b-bcd4-7fc856943980" name="HTMLGetOuterHTML" type="Data">
+    <subsheetid>4e1b161b-b6fb-4ad6-8422-cf001fb94a37</subsheetid>
+    <display x="180" y="465" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="9e5b32e1-5ca7-40f2-8e42-9b27375e1b87" name="EdgeIEMode (HTML Path)::HTML Table-Read-HTMLGetPath" type="Action">
+    <subsheetid>4e1b161b-b6fb-4ad6-8422-cf001fb94a37</subsheetid>
+    <display x="15" y="570" w="180" h="30" />
+    <outputs>
+      <output type="text" name="HTMLGetPath" stage="HTMLGetPath" />
+    </outputs>
+    <onsuccess>e4f1aaad-7815-4509-8f80-73f1e0d41b80</onsuccess>
+    <resource object="EdgeIEMode (ID)" action="HTML Table-Read-HTMLGetPath" />
+  </stage>
+  <stage stageid="d80677d9-0487-40be-8f5b-71a54bf4ba61" name="HTMLGetOuterHTML?" type="Decision">
+    <subsheetid>4e1b161b-b6fb-4ad6-8422-cf001fb94a37</subsheetid>
+    <display x="15" y="510" w="90" h="30" />
+    <decision expression="StartsWith([HTMLGetOuterHTML], &quot;&lt;table&quot;) AND EndsWith([HTMLGetOuterHTML], &quot;&gt;&quot;)" />
+    <ontrue>9e5b32e1-5ca7-40f2-8e42-9b27375e1b87</ontrue>
+    <onfalse>18314694-991c-4b0f-85b0-f7a62bd41701</onfalse>
+  </stage>
+  <stage stageid="18314694-991c-4b0f-85b0-f7a62bd41701" name="Value Exception" type="Exception">
+    <subsheetid>4e1b161b-b6fb-4ad6-8422-cf001fb94a37</subsheetid>
+    <display x="180" y="510" w="90" h="30" />
+    <exception type="System Exception" detail="&quot;The GetOuterHTML value is not as expected&quot;" />
+  </stage>
+  <stage stageid="76dfc5af-a20c-4ec3-8928-40680228a5d8" name="HTMLGetPath Match Value" type="Data">
+    <subsheetid>4e1b161b-b6fb-4ad6-8422-cf001fb94a37</subsheetid>
+    <display x="-150" y="570" />
+    <datatype>text</datatype>
+    <initialvalue xml:space="preserve">/HTML/BODY(1)/DIV(5)/DIV(2)/TABLE(1)</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="e4f1aaad-7815-4509-8f80-73f1e0d41b80" name="HTMLGetPath?" type="Decision">
+    <subsheetid>4e1b161b-b6fb-4ad6-8422-cf001fb94a37</subsheetid>
+    <display x="15" y="615" w="90" h="30" />
+    <decision expression="[HTMLGetPath]=[HTMLGetPath Match Value]" />
+    <ontrue>134e5a47-02c3-4745-b70f-5afaf301f1ea</ontrue>
+    <onfalse>639310c2-644d-447e-a364-7b39deab04ca</onfalse>
+  </stage>
+  <stage stageid="639310c2-644d-447e-a364-7b39deab04ca" name="Value Exception" type="Exception">
+    <subsheetid>4e1b161b-b6fb-4ad6-8422-cf001fb94a37</subsheetid>
+    <display x="180" y="615" w="90" h="30" />
+    <exception type="System Exception" detail="&quot;The HTMLGetPath value is not as expected&quot;" />
+  </stage>
+  <stage stageid="1d1fbe19-c2e1-4d65-8301-443e50d0fc73" name="HTMLGetTable?" type="Decision">
+    <subsheetid>4e1b161b-b6fb-4ad6-8422-cf001fb94a37</subsheetid>
+    <display x="15" y="720" w="90" h="30" />
+    <decision expression="[HTMLGetTable.Column1]=&quot;Cell[1,1]&quot;" />
+    <ontrue>1dafc86e-59f7-4dfd-b27b-5ba657c1be23</ontrue>
+    <onfalse>b4bebfdd-ef52-494a-955a-db25d3828227</onfalse>
+  </stage>
+  <stage stageid="b4bebfdd-ef52-494a-955a-db25d3828227" name="Value Exception" type="Exception">
+    <subsheetid>4e1b161b-b6fb-4ad6-8422-cf001fb94a37</subsheetid>
+    <display x="180" y="720" w="90" h="30" />
+    <exception type="System Exception" detail="&quot;The HTMLGetTable value is not as expected&quot;" />
+  </stage>
+  <stage stageid="17559e19-f514-480c-9f4d-d064f336954c" name="Block1" type="Block">
+    <display x="-75" y="165" w="390" h="90" />
+    <font family="Segoe UI" size="10" style="Regular" color="7FB2E5" />
+  </stage>
+  <stage stageid="dcc18bbd-103c-49d9-937b-8aca6079fb2d" name="Recover1" type="Recover">
+    <display x="225" y="210" />
+    <onsuccess>906126d5-650f-4969-8034-4a05ab6c9a05</onsuccess>
+    <breakpoint type="0">
+      <condition>
+      </condition>
+    </breakpoint>
+  </stage>
+  <stage stageid="906126d5-650f-4969-8034-4a05ab6c9a05" name="IE or Edge Win32::Close" type="Action">
+    <display x="225" y="285" w="180" h="30" />
+    <font family="Segoe UI" size="10" style="Regular" color="0000FF" />
+    <inputs>
+      <input type="flag" name="IE" expr="[IE]" />
+    </inputs>
+    <onsuccess>7f941e2d-b38c-4653-ace4-d821f5438efe</onsuccess>
+    <resource object="IE or Edge Win32" action="Close" />
+  </stage>
+  <stage stageid="7f941e2d-b38c-4653-ace4-d821f5438efe" name="Exception1" type="Exception">
+    <display x="225" y="345" />
+    <exception localized="yes" type="" detail="" usecurrent="yes" />
+  </stage>
+  <stage stageid="fe7046da-7f7e-4a08-9f6f-003465b17583" name="HTMLGetPath" type="Data">
+    <subsheetid>4e1b161b-b6fb-4ad6-8422-cf001fb94a37</subsheetid>
+    <display x="150" y="570" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="e07c903c-afe2-4982-9d5c-45bdba12a2e2" name="EdgeIEMode (HTML Path)::HTML Table-Write-WriteText" type="Action">
+    <subsheetid>4e1b161b-b6fb-4ad6-8422-cf001fb94a37</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="315" y="855" w="180" h="30" />
+    <inputs>
+      <input type="text" name="TextValue" expr="&quot;?&quot;" />
+    </inputs>
+    <onsuccess>e218a613-70cb-4d7e-a59d-6f080b449262</onsuccess>
+    <resource object="EdgeIEMode (ID)" action="HTML Table-Write-WriteText" />
+  </stage>
+  <stage stageid="e218a613-70cb-4d7e-a59d-6f080b449262" name="End2" type="End">
+    <subsheetid>4e1b161b-b6fb-4ad6-8422-cf001fb94a37</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="315" y="915" />
+  </stage>
+  <stage stageid="72023ed9-f559-4dd8-a1f5-d84099beb93c" name="Note1" type="Note">
+    <subsheetid>4e1b161b-b6fb-4ad6-8422-cf001fb94a37</subsheetid>
+    <narrative>TO DO</narrative>
+    <display x="315" y="810" />
+    <font family="Segoe UI" size="10" style="Regular" color="FF00FF" />
+    <onsuccess>e07c903c-afe2-4982-9d5c-45bdba12a2e2</onsuccess>
+  </stage>
+</process>

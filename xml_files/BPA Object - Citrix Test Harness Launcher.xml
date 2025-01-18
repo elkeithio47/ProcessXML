@@ -1,0 +1,394 @@
+﻿<process name="Citrix Test Harness Launcher" version="1.0" bpversion="6.0.0.0" narrative="" byrefcollection="true" type="object" runmode="Exclusive" preferredid="d1ba2163-b598-4334-adcc-2d2992a70ee7">
+  <appdef>
+    <element name="Application Root">
+      <id>aa842825-b1de-4691-ae0c-6fa8e976deca</id>
+      <type>Application</type>
+      <basetype>Application</basetype>
+      <datatype>unknown</datatype>
+      <diagnose>False</diagnose>
+    </element>
+  </appdef>
+  <view>
+    <camerax>0</camerax>
+    <cameray>0</cameray>
+    <zoom version="2">1.25</zoom>
+  </view>
+  <preconditions />
+  <endpoint narrative="" />
+  <subsheet subsheetid="dd727582-bd79-4339-b14a-6edb4b75cb91" type="CleanUp" published="True">
+    <name>Clean Up</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="714048fd-3d70-449b-869a-452b938c0fcf" type="Normal" published="True">
+    <name>Launch</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="c4ebd1e5-5f97-41c7-ba1d-d9752af6ce3d" type="Normal" published="True">
+    <name>Copy file</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="dcbcc7ed-f195-416d-94ab-15b754b4b908" type="Normal" published="True">
+    <name>Get log values</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="73d71a89-b1ee-4ed1-bfb9-4cd91b75f418" type="Normal" published="True">
+    <name>Combine collections</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <stage stageid="5dbb336c-c3a7-40af-ad40-4c934c2db24a" name="Start" type="Start">
+    <loginhibit />
+    <display x="15" y="-105" />
+    <onsuccess>a3fd46d8-aa07-43bb-9604-a323aec0b344</onsuccess>
+  </stage>
+  <stage stageid="a3fd46d8-aa07-43bb-9604-a323aec0b344" name="End" type="End">
+    <loginhibit />
+    <display x="15" y="90" />
+  </stage>
+  <stage stageid="777b8299-c0a4-4fc2-a599-86db6c7ff41d" name="Stage1" type="ProcessInfo">
+    <display x="-225" y="-105" w="150" h="90" />
+    <references>
+      <reference>System.dll</reference>
+      <reference>System.Data.dll</reference>
+      <reference>System.Xml.dll</reference>
+      <reference>System.Drawing.dll</reference>
+      <reference>System.Core.dll</reference>
+    </references>
+    <imports>
+      <import>System</import>
+      <import>System.Drawing</import>
+      <import>System.Data</import>
+      <import>System.Diagnostics</import>
+      <import>System.Reflection</import>
+      <import>System.IO</import>
+      <import>System.Collections.Generic</import>
+      <import>System.Linq</import>
+    </imports>
+    <language>csharp</language>
+    <globalcode><![CDATA[]]></globalcode>
+    <code><![CDATA[]]></code>
+  </stage>
+  <stage stageid="854529d6-9ea9-4b3b-bd61-8eec01809ea0" name="Clean Up" type="SubSheetInfo">
+    <subsheetid>dd727582-bd79-4339-b14a-6edb4b75cb91</subsheetid>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="f993d4d1-281b-40f7-be91-cadbb96a8df6" name="Start" type="Start">
+    <subsheetid>dd727582-bd79-4339-b14a-6edb4b75cb91</subsheetid>
+    <loginhibit />
+    <display x="15" y="-105" />
+    <onsuccess>17e0426f-1eeb-4afd-8f17-bf7a6c33feab</onsuccess>
+  </stage>
+  <stage stageid="17e0426f-1eeb-4afd-8f17-bf7a6c33feab" name="End" type="End">
+    <subsheetid>dd727582-bd79-4339-b14a-6edb4b75cb91</subsheetid>
+    <loginhibit />
+    <display x="15" y="90" />
+  </stage>
+  <stage stageid="34db5a6d-c019-4ded-ad49-b89661ed55fb" name="Launch" type="SubSheetInfo">
+    <subsheetid>714048fd-3d70-449b-869a-452b938c0fcf</subsheetid>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="110e70e2-7081-4c5c-9dd4-996a686a8e83" name="Start" type="Start">
+    <subsheetid>714048fd-3d70-449b-869a-452b938c0fcf</subsheetid>
+    <loginhibit />
+    <display x="15" y="-105" />
+    <inputs>
+      <input type="text" name="Arguments" stage="Arguments" />
+    </inputs>
+    <onsuccess>e2c072d0-e95b-41ab-b7d7-00a077dc4c75</onsuccess>
+  </stage>
+  <stage stageid="aa857692-45c7-40a5-be72-44e390626f28" name="End" type="End">
+    <subsheetid>714048fd-3d70-449b-869a-452b938c0fcf</subsheetid>
+    <loginhibit />
+    <display x="15" y="15" />
+  </stage>
+  <stage stageid="378bc6ae-1fd7-4b15-9278-44518f30d279" name="" type="Note">
+    <subsheetid>dd727582-bd79-4339-b14a-6edb4b75cb91</subsheetid>
+    <narrative>Clean Up Page
+
+This is an optional page where you might choose to perform some finalisation (or "cleanup") tasks as your business object is closed down.
+
+The cleanup action will be called automatically immediately after closing your business object at the end of a business process.
+
+You will not be able to call this action from a business process, nor will it be called at any other time than before the disposal of the business object.</narrative>
+    <display x="-180" y="60" w="180" h="230" />
+  </stage>
+  <stage stageid="864cff5d-5367-414f-bcaa-58c4d3adec7e" name="" type="Note">
+    <narrative>Initialise Page
+
+This is an optional page where you might choose to perform some initialisation tasks after your business object is loaded.
+
+The initialise action will be called automatically immediately after loading your business object.
+
+You will not be able to call this action from a business process, nor will it be called at any other time than after the creation of the object.</narrative>
+    <display x="-225" y="60" w="180" h="230" />
+  </stage>
+  <stage stageid="e2c072d0-e95b-41ab-b7d7-00a077dc4c75" name="Launch Process" type="Code">
+    <subsheetid>714048fd-3d70-449b-869a-452b938c0fcf</subsheetid>
+    <loginhibit />
+    <display x="15" y="-45" />
+    <inputs>
+      <input type="text" name="Location" expr="[QA Root]&amp;&quot;\&quot;&amp;[Test harness folder]" />
+      <input type="text" name="Arguments" expr="[Arguments]" />
+    </inputs>
+    <onsuccess>aa857692-45c7-40a5-be72-44e390626f28</onsuccess>
+    <code><![CDATA[Directory.SetCurrentDirectory(Location);
+string command = Path.Combine(Location, "AppManCitrixTestHarness.exe");
+ProcessStartInfo startInfo = new ProcessStartInfo(command,Arguments = Arguments);
+startInfo.UseShellExecute = false;
+startInfo.RedirectStandardError = true; 
+
+Process p=Process.Start(startInfo);
+p.WaitForExit();
+if(p.ExitCode != 0)
+	throw new ApplicationException(p.StandardError.ReadToEnd());]]></code>
+  </stage>
+  <stage stageid="78f13460-79ab-4286-a565-3ca2a6e17566" name="Arguments" type="Data">
+    <subsheetid>714048fd-3d70-449b-869a-452b938c0fcf</subsheetid>
+    <display x="90" y="-105" />
+    <datatype>text</datatype>
+    <initialvalue xml:space="preserve">--target=Local --quiet</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="d26b2412-1d96-4017-ad14-8c3fbb8af8a4" name="QA Root" type="Data">
+    <subsheetid>714048fd-3d70-449b-869a-452b938c0fcf</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="90" y="-45" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <exposure>Environment</exposure>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="37ff182a-0c7c-4164-b0f1-e0781620390c" name="Get log values" type="SubSheetInfo">
+    <subsheetid>dcbcc7ed-f195-416d-94ab-15b754b4b908</subsheetid>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="c041b248-57c7-4234-a808-7509ca1b0d89" name="Start" type="Start">
+    <subsheetid>dcbcc7ed-f195-416d-94ab-15b754b4b908</subsheetid>
+    <loginhibit />
+    <display x="15" y="-105" />
+    <inputs>
+      <input type="text" name="File path" stage="File path" />
+    </inputs>
+    <onsuccess>ab5c715e-a924-4b98-816f-c5e9d1fe15b3</onsuccess>
+  </stage>
+  <stage stageid="65cc7eb4-5111-4b31-a6c7-359049505895" name="End" type="End">
+    <subsheetid>dcbcc7ed-f195-416d-94ab-15b754b4b908</subsheetid>
+    <loginhibit />
+    <display x="15" y="15" />
+    <outputs>
+      <output type="collection" name="Logs" stage="Lines" />
+    </outputs>
+  </stage>
+  <stage stageid="3f213665-c606-4c88-af29-1015951764c9" name="File path" type="Data">
+    <subsheetid>dcbcc7ed-f195-416d-94ab-15b754b4b908</subsheetid>
+    <display x="90" y="-105" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="ab5c715e-a924-4b98-816f-c5e9d1fe15b3" name="Read collection from file" type="Code">
+    <subsheetid>dcbcc7ed-f195-416d-94ab-15b754b4b908</subsheetid>
+    <loginhibit />
+    <display x="15" y="-45" />
+    <inputs>
+      <input type="text" name="filePath" expr="[QA Root]&amp;&quot;\&quot;&amp;[Test harness folder]&amp;[File path]" />
+    </inputs>
+    <outputs>
+      <output type="collection" name="Lines" stage="Lines" />
+    </outputs>
+    <onsuccess>65cc7eb4-5111-4b31-a6c7-359049505895</onsuccess>
+    <code><![CDATA[Lines = new DataTable();
+Lines.Columns.Add("Value", typeof(string));
+
+using (var file = File.OpenRead(filePath))
+using (var streamReader = new StreamReader(file))
+{
+	while(!streamReader.EndOfStream)
+	{
+		Lines.Rows.Add(streamReader.ReadLine());
+	}
+}]]></code>
+  </stage>
+  <stage stageid="555b35db-1945-4023-bc2c-3c8c4f54ab74" name="Lines" type="Collection">
+    <subsheetid>dcbcc7ed-f195-416d-94ab-15b754b4b908</subsheetid>
+    <display x="90" y="-45" />
+    <datatype>collection</datatype>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="12cbaef2-0392-4277-86db-7a76f09fab29" name="Test harness folder" type="Data">
+    <loginhibit />
+    <display x="-75" y="-105" w="120" h="30" />
+    <datatype>text</datatype>
+    <initialvalue xml:space="preserve">Code\AppManCitrixTestHarness\bin\Debug\</initialvalue>
+    <alwaysinit />
+  </stage>
+  <stage stageid="bf17b383-604b-4c0b-bc59-442c14db5771" name="QA Root" type="Data">
+    <subsheetid>dcbcc7ed-f195-416d-94ab-15b754b4b908</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="150" y="-105" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <exposure>Environment</exposure>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="5f034e07-cd50-4d1f-b589-153aa5c947b6" name="Combine collections" type="SubSheetInfo">
+    <subsheetid>73d71a89-b1ee-4ed1-bfb9-4cd91b75f418</subsheetid>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="48dc6fb2-d1ef-4e3e-b204-09dfaa2b5b3f" name="Start" type="Start">
+    <subsheetid>73d71a89-b1ee-4ed1-bfb9-4cd91b75f418</subsheetid>
+    <loginhibit />
+    <display x="15" y="-105" />
+    <inputs>
+      <input type="collection" name="Collection 1" stage="Collection 1" />
+      <input type="collection" name="Collection 2" stage="Collection 2" />
+    </inputs>
+    <onsuccess>dd702d85-46d3-4cf4-9d76-a2d9523d1bdb</onsuccess>
+  </stage>
+  <stage stageid="f7289f09-fd8d-4d67-8a55-93e91fad2e9b" name="End" type="End">
+    <subsheetid>73d71a89-b1ee-4ed1-bfb9-4cd91b75f418</subsheetid>
+    <loginhibit />
+    <display x="15" y="15" />
+    <outputs>
+      <output type="collection" name="Combined collection" stage="Combined Collection" />
+    </outputs>
+  </stage>
+  <stage stageid="dd702d85-46d3-4cf4-9d76-a2d9523d1bdb" name="Combine" type="Code">
+    <subsheetid>73d71a89-b1ee-4ed1-bfb9-4cd91b75f418</subsheetid>
+    <loginhibit />
+    <display x="15" y="-45" />
+    <inputs>
+      <input type="collection" name="collection1" expr="[Collection 1]" />
+      <input type="collection" name="collection2" expr="[Collection 2]" />
+    </inputs>
+    <outputs>
+      <output type="collection" name="combinedCollection" stage="Combined Collection" />
+    </outputs>
+    <onsuccess>f7289f09-fd8d-4d67-8a55-93e91fad2e9b</onsuccess>
+    <code><![CDATA[combinedCollection = new DataTable();
+IEnumerable<DataColumn> GetColumns(DataTable table, Func<string, string> formatName) => 
+	table.Columns.OfType<DataColumn>().Select(c => new DataColumn(formatName(c.ColumnName), c.DataType));
+	
+combinedCollection.Columns.AddRange(
+	GetColumns(collection1, n => $"Collection 1 {n}")
+	.Concat(GetColumns(collection2, n => $"Collection 2 {n}"))
+	.ToArray());
+
+IEnumerable<object[]> GetRows(DataTable table) => table.Rows.Cast<DataRow>().Select(r => Enumerable.Range(0, table.Columns.Count).Select(i => r[i]).ToArray());
+var collection1Rows = GetRows(collection1);
+var collection2Rows = GetRows(collection2);
+
+var allRows = collection1Rows.Zip(collection2Rows, (l, r) => l.Concat(r).ToArray());
+
+foreach(var rowValues in allRows)
+{
+	var row = combinedCollection.NewRow();
+	for(var i = 0; i < rowValues.Length; ++i)
+	{
+		row[i] = rowValues[i];
+	}
+	combinedCollection.Rows.Add(row);
+}]]></code>
+  </stage>
+  <stage stageid="3d980d62-6ee0-41f4-ac70-6371824f6a46" name="Collection 1" type="Collection">
+    <subsheetid>73d71a89-b1ee-4ed1-bfb9-4cd91b75f418</subsheetid>
+    <display x="90" y="-105" />
+    <datatype>collection</datatype>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="5269a46f-bbbe-4e73-87af-090dd1e58163" name="Collection 2" type="Collection">
+    <subsheetid>73d71a89-b1ee-4ed1-bfb9-4cd91b75f418</subsheetid>
+    <display x="150" y="-105" />
+    <datatype>collection</datatype>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="a673918b-9cfe-4598-bb41-f2fba51373c1" name="Combined Collection" type="Collection">
+    <subsheetid>73d71a89-b1ee-4ed1-bfb9-4cd91b75f418</subsheetid>
+    <display x="120" y="-45" w="120" h="30" />
+    <datatype>collection</datatype>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="055f758a-e94a-4768-8e67-3ec863ea07d4" name="Copy file" type="SubSheetInfo">
+    <subsheetid>c4ebd1e5-5f97-41c7-ba1d-d9752af6ce3d</subsheetid>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="48547d37-51ba-488f-8985-48d47f45b8e0" name="Start" type="Start">
+    <subsheetid>c4ebd1e5-5f97-41c7-ba1d-d9752af6ce3d</subsheetid>
+    <loginhibit />
+    <display x="15" y="-105" />
+    <inputs>
+      <input type="text" name="Source path" stage="Source path" />
+      <input type="text" name="Destination path" stage="Destination path" />
+    </inputs>
+    <onsuccess>30e31c98-dd1e-48dc-a9ae-076e19941e77</onsuccess>
+  </stage>
+  <stage stageid="45b9c4ab-4a82-4384-ad54-14d686711bad" name="End" type="End">
+    <subsheetid>c4ebd1e5-5f97-41c7-ba1d-d9752af6ce3d</subsheetid>
+    <loginhibit />
+    <display x="15" y="15" />
+  </stage>
+  <stage stageid="4f11af07-0b2f-49f6-9cb2-27366cc733bc" name="Source path" type="Data">
+    <subsheetid>c4ebd1e5-5f97-41c7-ba1d-d9752af6ce3d</subsheetid>
+    <display x="90" y="-105" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="36dd6af3-c773-434d-ad08-7c4d04c9567d" name="Destination path" type="Data">
+    <subsheetid>c4ebd1e5-5f97-41c7-ba1d-d9752af6ce3d</subsheetid>
+    <display x="150" y="-105" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="30e31c98-dd1e-48dc-a9ae-076e19941e77" name="Copy" type="Code">
+    <subsheetid>c4ebd1e5-5f97-41c7-ba1d-d9752af6ce3d</subsheetid>
+    <loginhibit />
+    <display x="15" y="-45" />
+    <inputs>
+      <input type="text" name="sourcePath" expr="[QA Root]&amp;&quot;\&quot;&amp;[Test harness folder]&amp;[Source path]" />
+      <input type="text" name="destinationPath" expr="[QA Root]&amp;&quot;\&quot;&amp;[Test harness folder]&amp;[Destination path]" />
+    </inputs>
+    <onsuccess>45b9c4ab-4a82-4384-ad54-14d686711bad</onsuccess>
+    <code><![CDATA[File.Copy(sourcePath, destinationPath, true);]]></code>
+  </stage>
+  <stage stageid="938695e5-28c2-4c65-87a7-61b0c86d6a37" name="QA Root" type="Data">
+    <subsheetid>c4ebd1e5-5f97-41c7-ba1d-d9752af6ce3d</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="210" y="-105" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <exposure>Environment</exposure>
+    <private />
+    <alwaysinit />
+  </stage>
+</process>

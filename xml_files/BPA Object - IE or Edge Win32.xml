@@ -1,0 +1,1070 @@
+﻿<process name="IE or Edge Win32" version="1.0" bpversion="7.3.0.7043" narrative="" byrefcollection="true" processrunningmessage="" disableversioning="false" type="object" runmode="Exclusive" preferredid="c6394731-5ab7-4529-a1ce-c5825cfaeb37">
+  <appdef>
+    <element name="Utility - Application">
+      <id>c868b2df-8478-4735-b762-46623a97ff5d</id>
+      <element name="Main Window IE - Win32">
+        <id>7b357558-cd7b-4256-a775-96e4036af140</id>
+        <type>Window</type>
+        <basetype>Window</basetype>
+        <datatype>text</datatype>
+        <diagnose>False</diagnose>
+        <attributes>
+          <attribute name="WindowText" comparisontype="Wildcard" inuse="True" isUserVisible="True">
+            <ProcessValue datatype="text" value="*Internet Explorer" />
+          </attribute>
+          <attribute name="ClassName" isUserVisible="True">
+            <ProcessValue datatype="text" value="IEFrame" />
+          </attribute>
+          <attribute name="CtrlID" isUserVisible="True">
+            <ProcessValue datatype="number" value="0" />
+          </attribute>
+          <attribute name="X" isUserVisible="True">
+            <ProcessValue datatype="number" value="45" />
+          </attribute>
+          <attribute name="Y" isUserVisible="True">
+            <ProcessValue datatype="number" value="84" />
+          </attribute>
+          <attribute name="Width" isUserVisible="True">
+            <ProcessValue datatype="number" value="1201" />
+          </attribute>
+          <attribute name="Height" isUserVisible="True">
+            <ProcessValue datatype="number" value="676" />
+          </attribute>
+          <attribute name="Visible" inuse="True" isUserVisible="True">
+            <ProcessValue datatype="flag" value="True" />
+          </attribute>
+          <attribute name="ScreenVisible" inuse="True" isUserVisible="True">
+            <ProcessValue datatype="flag" value="True" />
+          </attribute>
+          <attribute name="Enabled" inuse="True" isUserVisible="True">
+            <ProcessValue datatype="flag" value="True" />
+          </attribute>
+          <attribute name="Active" isUserVisible="True">
+            <ProcessValue datatype="flag" value="False" />
+          </attribute>
+          <attribute name="Ordinal" isUserVisible="True">
+            <ProcessValue datatype="number" value="9" />
+          </attribute>
+          <attribute name="ChildCount" isUserVisible="True">
+            <ProcessValue datatype="number" value="5" />
+          </attribute>
+          <attribute name="AncestorsText" isUserVisible="True">
+            <ProcessValue datatype="text" value="&lt;UNKNOWN&gt; " />
+          </attribute>
+          <attribute name="AncestorCount" isUserVisible="True">
+            <ProcessValue datatype="number" value="1" />
+          </attribute>
+          <attribute name="TypeName" isUserVisible="True">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="ScreenBounds" isUserVisible="True">
+            <ProcessValue datatype="text" value="RECT:53,84,751,1237" />
+          </attribute>
+          <attribute name="Style" isUserVisible="True">
+            <ProcessValue datatype="number" value="382664704" />
+          </attribute>
+          <attribute name="MatchIndex" inuse="True" isUserVisible="True">
+            <ProcessValue datatype="number" value="1" />
+          </attribute>
+          <attribute name="MatchReverse" isUserVisible="True">
+            <ProcessValue datatype="flag" value="True" />
+          </attribute>
+        </attributes>
+      </element>
+      <element name="Main Window Edge - Win32">
+        <id>4f42ccc2-cc16-49be-8650-616a713a1700</id>
+        <type>Window</type>
+        <basetype>Window</basetype>
+        <datatype>text</datatype>
+        <diagnose>False</diagnose>
+        <attributes>
+          <attribute name="WindowText" comparisontype="Wildcard" inuse="True" isUserVisible="True">
+            <ProcessValue datatype="text" value="*Edge" />
+          </attribute>
+          <attribute name="ClassName" isUserVisible="True">
+            <ProcessValue datatype="text" value="Chrome_WidgetWin_1" />
+          </attribute>
+          <attribute name="CtrlID" isUserVisible="True">
+            <ProcessValue datatype="number" value="0" />
+          </attribute>
+          <attribute name="X" isUserVisible="True">
+            <ProcessValue datatype="number" value="646" />
+          </attribute>
+          <attribute name="Y" isUserVisible="True">
+            <ProcessValue datatype="number" value="20" />
+          </attribute>
+          <attribute name="Width" isUserVisible="True">
+            <ProcessValue datatype="number" value="1224" />
+          </attribute>
+          <attribute name="Height" isUserVisible="True">
+            <ProcessValue datatype="number" value="882" />
+          </attribute>
+          <attribute name="Visible" inuse="True" isUserVisible="True">
+            <ProcessValue datatype="flag" value="True" />
+          </attribute>
+          <attribute name="ScreenVisible" inuse="True" isUserVisible="True">
+            <ProcessValue datatype="flag" value="True" />
+          </attribute>
+          <attribute name="Enabled" inuse="True" isUserVisible="True">
+            <ProcessValue datatype="flag" value="True" />
+          </attribute>
+          <attribute name="Active" isUserVisible="True">
+            <ProcessValue datatype="flag" value="False" />
+          </attribute>
+          <attribute name="Ordinal" isUserVisible="True">
+            <ProcessValue datatype="number" value="1" />
+          </attribute>
+          <attribute name="ChildCount" isUserVisible="True">
+            <ProcessValue datatype="number" value="2" />
+          </attribute>
+          <attribute name="AncestorsText" isUserVisible="True">
+            <ProcessValue datatype="text" value="&lt;UNKNOWN&gt; " />
+          </attribute>
+          <attribute name="AncestorCount" isUserVisible="True">
+            <ProcessValue datatype="number" value="1" />
+          </attribute>
+          <attribute name="TypeName" isUserVisible="True">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="ScreenBounds" isUserVisible="True">
+            <ProcessValue datatype="text" value="RECT:654,20,893,1861" />
+          </attribute>
+          <attribute name="Style" isUserVisible="True">
+            <ProcessValue datatype="number" value="382664704" />
+          </attribute>
+          <attribute name="MatchIndex" inuse="True" isUserVisible="True">
+            <ProcessValue datatype="number" value="1" />
+          </attribute>
+          <attribute name="MatchReverse" isUserVisible="True">
+            <ProcessValue datatype="flag" value="True" />
+          </attribute>
+        </attributes>
+      </element>
+      <type>Application</type>
+      <basetype>Application</basetype>
+      <datatype>unknown</datatype>
+      <diagnose>False</diagnose>
+    </element>
+    <apptypeinfo>
+      <id>Win32Attach</id>
+      <parameters>
+        <parameter>
+          <name>WindowTitle</name>
+          <value>
+          </value>
+        </parameter>
+        <parameter>
+          <name>ProcessName</name>
+          <value>msedge</value>
+        </parameter>
+        <parameter>
+          <name>Path</name>
+          <value>
+          </value>
+        </parameter>
+        <parameter>
+          <name>CommandLineParams</name>
+          <value>
+          </value>
+        </parameter>
+        <parameter>
+          <name>NonInvasive</name>
+          <value>True</value>
+        </parameter>
+        <parameter>
+          <name>ProcessMode</name>
+          <value>Internal</value>
+        </parameter>
+        <parameter>
+          <name>ExternalProcessTimeout</name>
+          <value>0</value>
+        </parameter>
+        <parameter>
+          <name>Options</name>
+          <value>
+          </value>
+        </parameter>
+      </parameters>
+    </apptypeinfo>
+  </appdef>
+  <view>
+    <camerax>0</camerax>
+    <cameray>0</cameray>
+    <zoom version="2">1.25</zoom>
+  </view>
+  <preconditions />
+  <endpoint narrative="" />
+  <subsheet subsheetid="802b2d53-73b2-47f8-920f-6921350cf2fb" type="CleanUp" published="True">
+    <name>Clean Up</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="9d5c20a9-ba78-4f8f-b381-be5951165e60" type="Normal" published="True">
+    <name>Resize</name>
+    <view>
+      <camerax>-152</camerax>
+      <cameray>21</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="f835c63d-909b-422e-8df8-3a038b8b9920" type="Normal" published="True">
+    <name>Activate</name>
+    <view>
+      <camerax>-152</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="cafbfd7b-d3cd-4fee-9f2d-c881efd7faef" type="Normal" published="True">
+    <name>Close</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>42</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="91ba584a-824a-4cfa-abcc-8d3a894012f3" type="Normal" published="True">
+    <name>Attach</name>
+    <view>
+      <camerax>131</camerax>
+      <cameray>-21</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="06c037f9-a6f3-4d93-a5a4-9c9884902790" type="Normal" published="False">
+    <name>Wait for Detach</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <stage stageid="1640560f-467a-4c8a-9b37-4b22824a95bb" name="Start" type="Start">
+    <loginhibit />
+    <display x="15" y="-105" />
+    <onsuccess>73a7ac98-4e94-46c3-84b9-b6d3fbbc4637</onsuccess>
+  </stage>
+  <stage stageid="73a7ac98-4e94-46c3-84b9-b6d3fbbc4637" name="End" type="End">
+    <loginhibit />
+    <display x="15" y="90" />
+  </stage>
+  <stage stageid="ac8a636a-0724-4f18-8e3d-d1dda90ca7e1" name="Stage1" type="ProcessInfo">
+    <display x="-195" y="-105" w="150" h="90" />
+    <references>
+      <reference>System.dll</reference>
+      <reference>System.Data.dll</reference>
+      <reference>System.Xml.dll</reference>
+      <reference>System.Drawing.dll</reference>
+    </references>
+    <imports>
+      <import>System</import>
+      <import>System.Drawing</import>
+      <import>System.Data</import>
+    </imports>
+    <language>visualbasic</language>
+    <globalcode><![CDATA[]]></globalcode>
+    <code><![CDATA[]]></code>
+  </stage>
+  <stage stageid="ac380611-8fc6-4406-bcef-23ccec61b664" name="Clean Up" type="SubSheetInfo">
+    <subsheetid>802b2d53-73b2-47f8-920f-6921350cf2fb</subsheetid>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="7787c680-2eff-4687-85e2-343dbc6484da" name="Start" type="Start">
+    <subsheetid>802b2d53-73b2-47f8-920f-6921350cf2fb</subsheetid>
+    <loginhibit />
+    <display x="15" y="-105" />
+    <onsuccess>fdc09ba2-6700-4e27-b4e5-c0dc1daf8872</onsuccess>
+  </stage>
+  <stage stageid="fdc09ba2-6700-4e27-b4e5-c0dc1daf8872" name="End" type="End">
+    <subsheetid>802b2d53-73b2-47f8-920f-6921350cf2fb</subsheetid>
+    <loginhibit />
+    <display x="15" y="90" />
+  </stage>
+  <stage stageid="6fce92a9-d5da-4bfc-bab1-0d79858e5811" name="Resize" type="SubSheetInfo">
+    <subsheetid>9d5c20a9-ba78-4f8f-b381-be5951165e60</subsheetid>
+    <display x="-195" y="-150" w="150" h="90" />
+  </stage>
+  <stage stageid="d1bbab68-7bf9-4a32-a4a9-bfbaa27c4df0" name="Start" type="Start">
+    <subsheetid>9d5c20a9-ba78-4f8f-b381-be5951165e60</subsheetid>
+    <loginhibit />
+    <display x="15" y="-135" />
+    <onsuccess>b56d1327-9a1b-4746-b419-30d88ddf42ed</onsuccess>
+  </stage>
+  <stage stageid="23383891-0046-4d68-a7e0-4209f2b0f22c" name="End" type="End">
+    <subsheetid>9d5c20a9-ba78-4f8f-b381-be5951165e60</subsheetid>
+    <loginhibit />
+    <display x="15" y="180" />
+  </stage>
+  <stage stageid="1531d14d-669b-412e-9e62-6b625b9c3c7e" name="Note1" type="Note">
+    <subsheetid>802b2d53-73b2-47f8-920f-6921350cf2fb</subsheetid>
+    <narrative>Clean Up Page
+
+This is an optional page where you might choose to perform some finalisation (or "cleanup") tasks as your business object is closed down.
+
+The cleanup action will be called automatically immediately after closing your business object at the end of a business process.
+
+You will not be able to call this action from a business process, nor will it be called at any other time than before the disposal of the business object.</narrative>
+    <display x="-180" y="60" w="180" h="230" />
+  </stage>
+  <stage stageid="1d837585-22d3-4e61-8fe8-e6e136ca78cc" name="Note2" type="Note">
+    <narrative>Initialise Page
+
+This is an optional page where you might choose to perform some initialisation tasks after your business object is loaded.
+
+The initialise action will be called automatically immediately after loading your business object.
+
+You will not be able to call this action from a business process, nor will it be called at any other time than after the creation of the object.</narrative>
+    <display x="-180" y="60" w="180" h="230" />
+  </stage>
+  <stage stageid="48b5f58f-60d3-4f34-88f8-48475b158d1f" name="Attach" type="SubSheetInfo">
+    <subsheetid>91ba584a-824a-4cfa-abcc-8d3a894012f3</subsheetid>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="54e4c719-5b16-48a4-8b4a-90872cadcee2" name="Attach IE" type="Navigate">
+    <subsheetid>91ba584a-824a-4cfa-abcc-8d3a894012f3</subsheetid>
+    <loginhibit />
+    <display x="-90" y="150" />
+    <onsuccess>7730ff34-0865-417c-bd33-3d58a5a29d8e</onsuccess>
+    <step>
+      <element id="c868b2df-8478-4735-b762-46623a97ff5d" />
+      <action>
+        <id>AttachApplication</id>
+        <arguments>
+          <argument>
+            <id>WindowTitlesCollection</id>
+            <value>
+            </value>
+          </argument>
+          <argument>
+            <id>WindowTitle</id>
+            <value>[Window Title]</value>
+          </argument>
+          <argument>
+            <id>ProcessName</id>
+            <value>"iexplore"</value>
+          </argument>
+          <argument>
+            <id>ProcessID</id>
+            <value>
+            </value>
+          </argument>
+          <argument>
+            <id>Username</id>
+            <value>
+            </value>
+          </argument>
+          <argument>
+            <id>ChildIndex</id>
+            <value>0</value>
+          </argument>
+        </arguments>
+      </action>
+    </step>
+  </stage>
+  <stage stageid="68b30c6c-03b7-4040-a3bb-5b1f36e2659f" name="Move IE" type="Navigate" interval="1">
+    <subsheetid>9d5c20a9-ba78-4f8f-b381-be5951165e60</subsheetid>
+    <loginhibit />
+    <display x="-75" y="90" />
+    <onsuccess>23383891-0046-4d68-a7e0-4209f2b0f22c</onsuccess>
+    <step>
+      <element id="7b357558-cd7b-4256-a775-96e4036af140" />
+      <action>
+        <id>ActivateApp</id>
+      </action>
+    </step>
+    <step>
+      <element id="7b357558-cd7b-4256-a775-96e4036af140">
+        <elementparameter>
+          <name>WindowText</name>
+          <expression>[Window Title]</expression>
+          <datatype>text</datatype>
+          <comparisontype>Wildcard</comparisontype>
+        </elementparameter>
+      </element>
+      <action>
+        <id>MoveWindow</id>
+        <arguments>
+          <argument>
+            <id>targx</id>
+            <value>0</value>
+          </argument>
+          <argument>
+            <id>targy</id>
+            <value>0</value>
+          </argument>
+        </arguments>
+      </action>
+    </step>
+    <step>
+      <element id="7b357558-cd7b-4256-a775-96e4036af140" />
+      <action>
+        <id>ResizeWindow</id>
+        <arguments>
+          <argument>
+            <id>targwidth</id>
+            <value>1100</value>
+          </argument>
+          <argument>
+            <id>targheight</id>
+            <value>1000</value>
+          </argument>
+        </arguments>
+      </action>
+    </step>
+  </stage>
+  <stage stageid="9f3f9654-1d82-458a-9816-267d58eb40b5" name="Is Connected?" type="Read">
+    <subsheetid>91ba584a-824a-4cfa-abcc-8d3a894012f3</subsheetid>
+    <loginhibit />
+    <display x="15" y="-45" />
+    <onsuccess>24dfff78-9fed-49b6-9415-f1918fc000aa</onsuccess>
+    <step stage="Value from Utility - Application">
+      <element id="c868b2df-8478-4735-b762-46623a97ff5d" />
+      <action>
+        <id>IsConnected</id>
+      </action>
+    </step>
+  </stage>
+  <stage stageid="43854cd0-241f-4ef1-bd64-963207a12b2e" name="Value from Utility - Application" type="Data">
+    <subsheetid>91ba584a-824a-4cfa-abcc-8d3a894012f3</subsheetid>
+    <display x="120" y="-45" w="90" h="30" />
+    <datatype>flag</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="24dfff78-9fed-49b6-9415-f1918fc000aa" name="Attach needed?" type="Decision">
+    <subsheetid>91ba584a-824a-4cfa-abcc-8d3a894012f3</subsheetid>
+    <loginhibit />
+    <display x="15" y="15" />
+    <decision expression="[Value from Utility - Application]=False" />
+    <ontrue>3e511c53-4f70-408e-a63e-d50328832772</ontrue>
+    <onfalse>5991cc49-9a96-4ee7-b1b7-29989917a99b</onfalse>
+  </stage>
+  <stage stageid="3e511c53-4f70-408e-a63e-d50328832772" name="IE?" type="Decision">
+    <subsheetid>91ba584a-824a-4cfa-abcc-8d3a894012f3</subsheetid>
+    <loginhibit />
+    <display x="15" y="75" />
+    <decision expression="[IE]=True" />
+    <ontrue>54e4c719-5b16-48a4-8b4a-90872cadcee2</ontrue>
+    <onfalse>d3330c01-31f5-46b9-89c3-e9cd51f08853</onfalse>
+  </stage>
+  <stage stageid="d3330c01-31f5-46b9-89c3-e9cd51f08853" name="Attach Edge" type="Navigate">
+    <subsheetid>91ba584a-824a-4cfa-abcc-8d3a894012f3</subsheetid>
+    <loginhibit />
+    <display x="150" y="150" />
+    <onsuccess>f95deccb-a71a-422a-9668-f362fd522d65</onsuccess>
+    <step>
+      <element id="c868b2df-8478-4735-b762-46623a97ff5d" />
+      <action>
+        <id>AttachApplication</id>
+        <arguments>
+          <argument>
+            <id>WindowTitlesCollection</id>
+            <value>
+            </value>
+          </argument>
+          <argument>
+            <id>WindowTitle</id>
+            <value>[Window Title]</value>
+          </argument>
+          <argument>
+            <id>ProcessName</id>
+            <value>"msedge"</value>
+          </argument>
+          <argument>
+            <id>ProcessID</id>
+            <value>
+            </value>
+          </argument>
+          <argument>
+            <id>Username</id>
+            <value>
+            </value>
+          </argument>
+          <argument>
+            <id>ChildIndex</id>
+            <value>0</value>
+          </argument>
+        </arguments>
+      </action>
+    </step>
+  </stage>
+  <stage stageid="79be4089-396c-43c6-aebc-25e137ff8da6" name="IE?" type="Decision">
+    <subsheetid>9d5c20a9-ba78-4f8f-b381-be5951165e60</subsheetid>
+    <loginhibit />
+    <display x="15" y="15" />
+    <decision expression="[IE]=True" />
+    <ontrue>68b30c6c-03b7-4040-a3bb-5b1f36e2659f</ontrue>
+    <onfalse>b8e529da-afc7-4b8e-afe4-68c59c5ad277</onfalse>
+  </stage>
+  <stage stageid="b8e529da-afc7-4b8e-afe4-68c59c5ad277" name="Move Edge" type="Navigate" interval="1">
+    <subsheetid>9d5c20a9-ba78-4f8f-b381-be5951165e60</subsheetid>
+    <loginhibit />
+    <display x="90" y="90" />
+    <onsuccess>23383891-0046-4d68-a7e0-4209f2b0f22c</onsuccess>
+    <step>
+      <element id="4f42ccc2-cc16-49be-8650-616a713a1700" />
+      <action>
+        <id>ActivateApp</id>
+      </action>
+    </step>
+    <step>
+      <element id="4f42ccc2-cc16-49be-8650-616a713a1700">
+        <elementparameter>
+          <name>WindowText</name>
+          <expression>[Window Title]</expression>
+          <datatype>text</datatype>
+          <comparisontype>Wildcard</comparisontype>
+        </elementparameter>
+      </element>
+      <action>
+        <id>MoveWindow</id>
+        <arguments>
+          <argument>
+            <id>targx</id>
+            <value>0</value>
+          </argument>
+          <argument>
+            <id>targy</id>
+            <value>0</value>
+          </argument>
+        </arguments>
+      </action>
+    </step>
+    <step>
+      <element id="4f42ccc2-cc16-49be-8650-616a713a1700" />
+      <action>
+        <id>ResizeWindow</id>
+        <arguments>
+          <argument>
+            <id>targwidth</id>
+            <value>1100</value>
+          </argument>
+          <argument>
+            <id>targheight</id>
+            <value>1000</value>
+          </argument>
+        </arguments>
+      </action>
+    </step>
+  </stage>
+  <stage stageid="607e72cc-4f25-46d9-8a96-fc0043f7b9be" name="Close" type="SubSheetInfo">
+    <subsheetid>cafbfd7b-d3cd-4fee-9f2d-c881efd7faef</subsheetid>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="73b489b1-3682-452f-9746-6e78bb5e9995" name="Start" type="Start">
+    <subsheetid>cafbfd7b-d3cd-4fee-9f2d-c881efd7faef</subsheetid>
+    <loginhibit />
+    <display x="15" y="-105" />
+    <inputs>
+      <input type="flag" name="IE" stage="IE" />
+    </inputs>
+    <onsuccess>fd31a8f6-d78d-4f2e-abe4-d5c286b0c981</onsuccess>
+  </stage>
+  <stage stageid="665ba5f1-209f-488a-a2f9-c1016c1ebd1e" name="End" type="End">
+    <subsheetid>cafbfd7b-d3cd-4fee-9f2d-c881efd7faef</subsheetid>
+    <loginhibit />
+    <display x="15" y="165" />
+  </stage>
+  <stage stageid="5d46a618-71b4-46c7-b7e2-168e5ad07c2e" name="Close IE" type="Navigate">
+    <subsheetid>cafbfd7b-d3cd-4fee-9f2d-c881efd7faef</subsheetid>
+    <loginhibit />
+    <display x="-60" y="60" />
+    <onsuccess>3bd9232f-fb14-4880-adc7-24a7e19c73f2</onsuccess>
+    <step>
+      <element id="7b357558-cd7b-4256-a775-96e4036af140">
+        <elementparameter>
+          <name>WindowText</name>
+          <expression>[Window Title]</expression>
+          <datatype>text</datatype>
+          <comparisontype>Wildcard</comparisontype>
+        </elementparameter>
+      </element>
+      <action>
+        <id>CloseWindow</id>
+      </action>
+    </step>
+  </stage>
+  <stage stageid="91bd2186-6504-42e7-a458-9d1a325dbfa5" name="IE?" type="Decision">
+    <subsheetid>cafbfd7b-d3cd-4fee-9f2d-c881efd7faef</subsheetid>
+    <loginhibit />
+    <display x="15" y="15" />
+    <decision expression="[IE]=True" />
+    <ontrue>5d46a618-71b4-46c7-b7e2-168e5ad07c2e</ontrue>
+    <onfalse>2bbcee33-5171-4d33-91a5-268cce92d14e</onfalse>
+  </stage>
+  <stage stageid="2bbcee33-5171-4d33-91a5-268cce92d14e" name="Close Edge" type="Navigate">
+    <subsheetid>cafbfd7b-d3cd-4fee-9f2d-c881efd7faef</subsheetid>
+    <loginhibit />
+    <display x="90" y="60" />
+    <onsuccess>3bd9232f-fb14-4880-adc7-24a7e19c73f2</onsuccess>
+    <step>
+      <element id="4f42ccc2-cc16-49be-8650-616a713a1700">
+        <elementparameter>
+          <name>WindowText</name>
+          <expression>[Window Title]</expression>
+          <datatype>text</datatype>
+          <comparisontype>Wildcard</comparisontype>
+        </elementparameter>
+      </element>
+      <action>
+        <id>CloseWindow</id>
+      </action>
+    </step>
+  </stage>
+  <stage stageid="c424d82e-c529-4d75-b953-9d244b8909a7" name="Wait for Detach" type="SubSheetInfo">
+    <subsheetid>06c037f9-a6f3-4d93-a5a4-9c9884902790</subsheetid>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="1989cfcd-3183-4e1d-ae52-ca1a670d8f2d" name="Start" type="Start">
+    <subsheetid>06c037f9-a6f3-4d93-a5a4-9c9884902790</subsheetid>
+    <loginhibit />
+    <display x="15" y="-105" />
+    <onsuccess>5fa00c44-6adf-498c-ae25-a412458e1a7a</onsuccess>
+  </stage>
+  <stage stageid="7ec2e973-5e81-46d2-b5c1-6b3a610b508b" name="End" type="End">
+    <subsheetid>06c037f9-a6f3-4d93-a5a4-9c9884902790</subsheetid>
+    <loginhibit />
+    <display x="15" y="210" />
+  </stage>
+  <stage stageid="5fa00c44-6adf-498c-ae25-a412458e1a7a" name="Is Connected?" type="Read">
+    <subsheetid>06c037f9-a6f3-4d93-a5a4-9c9884902790</subsheetid>
+    <loginhibit />
+    <display x="15" y="-30" />
+    <onsuccess>9a4ab240-312b-4184-a670-4dc92d2750f7</onsuccess>
+    <step stage="Attached">
+      <element id="c868b2df-8478-4735-b762-46623a97ff5d" />
+      <action>
+        <id>IsConnected</id>
+      </action>
+    </step>
+  </stage>
+  <stage stageid="7132a852-65c6-45fa-8f3f-acafa6b04286" name="Attached" type="Data">
+    <subsheetid>06c037f9-a6f3-4d93-a5a4-9c9884902790</subsheetid>
+    <display x="-195" y="-30" w="90" h="30" />
+    <datatype>flag</datatype>
+    <initialvalue>False</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="9a4ab240-312b-4184-a670-4dc92d2750f7" name="Attached?" type="Decision">
+    <subsheetid>06c037f9-a6f3-4d93-a5a4-9c9884902790</subsheetid>
+    <loginhibit />
+    <display x="15" y="150" />
+    <decision expression="[Attached]" />
+    <ontrue>64e76599-d12a-482f-b462-555b8640dad5</ontrue>
+    <onfalse>7ec2e973-5e81-46d2-b5c1-6b3a610b508b</onfalse>
+  </stage>
+  <stage stageid="64e76599-d12a-482f-b462-555b8640dad5" name="Wait?" type="Decision">
+    <subsheetid>06c037f9-a6f3-4d93-a5a4-9c9884902790</subsheetid>
+    <loginhibit />
+    <display x="195" y="150" />
+    <decision expression="[Wait]&gt;0" />
+    <ontrue>acb3c11b-10ff-4ea5-8ba1-c5dd237acde8</ontrue>
+    <onfalse>21b2c3b6-3b32-4c3c-b9f0-d4434b866372</onfalse>
+  </stage>
+  <stage stageid="2e1f2f9c-ac82-4532-857c-4ffb5d4d343c" name="Wait" type="Data">
+    <subsheetid>06c037f9-a6f3-4d93-a5a4-9c9884902790</subsheetid>
+    <loginhibit />
+    <display x="-195" y="30" w="90" h="30" />
+    <datatype>number</datatype>
+    <initialvalue>30</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="ed5474a9-ecf5-432f-9b6a-1f5df59e062a" name="Time Out1" type="WaitEnd">
+    <subsheetid>06c037f9-a6f3-4d93-a5a4-9c9884902790</subsheetid>
+    <loginhibit />
+    <display x="90" y="-30" w="30" h="30" />
+    <onsuccess>5fa00c44-6adf-498c-ae25-a412458e1a7a</onsuccess>
+    <groupid>54d1e7ea-6869-489f-bc75-6786fe71913c</groupid>
+  </stage>
+  <stage stageid="93cc3f8c-bf1d-428a-a9cc-31656591cac4" name="Wait1" type="WaitStart">
+    <subsheetid>06c037f9-a6f3-4d93-a5a4-9c9884902790</subsheetid>
+    <loginhibit />
+    <display x="135" y="-30" w="30" h="30" />
+    <groupid>54d1e7ea-6869-489f-bc75-6786fe71913c</groupid>
+    <choices />
+    <timeout>1</timeout>
+  </stage>
+  <stage stageid="21b2c3b6-3b32-4c3c-b9f0-d4434b866372" name="SE" type="Exception">
+    <subsheetid>06c037f9-a6f3-4d93-a5a4-9c9884902790</subsheetid>
+    <display x="195" y="210" />
+    <exception type="System Exception" detail="&quot;Failed waiting for detach&quot;" />
+  </stage>
+  <stage stageid="3bd9232f-fb14-4880-adc7-24a7e19c73f2" name="Wait for Detach" type="SubSheet">
+    <subsheetid>cafbfd7b-d3cd-4fee-9f2d-c881efd7faef</subsheetid>
+    <loginhibit />
+    <display x="15" y="105" />
+    <onsuccess>665ba5f1-209f-488a-a2f9-c1016c1ebd1e</onsuccess>
+    <processid>06c037f9-a6f3-4d93-a5a4-9c9884902790</processid>
+  </stage>
+  <stage stageid="c22d0843-0fc9-46b2-9717-deb79e50f0f4" name="Count" type="Calculation">
+    <subsheetid>06c037f9-a6f3-4d93-a5a4-9c9884902790</subsheetid>
+    <loginhibit />
+    <display x="195" y="-30" />
+    <onsuccess>93cc3f8c-bf1d-428a-a9cc-31656591cac4</onsuccess>
+    <calculation expression="[Wait]-1" stage="Wait" />
+  </stage>
+  <stage stageid="a5fe676f-33a8-4d38-91f6-f92e2d98e59c" name="Start" type="Start">
+    <subsheetid>91ba584a-824a-4cfa-abcc-8d3a894012f3</subsheetid>
+    <loginhibit />
+    <display x="15" y="-135" />
+    <inputs>
+      <input type="flag" name="IE" stage="IE" />
+      <input type="text" name="Window Title" stage="Window Title" />
+    </inputs>
+    <onsuccess>60260ada-69f5-4b00-befd-43630a81b325</onsuccess>
+  </stage>
+  <stage stageid="db13488a-4626-4fab-9e0e-98f2d0246ccb" name="IE" type="Data">
+    <subsheetid>91ba584a-824a-4cfa-abcc-8d3a894012f3</subsheetid>
+    <display x="105" y="-135" />
+    <datatype>flag</datatype>
+    <initialvalue>True</initialvalue>
+    <alwaysinit />
+  </stage>
+  <stage stageid="74e00961-377e-4151-89c1-501b4e2a57be" name="Window Title" type="Data">
+    <subsheetid>91ba584a-824a-4cfa-abcc-8d3a894012f3</subsheetid>
+    <display x="165" y="-135" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <alwaysinit />
+  </stage>
+  <stage stageid="04ceaeb5-4431-492f-b300-3f488605328d" name="Activate" type="SubSheetInfo">
+    <subsheetid>f835c63d-909b-422e-8df8-3a038b8b9920</subsheetid>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="3e80ca9e-4ebf-4b04-aa2f-f96c398904fa" name="Start" type="Start">
+    <subsheetid>f835c63d-909b-422e-8df8-3a038b8b9920</subsheetid>
+    <loginhibit />
+    <display x="15" y="-105" />
+    <onsuccess>3d6ec2dc-c9cd-498e-b91c-6155ea4673db</onsuccess>
+  </stage>
+  <stage stageid="72b3cdeb-0f1c-42e1-828a-a252c0d58fe6" name="End" type="End">
+    <subsheetid>f835c63d-909b-422e-8df8-3a038b8b9920</subsheetid>
+    <loginhibit />
+    <display x="15" y="150" />
+  </stage>
+  <stage stageid="615dccf6-17e6-4089-94a2-bc26566bf8b6" name="Move IE" type="Navigate" interval="1">
+    <subsheetid>f835c63d-909b-422e-8df8-3a038b8b9920</subsheetid>
+    <loginhibit />
+    <display x="-60" y="75" />
+    <onsuccess>72b3cdeb-0f1c-42e1-828a-a252c0d58fe6</onsuccess>
+    <step>
+      <element id="7b357558-cd7b-4256-a775-96e4036af140">
+        <elementparameter>
+          <name>WindowText</name>
+          <expression>[Window Title]</expression>
+          <datatype>text</datatype>
+          <comparisontype>Wildcard</comparisontype>
+        </elementparameter>
+      </element>
+      <action>
+        <id>ActivateApp</id>
+      </action>
+    </step>
+  </stage>
+  <stage stageid="3d6ec2dc-c9cd-498e-b91c-6155ea4673db" name="IE?" type="Decision">
+    <subsheetid>f835c63d-909b-422e-8df8-3a038b8b9920</subsheetid>
+    <loginhibit />
+    <display x="15" y="15" />
+    <decision expression="[IE]=True" />
+    <ontrue>615dccf6-17e6-4089-94a2-bc26566bf8b6</ontrue>
+    <onfalse>d9d036ae-3307-48ba-a9dd-4ce7e514ca69</onfalse>
+  </stage>
+  <stage stageid="d9d036ae-3307-48ba-a9dd-4ce7e514ca69" name="Move Edge" type="Navigate" interval="1">
+    <subsheetid>f835c63d-909b-422e-8df8-3a038b8b9920</subsheetid>
+    <loginhibit />
+    <display x="90" y="75" />
+    <onsuccess>72b3cdeb-0f1c-42e1-828a-a252c0d58fe6</onsuccess>
+    <step>
+      <element id="4f42ccc2-cc16-49be-8650-616a713a1700">
+        <elementparameter>
+          <name>WindowText</name>
+          <expression>[Window Title]</expression>
+          <datatype>text</datatype>
+          <comparisontype>Wildcard</comparisontype>
+        </elementparameter>
+      </element>
+      <action>
+        <id>ActivateApp</id>
+      </action>
+    </step>
+  </stage>
+  <stage stageid="f95deccb-a71a-422a-9668-f362fd522d65" name="End" type="End">
+    <subsheetid>91ba584a-824a-4cfa-abcc-8d3a894012f3</subsheetid>
+    <loginhibit />
+    <display x="150" y="210" />
+  </stage>
+  <stage stageid="7dcd0c54-dc1f-480a-8772-f34d875d94dd" name="Wait?" type="Decision">
+    <subsheetid>91ba584a-824a-4cfa-abcc-8d3a894012f3</subsheetid>
+    <loginhibit />
+    <display x="315" y="150" />
+    <decision expression="[Wait]&gt;0" />
+    <ontrue>d894e58f-841d-42a8-9a2e-f13a9d432113</ontrue>
+    <onfalse>069b1a10-3ebe-405b-a69a-78de1100cc97</onfalse>
+  </stage>
+  <stage stageid="d1fde826-17f1-4cf4-9390-4b2bbd33bea6" name="Wait" type="Data">
+    <subsheetid>91ba584a-824a-4cfa-abcc-8d3a894012f3</subsheetid>
+    <loginhibit />
+    <display x="-195" y="-15" w="90" h="30" />
+    <datatype>number</datatype>
+    <initialvalue>30</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="284c01d2-6bed-487a-ade7-5d1f5d3ef2f1" name="Time Out1" type="WaitEnd">
+    <subsheetid>91ba584a-824a-4cfa-abcc-8d3a894012f3</subsheetid>
+    <loginhibit />
+    <display x="255" y="75" w="30" h="30" />
+    <onsuccess>3e511c53-4f70-408e-a63e-d50328832772</onsuccess>
+    <groupid>51d23954-ac68-4dd1-9e0c-ded214579366</groupid>
+  </stage>
+  <stage stageid="2d711aed-224a-40b7-a5d1-449ef74715eb" name="Wait1" type="WaitStart">
+    <subsheetid>91ba584a-824a-4cfa-abcc-8d3a894012f3</subsheetid>
+    <loginhibit />
+    <display x="300" y="75" w="30" h="30" />
+    <groupid>51d23954-ac68-4dd1-9e0c-ded214579366</groupid>
+    <choices />
+    <timeout>1</timeout>
+  </stage>
+  <stage stageid="e94ec6f8-9410-4fd1-ad01-653b231af079" name="Count" type="Calculation">
+    <subsheetid>91ba584a-824a-4cfa-abcc-8d3a894012f3</subsheetid>
+    <loginhibit />
+    <display x="390" y="75" />
+    <onsuccess>2d711aed-224a-40b7-a5d1-449ef74715eb</onsuccess>
+    <calculation expression="[Wait]-1" stage="Wait" />
+  </stage>
+  <stage stageid="5991cc49-9a96-4ee7-b1b7-29989917a99b" name="End1" type="End">
+    <subsheetid>91ba584a-824a-4cfa-abcc-8d3a894012f3</subsheetid>
+    <loginhibit />
+    <display x="120" y="15" />
+  </stage>
+  <stage stageid="4d40e7fe-003b-47a7-a6d6-57a783dff762" name="Block1" type="Block">
+    <subsheetid>91ba584a-824a-4cfa-abcc-8d3a894012f3</subsheetid>
+    <loginhibit />
+    <display x="105" y="120" w="165" h="60" />
+    <font family="Segoe UI" size="10" style="Regular" color="7FB2E5" />
+  </stage>
+  <stage stageid="1f2ac10b-96b7-4e3f-b988-d3dc653c17f1" name="Recover1" type="Recover">
+    <subsheetid>91ba584a-824a-4cfa-abcc-8d3a894012f3</subsheetid>
+    <loginhibit />
+    <display x="225" y="150" />
+    <onsuccess>7dcd0c54-dc1f-480a-8772-f34d875d94dd</onsuccess>
+  </stage>
+  <stage stageid="069b1a10-3ebe-405b-a69a-78de1100cc97" name="Exception1" type="Exception">
+    <subsheetid>91ba584a-824a-4cfa-abcc-8d3a894012f3</subsheetid>
+    <display x="315" y="195" />
+    <exception localized="yes" type="" detail="" usecurrent="yes" />
+  </stage>
+  <stage stageid="d894e58f-841d-42a8-9a2e-f13a9d432113" name="Resume1" type="Resume">
+    <subsheetid>91ba584a-824a-4cfa-abcc-8d3a894012f3</subsheetid>
+    <loginhibit />
+    <display x="390" y="150" />
+    <onsuccess>e94ec6f8-9410-4fd1-ad01-653b231af079</onsuccess>
+  </stage>
+  <stage stageid="6dfbf35a-a8d0-44fe-8ff2-9b850b7e8d1d" name="Block2" type="Block">
+    <subsheetid>9d5c20a9-ba78-4f8f-b381-be5951165e60</subsheetid>
+    <loginhibit />
+    <display x="-225" y="60" w="465" h="90" />
+    <font family="Segoe UI" size="10" style="Regular" color="7FB2E5" />
+  </stage>
+  <stage stageid="6f422ad8-8694-483b-ae04-f67d625a9f0c" name="counter" type="Data">
+    <subsheetid>9d5c20a9-ba78-4f8f-b381-be5951165e60</subsheetid>
+    <loginhibit />
+    <display x="-360" y="-45" />
+    <datatype>number</datatype>
+    <initialvalue>0</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="86591714-e3bd-4506-93ce-b10192566977" name="Recover2" type="Recover">
+    <subsheetid>9d5c20a9-ba78-4f8f-b381-be5951165e60</subsheetid>
+    <loginhibit />
+    <display x="-195" y="105" />
+    <onsuccess>9d000e50-2289-41b3-9b23-a46089456850</onsuccess>
+  </stage>
+  <stage stageid="9d000e50-2289-41b3-9b23-a46089456850" name="Retry?" type="Decision">
+    <subsheetid>9d5c20a9-ba78-4f8f-b381-be5951165e60</subsheetid>
+    <loginhibit />
+    <display x="-195" y="180" />
+    <decision expression="[counter] &gt; 5" />
+    <ontrue>4c8d90a7-34db-48d9-86db-9bdaaba62540</ontrue>
+    <onfalse>e2d096ed-c903-40a6-b6f5-0dda4c3829c4</onfalse>
+  </stage>
+  <stage stageid="4c8d90a7-34db-48d9-86db-9bdaaba62540" name="Resume2" type="Resume">
+    <subsheetid>9d5c20a9-ba78-4f8f-b381-be5951165e60</subsheetid>
+    <loginhibit />
+    <display x="-285" y="180" />
+    <onsuccess>821a044c-8940-4097-99d7-f7371138a01b</onsuccess>
+  </stage>
+  <stage stageid="23b35dcc-15d4-4200-b563-3753c9cb7827" name="Anchor1" type="Anchor">
+    <subsheetid>9d5c20a9-ba78-4f8f-b381-be5951165e60</subsheetid>
+    <loginhibit />
+    <display x="-285" y="-45" w="10" h="10" />
+    <onsuccess>e5da83f7-742e-423d-9534-8637b5525b4c</onsuccess>
+  </stage>
+  <stage stageid="e2d096ed-c903-40a6-b6f5-0dda4c3829c4" name="Exception2" type="Exception">
+    <subsheetid>9d5c20a9-ba78-4f8f-b381-be5951165e60</subsheetid>
+    <display x="-105" y="180" />
+    <exception localized="yes" type="" detail="" usecurrent="yes" />
+  </stage>
+  <stage stageid="821a044c-8940-4097-99d7-f7371138a01b" name="counter++" type="Calculation">
+    <subsheetid>9d5c20a9-ba78-4f8f-b381-be5951165e60</subsheetid>
+    <loginhibit />
+    <display x="-285" y="105" />
+    <onsuccess>9bed5811-b2fa-4738-84a3-70d5c0856025</onsuccess>
+    <calculation expression="[counter]  + 1 " stage="counter" />
+  </stage>
+  <stage stageid="e5da83f7-742e-423d-9534-8637b5525b4c" name="Anchor2" type="Anchor">
+    <subsheetid>9d5c20a9-ba78-4f8f-b381-be5951165e60</subsheetid>
+    <loginhibit />
+    <display x="15" y="-45" w="10" h="10" />
+    <onsuccess>79be4089-396c-43c6-aebc-25e137ff8da6</onsuccess>
+  </stage>
+  <stage stageid="2f842cad-5ee6-41c0-99f5-0a8e3a8700c7" name="Time Out - 1s" type="WaitEnd">
+    <subsheetid>9d5c20a9-ba78-4f8f-b381-be5951165e60</subsheetid>
+    <loginhibit />
+    <display x="-285" y="15" w="30" h="30" />
+    <onsuccess>23b35dcc-15d4-4200-b563-3753c9cb7827</onsuccess>
+    <groupid>bbe567fe-110b-45c7-b86a-bda44e0abe92</groupid>
+  </stage>
+  <stage stageid="9bed5811-b2fa-4738-84a3-70d5c0856025" name="1s" type="WaitStart">
+    <subsheetid>9d5c20a9-ba78-4f8f-b381-be5951165e60</subsheetid>
+    <loginhibit />
+    <display x="-285" y="60" w="30" h="30" />
+    <groupid>bbe567fe-110b-45c7-b86a-bda44e0abe92</groupid>
+    <choices />
+    <timeout>1</timeout>
+  </stage>
+  <stage stageid="899abc1e-f05e-4f28-ab31-1ec48cf5b634" name="Block3" type="Block">
+    <subsheetid>91ba584a-824a-4cfa-abcc-8d3a894012f3</subsheetid>
+    <loginhibit />
+    <display x="-135" y="120" w="90" h="195" />
+    <font family="Segoe UI" size="10" style="Regular" color="7FB2E5" />
+  </stage>
+  <stage stageid="84a3ebad-ff2b-4df7-87a7-45dbefbe9c7b" name="Recover3" type="Recover">
+    <subsheetid>91ba584a-824a-4cfa-abcc-8d3a894012f3</subsheetid>
+    <loginhibit />
+    <display x="-90" y="285" />
+    <onsuccess>0ffd2559-c54d-442c-9c1d-745bf624e6c9</onsuccess>
+    <attempts>3</attempts>
+    <bubbleException>False</bubbleException>
+  </stage>
+  <stage stageid="0ffd2559-c54d-442c-9c1d-745bf624e6c9" name="Retry" type="Resume">
+    <subsheetid>91ba584a-824a-4cfa-abcc-8d3a894012f3</subsheetid>
+    <loginhibit />
+    <display x="-90" y="240" />
+    <onsuccess>08915361-1a27-4cd5-9c23-4ab7563eb814</onsuccess>
+  </stage>
+  <stage stageid="08915361-1a27-4cd5-9c23-4ab7563eb814" name="Attach IE" type="Navigate">
+    <subsheetid>91ba584a-824a-4cfa-abcc-8d3a894012f3</subsheetid>
+    <loginhibit />
+    <display x="-90" y="195" />
+    <onsuccess>00a3b1aa-2260-4c8f-b349-cd20ae2954d3</onsuccess>
+    <step>
+      <element id="c868b2df-8478-4735-b762-46623a97ff5d" />
+      <action>
+        <id>AttachApplication</id>
+        <arguments>
+          <argument>
+            <id>WindowTitlesCollection</id>
+            <value>
+            </value>
+          </argument>
+          <argument>
+            <id>WindowTitle</id>
+            <value>"*QATestSite*"</value>
+          </argument>
+          <argument>
+            <id>ProcessName</id>
+            <value>"iexplore"</value>
+          </argument>
+          <argument>
+            <id>ProcessID</id>
+            <value>
+            </value>
+          </argument>
+          <argument>
+            <id>Username</id>
+            <value>
+            </value>
+          </argument>
+          <argument>
+            <id>ChildIndex</id>
+            <value>0</value>
+          </argument>
+        </arguments>
+      </action>
+    </step>
+  </stage>
+  <stage stageid="00a3b1aa-2260-4c8f-b349-cd20ae2954d3" name="End2" type="End">
+    <subsheetid>91ba584a-824a-4cfa-abcc-8d3a894012f3</subsheetid>
+    <loginhibit />
+    <display x="0" y="195" />
+  </stage>
+  <stage stageid="7730ff34-0865-417c-bd33-3d58a5a29d8e" name="Anchor3" type="Anchor">
+    <subsheetid>91ba584a-824a-4cfa-abcc-8d3a894012f3</subsheetid>
+    <loginhibit />
+    <display x="0" y="150" w="10" h="10" />
+    <onsuccess>00a3b1aa-2260-4c8f-b349-cd20ae2954d3</onsuccess>
+  </stage>
+  <stage stageid="722a5955-ea80-4a10-87c3-b30ab8919697" name="Time Out - Wait 5" type="WaitEnd">
+    <subsheetid>91ba584a-824a-4cfa-abcc-8d3a894012f3</subsheetid>
+    <loginhibit />
+    <display x="45" y="-90" w="30" h="30" />
+    <onsuccess>9f3f9654-1d82-458a-9816-267d58eb40b5</onsuccess>
+    <groupid>31fd6b72-6a11-4847-8423-b26efe614b96</groupid>
+  </stage>
+  <stage stageid="60260ada-69f5-4b00-befd-43630a81b325" name="Wait 5" type="WaitStart">
+    <subsheetid>91ba584a-824a-4cfa-abcc-8d3a894012f3</subsheetid>
+    <loginhibit />
+    <display x="-15" y="-90" w="30" h="30" />
+    <groupid>31fd6b72-6a11-4847-8423-b26efe614b96</groupid>
+    <choices />
+    <timeout>5</timeout>
+  </stage>
+  <stage stageid="ddd6c78a-0f63-43a0-bb8b-ffb41eec6cce" name="Time Out - Wait 5" type="WaitEnd">
+    <subsheetid>cafbfd7b-d3cd-4fee-9f2d-c881efd7faef</subsheetid>
+    <loginhibit />
+    <display x="45" y="-60" w="30" h="30" />
+    <onsuccess>91bd2186-6504-42e7-a458-9d1a325dbfa5</onsuccess>
+    <groupid>25c53feb-f0f7-49f0-921c-301bd32c9939</groupid>
+  </stage>
+  <stage stageid="fd31a8f6-d78d-4f2e-abe4-d5c286b0c981" name="Wait 5" type="WaitStart">
+    <subsheetid>cafbfd7b-d3cd-4fee-9f2d-c881efd7faef</subsheetid>
+    <loginhibit />
+    <display x="-15" y="-60" w="30" h="30" />
+    <groupid>25c53feb-f0f7-49f0-921c-301bd32c9939</groupid>
+    <choices />
+    <timeout>5</timeout>
+  </stage>
+  <stage stageid="097c4265-2f35-4bac-87b9-ba35fdb7ee52" name="Time Out - Wait 5" type="WaitEnd">
+    <subsheetid>9d5c20a9-ba78-4f8f-b381-be5951165e60</subsheetid>
+    <loginhibit />
+    <display x="45" y="-90" w="30" h="30" />
+    <onsuccess>e5da83f7-742e-423d-9534-8637b5525b4c</onsuccess>
+    <groupid>b5158111-f9e3-48a7-ac0c-9f3686ed6328</groupid>
+  </stage>
+  <stage stageid="b56d1327-9a1b-4746-b419-30d88ddf42ed" name="Wait 5" type="WaitStart">
+    <subsheetid>9d5c20a9-ba78-4f8f-b381-be5951165e60</subsheetid>
+    <loginhibit />
+    <display x="-15" y="-90" w="30" h="30" />
+    <groupid>b5158111-f9e3-48a7-ac0c-9f3686ed6328</groupid>
+    <choices />
+    <timeout>5</timeout>
+  </stage>
+  <stage stageid="acb3c11b-10ff-4ea5-8ba1-c5dd237acde8" name="Utility - Environment::Kill Process" type="Action">
+    <subsheetid>06c037f9-a6f3-4d93-a5a4-9c9884902790</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="195" y="60" w="90" h="60" />
+    <inputs>
+      <input type="text" name="Process Name" friendlyname="Process Name" narrative="The name of the process to kill" expr="&quot;msedge&quot;" />
+    </inputs>
+    <onsuccess>c22d0843-0fc9-46b2-9717-deb79e50f0f4</onsuccess>
+    <resource object="Utility - Environment" action="Kill Process" />
+  </stage>
+</process>

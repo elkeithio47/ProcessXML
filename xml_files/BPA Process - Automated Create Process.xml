@@ -1,0 +1,18 @@
+﻿<process name="Automated Create Process" version="1.0" bpversion="7.2.0.62166" narrative="To create a process." byrefcollection="true" preferredid="b73841a6-7182-428a-a39c-7b31d097d285">
+  <view>
+    <camerax>-43</camerax>
+    <cameray>-42</cameray>
+    <zoom version="2">1.25</zoom>
+  </view>
+  <preconditions />
+  <endpoint narrative="" />
+  <stage stageid="72e17d41-206a-4ac6-9b05-c070eca8360d" name="Start" type="Start">
+    <display x="15" y="-195" w="90" h="30" />
+  </stage>
+  <stage stageid="d36e1071-4465-44ca-bdda-0543544c0d25" name="End" type="End">
+    <display x="15" y="90" w="90" h="30" />
+  </stage>
+  <stage stageid="32ba5cb6-b1df-48d6-bc27-ef8ca1ff34f5" name="Stage1" type="ProcessInfo">
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+</process>

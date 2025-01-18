@@ -1,0 +1,721 @@
+﻿<process name="IE - Combobox Process (HTML Path)" version="1.0" bpversion="7.3.0.8765" narrative="" byrefcollection="true" processrunningmessage="" disableversioning="false" preferredid="8952f4e4-f78f-4983-9e38-20e7e24cdbf5">
+  <view>
+    <camerax>222</camerax>
+    <cameray>210</cameray>
+    <zoom version="2">1.25</zoom>
+  </view>
+  <preconditions />
+  <endpoint narrative="" />
+  <subsheet subsheetid="1e79efe8-c377-401b-aada-5e385420b9a0" type="Normal" published="False">
+    <name>HTML Combobox</name>
+    <view>
+      <camerax>-27</camerax>
+      <cameray>1860</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <stage stageid="ba5e66f3-c2ba-41aa-80ec-10a1024e8017" name="Stage1" type="ProcessInfo">
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="a50ac0a3-5884-4bd7-b391-d477e469f50a" name="HTML Combobox" type="SubSheet">
+    <display x="15" y="210" w="90" h="60" />
+    <onsuccess>4ddea655-318a-42ea-adb6-b78aef23b612</onsuccess>
+    <processid>1e79efe8-c377-401b-aada-5e385420b9a0</processid>
+  </stage>
+  <stage stageid="418dc7b9-8a40-4ba8-9978-cb3cc97c5bd0" name="HTML Combobox" type="SubSheetInfo">
+    <subsheetid>1e79efe8-c377-401b-aada-5e385420b9a0</subsheetid>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="2dff5a35-7e60-4a28-8c1c-a088d8f847aa" name="Start" type="Start">
+    <subsheetid>1e79efe8-c377-401b-aada-5e385420b9a0</subsheetid>
+    <display x="15" y="-90" />
+    <onsuccess>bd94eb7a-b625-4b1c-afb9-66216a8a7a5a</onsuccess>
+  </stage>
+  <stage stageid="8f104d1a-9ac3-405d-8475-6ef0ac16f70d" name="EdgeIEMode (HTML Path)::HTML Combo Box-Navigate-HTMLClickCentre" type="Action">
+    <subsheetid>1e79efe8-c377-401b-aada-5e385420b9a0</subsheetid>
+    <display x="15" y="15" w="180" h="30" />
+    <onsuccess>da2ffffb-40c2-4f58-b6de-f83899fc5253</onsuccess>
+    <resource object="EdgeIEMode (HTML Path)" action="HTML Combo Box-Navigate-HTMLClickCentre" />
+  </stage>
+  <stage stageid="da2ffffb-40c2-4f58-b6de-f83899fc5253" name="EdgeIEMode (HTML Path)::HTML Combo Box-Navigate-HTMLDoubleClickCentre" type="Action">
+    <subsheetid>1e79efe8-c377-401b-aada-5e385420b9a0</subsheetid>
+    <display x="15" y="60" w="180" h="30" />
+    <onsuccess>aa87dc9d-1ca3-4ee9-a5a8-66e4bea4fab8</onsuccess>
+    <resource object="EdgeIEMode (HTML Path)" action="HTML Combo Box-Navigate-HTMLDoubleClickCentre" />
+  </stage>
+  <stage stageid="cd101fb9-001b-47e8-a4fa-29cf9df5406d" name="EdgeIEMode (HTML Path)::HTML Combo Box-Navigate-HTMLSelectItem" type="Action">
+    <subsheetid>1e79efe8-c377-401b-aada-5e385420b9a0</subsheetid>
+    <display x="15" y="195" w="180" h="30" />
+    <inputs>
+      <input type="text" name="newtext" expr="[HTMLGetAllItems.Item Text]" />
+      <input type="number" name="position" expr="" />
+      <input type="text" name="propname" expr="" />
+    </inputs>
+    <onsuccess>a95cd6c5-b903-44bd-b8db-0c9620cf0c2b</onsuccess>
+    <resource object="EdgeIEMode (HTML Path)" action="HTML Combo Box-Navigate-HTMLSelectItem" />
+  </stage>
+  <stage stageid="bf848c3a-c437-45a7-8e2a-307fb7f88c75" name="EdgeIEMode (HTML Path)::HTML Combo Box-Read-GetElementBounds" type="Action">
+    <subsheetid>1e79efe8-c377-401b-aada-5e385420b9a0</subsheetid>
+    <display x="15" y="1725" w="180" h="30" />
+    <outputs>
+      <output type="collection" name="GetElementBounds" stage="GetElementBounds" />
+    </outputs>
+    <onsuccess>89109dc6-da8e-4d87-a209-8437f94c2fa1</onsuccess>
+    <resource object="EdgeIEMode (HTML Path)" action="HTML Combo Box-Read-GetElementBounds" />
+  </stage>
+  <stage stageid="5b9efe03-37af-4415-8949-53868f67c125" name="EdgeIEMode (HTML Path)::HTML Combo Box-Read-GetElementScreenBounds" type="Action">
+    <subsheetid>1e79efe8-c377-401b-aada-5e385420b9a0</subsheetid>
+    <display x="15" y="1815" w="180" h="30" />
+    <outputs>
+      <output type="collection" name="GetElementScreenBounds" stage="GetElementScreenBounds" />
+    </outputs>
+    <onsuccess>87fda51d-6e57-4a14-8927-13f97cd8194a</onsuccess>
+    <resource object="EdgeIEMode (HTML Path)" action="HTML Combo Box-Read-GetElementScreenBounds" />
+  </stage>
+  <stage stageid="189ff301-a8c8-43d6-832f-60dba8106c9d" name="EdgeIEMode (HTML Path)::HTML Combo Box-Read-GetHTMLIdentifier" type="Action">
+    <subsheetid>1e79efe8-c377-401b-aada-5e385420b9a0</subsheetid>
+    <display x="15" y="1905" w="180" h="30" />
+    <inputs>
+      <input type="text" name="idname" expr="&quot;TAG NAME&quot;" />
+    </inputs>
+    <outputs>
+      <output type="text" name="GetHTMLIdentifier" stage="GetHTMLIdentifier" />
+    </outputs>
+    <onsuccess>2e9bf106-c0f4-41a3-a685-306ed4551618</onsuccess>
+    <resource object="EdgeIEMode (HTML Path)" action="HTML Combo Box-Read-GetHTMLIdentifier" />
+  </stage>
+  <stage stageid="221c26d1-e064-40df-bf48-5190932ed904" name="GetElementBounds" type="Collection">
+    <subsheetid>1e79efe8-c377-401b-aada-5e385420b9a0</subsheetid>
+    <display x="150" y="1725" />
+    <datatype>collection</datatype>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="cfb4f73b-5136-466d-b187-26342a22c894" name="GetElementScreenBounds" type="Collection">
+    <subsheetid>1e79efe8-c377-401b-aada-5e385420b9a0</subsheetid>
+    <display x="150" y="1815" />
+    <datatype>collection</datatype>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="c98a0f9e-94a3-412f-9525-99a045ae2dc6" name="GetHTMLIdentifier" type="Data">
+    <subsheetid>1e79efe8-c377-401b-aada-5e385420b9a0</subsheetid>
+    <display x="150" y="1905" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="aa87dc9d-1ca3-4ee9-a5a8-66e4bea4fab8" name="EdgeIEMode (HTML Path)::HTML Combo Box-Read-HTMLGetAllItems" type="Action">
+    <subsheetid>1e79efe8-c377-401b-aada-5e385420b9a0</subsheetid>
+    <display x="15" y="105" w="180" h="30" />
+    <outputs>
+      <output type="collection" name="HTMLGetAllItems" stage="HTMLGetAllItems" />
+    </outputs>
+    <onsuccess>6a39d4ad-d862-490f-953c-a6bffabfa7d1</onsuccess>
+    <resource object="EdgeIEMode (HTML Path)" action="HTML Combo Box-Read-HTMLGetAllItems" />
+  </stage>
+  <stage stageid="c6afa681-6085-4169-a9f8-c21966687818" name="HTMLGetOuterHTML" type="Data">
+    <subsheetid>1e79efe8-c377-401b-aada-5e385420b9a0</subsheetid>
+    <display x="150" y="1170" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="6c216c32-7aa4-4277-8a85-642d6103ecb6" name="EdgeIEMode (HTML Path)::HTML Combo Box-Read-HTMLGetOuterHTML" type="Action">
+    <subsheetid>1e79efe8-c377-401b-aada-5e385420b9a0</subsheetid>
+    <display x="15" y="1170" w="180" h="30" />
+    <outputs>
+      <output type="text" name="HTMLGetOuterHTML" stage="HTMLGetOuterHTML" />
+    </outputs>
+    <onsuccess>6b82a18b-61d7-4696-8236-444fafee7552</onsuccess>
+    <resource object="EdgeIEMode (HTML Path)" action="HTML Combo Box-Read-HTMLGetOuterHTML" />
+  </stage>
+  <stage stageid="d532d5b3-d689-4793-8e69-67a570b855d7" name="HTMLGetPath" type="Data">
+    <subsheetid>1e79efe8-c377-401b-aada-5e385420b9a0</subsheetid>
+    <display x="150" y="1275" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="dd9673ea-ee43-446e-8e90-376ff70cbc42" name="EdgeIEMode (HTML Path)::HTML Combo Box-Read-HTMLGetPath" type="Action">
+    <subsheetid>1e79efe8-c377-401b-aada-5e385420b9a0</subsheetid>
+    <display x="15" y="1275" w="180" h="30" />
+    <outputs>
+      <output type="text" name="HTMLGetPath" stage="HTMLGetPath" />
+    </outputs>
+    <onsuccess>af35c09c-a92f-42a7-85bc-96e91149e880</onsuccess>
+    <resource object="EdgeIEMode (HTML Path)" action="HTML Combo Box-Read-HTMLGetPath" />
+  </stage>
+  <stage stageid="4563083e-50f4-42a5-9f3b-e870d42860ff" name="End1" type="End">
+    <subsheetid>1e79efe8-c377-401b-aada-5e385420b9a0</subsheetid>
+    <display x="15" y="2040" />
+  </stage>
+  <stage stageid="e2561a55-aa8e-4b19-963c-0b5e05490991" name="HTMLGetAllItems" type="Collection">
+    <subsheetid>1e79efe8-c377-401b-aada-5e385420b9a0</subsheetid>
+    <display x="150" y="105" />
+    <datatype>collection</datatype>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="555dd308-91c1-4e25-89c9-61508cdcb575" name="HTMLGetSelectedItemText" type="Data">
+    <subsheetid>1e79efe8-c377-401b-aada-5e385420b9a0</subsheetid>
+    <display x="150" y="240" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="776bffeb-5a09-497d-9750-ab338ed1ed92" name="EdgeIEMode (HTML Path)::HTML Combo Box-Wait-CheckExists" type="Action">
+    <subsheetid>1e79efe8-c377-401b-aada-5e385420b9a0</subsheetid>
+    <display x="15" y="1365" w="180" h="30" />
+    <inputs>
+      <input type="number" name="Timeout" expr="" />
+      <input type="flag" name="FlagValue" expr="" />
+    </inputs>
+    <onsuccess>edb95e99-053c-46e2-a862-5972474e232d</onsuccess>
+    <resource object="EdgeIEMode (HTML Path)" action="HTML Combo Box-Wait-CheckExists" />
+  </stage>
+  <stage stageid="edb95e99-053c-46e2-a862-5972474e232d" name="EdgeIEMode (HTML Path)::HTML Combo Box-Wait-CheckHTMLIdentifier" type="Action">
+    <subsheetid>1e79efe8-c377-401b-aada-5e385420b9a0</subsheetid>
+    <display x="15" y="1410" w="180" h="30" />
+    <inputs>
+      <input type="number" name="Timeout" expr="" />
+      <input type="text" name="TextValue" expr="&quot;SELECT&quot;" />
+      <input type="text" name="idname" expr="&quot;TAG NAME&quot;" />
+    </inputs>
+    <onsuccess>7925e134-19ab-4119-b153-2135249c6b12</onsuccess>
+    <resource object="EdgeIEMode (HTML Path)" action="HTML Combo Box-Wait-CheckHTMLIdentifier" />
+  </stage>
+  <stage stageid="7925e134-19ab-4119-b153-2135249c6b12" name="EdgeIEMode (HTML Path)::HTML Combo Box-Wait-HTMLCheckExistsAndDocumentLoaded" type="Action">
+    <subsheetid>1e79efe8-c377-401b-aada-5e385420b9a0</subsheetid>
+    <display x="15" y="1455" w="180" h="30" />
+    <inputs>
+      <input type="number" name="Timeout" expr="" />
+      <input type="flag" name="FlagValue" expr="" />
+    </inputs>
+    <onsuccess>78302e50-b7ac-49c2-875b-1247ba36ea6e</onsuccess>
+    <resource object="EdgeIEMode (HTML Path)" action="HTML Combo Box-Wait-HTMLCheckExistsAndDocumentLoaded" />
+  </stage>
+  <stage stageid="9dff6694-6f54-4551-8e09-1dfd927f71f3" name="EdgeIEMode (HTML Path)::HTML Combo Box-Write-WriteText" type="Action">
+    <subsheetid>1e79efe8-c377-401b-aada-5e385420b9a0</subsheetid>
+    <display x="15" y="1545" w="180" h="30" />
+    <inputs>
+      <input type="text" name="TextValue" expr="[HTMLGetAllItems.Item Text]" />
+    </inputs>
+    <onsuccess>094e46c3-8d79-4a48-91e8-5aee5d1a1a12</onsuccess>
+    <resource object="EdgeIEMode (HTML Path)" action="HTML Combo Box-Write-WriteText" />
+  </stage>
+  <stage stageid="bd94eb7a-b625-4b1c-afb9-66216a8a7a5a" name="EdgeIEMode (HTML Path)::HTML Combo Box-Navigate-Verify" type="Action">
+    <subsheetid>1e79efe8-c377-401b-aada-5e385420b9a0</subsheetid>
+    <display x="15" y="-30" w="180" h="30" />
+    <inputs>
+      <input type="flag" name="highlight" expr="True" />
+    </inputs>
+    <onsuccess>8f104d1a-9ac3-405d-8475-6ef0ac16f70d</onsuccess>
+    <resource object="EdgeIEMode (HTML Path)" action="HTML Combo Box-Navigate-Verify" />
+  </stage>
+  <stage stageid="78302e50-b7ac-49c2-875b-1247ba36ea6e" name="All Items" type="LoopStart">
+    <subsheetid>1e79efe8-c377-401b-aada-5e385420b9a0</subsheetid>
+    <display x="15" y="1500" />
+    <onsuccess>9dff6694-6f54-4551-8e09-1dfd927f71f3</onsuccess>
+    <groupid>47eb9f96-3dba-41c1-abca-e1349be78f41</groupid>
+    <looptype>ForEach</looptype>
+    <loopdata>HTMLGetAllItems</loopdata>
+  </stage>
+  <stage stageid="358e4183-8d3b-4153-8756-380a017d277d" name="All Items" type="LoopEnd">
+    <subsheetid>1e79efe8-c377-401b-aada-5e385420b9a0</subsheetid>
+    <display x="15" y="1680" />
+    <onsuccess>bf848c3a-c437-45a7-8e2a-307fb7f88c75</onsuccess>
+    <groupid>47eb9f96-3dba-41c1-abca-e1349be78f41</groupid>
+  </stage>
+  <stage stageid="00b55702-fa2c-4bed-80d0-0cce0a2909b0" name="Start" type="Start">
+    <display x="120" y="-105" />
+    <inputs>
+      <input type="flag" name="IE" stage="IE" />
+    </inputs>
+    <onsuccess>253b4028-83cf-403d-8c80-666020d4b856</onsuccess>
+  </stage>
+  <stage stageid="5385cbef-f85f-490e-9807-6dbac41a4f97" name="End" type="End">
+    <display x="15" y="345" />
+  </stage>
+  <stage stageid="82dec90e-72c9-4bc5-b74b-d5592e8d6028" name="EdgeIEMode (HTML Path)::Application-Navigate-AttachApplication" type="Action">
+    <display x="15" y="135" w="180" h="30" />
+    <inputs>
+      <input type="collection" name="WindowTitlesCollection" expr="" />
+      <input type="text" name="WindowTitle" expr="[Window Title]" />
+      <input type="text" name="ProcessName" expr="&quot;iexplore&quot;" />
+      <input type="number" name="ProcessID" expr="" />
+      <input type="text" name="Username" expr="" />
+      <input type="number" name="ChildIndex" expr="0" />
+    </inputs>
+    <onsuccess>a50ac0a3-5884-4bd7-b391-d477e469f50a</onsuccess>
+    <resource object="EdgeIEMode (HTML Path)" action="Application-Navigate-AttachApplication" />
+  </stage>
+  <stage stageid="7c7be0f5-5039-4866-ab8d-bf4c7877214b" name="Launch IE " type="Action">
+    <display x="15" y="0" w="180" h="30" />
+    <inputs>
+      <input type="text" name="Arguments" narrative="Any arguments needed for the app" expr="[Application URL]" />
+      <input type="text" name="Application" narrative="The application or short cut to start" expr="&quot;C:\Program Files\Internet Explorer\iexplore.exe&quot;" />
+    </inputs>
+    <onsuccess>8dc9d8ba-5975-4256-87ff-f988763c2d5a</onsuccess>
+    <resource object="Utility - Environment" action="Start Process" />
+  </stage>
+  <stage stageid="253b4028-83cf-403d-8c80-666020d4b856" name="IE?" type="Decision">
+    <display x="120" y="-45" />
+    <decision expression="[IE]=True" />
+    <ontrue>948b0795-12fd-4ab4-94fe-6e7ce2e52660</ontrue>
+    <onfalse>d41bd7de-445b-4ff2-a4a4-56558d7c0015</onfalse>
+  </stage>
+  <stage stageid="0f611d8a-9121-4c22-9d5f-afedaca485ac" name="Launch Edge" type="Action">
+    <display x="225" y="0" w="180" h="30" />
+    <inputs>
+      <input type="text" name="Arguments" narrative="Any arguments needed for the app" expr="[Application URL]" />
+      <input type="text" name="Application" narrative="The application or short cut to start" expr="&quot;C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe&quot;" />
+    </inputs>
+    <onsuccess>a1958300-6d2a-4a28-86a7-35176a339d3c</onsuccess>
+    <resource object="Utility - Environment" action="Start Process" />
+  </stage>
+  <stage stageid="d9d20fd1-2840-4d5b-af13-1bf0ef660fc6" name="EdgeIEMode (HTML Path)::Application-Navigate-AttachApplication" type="Action">
+    <display x="225" y="135" w="180" h="30" />
+    <inputs>
+      <input type="collection" name="WindowTitlesCollection" expr="" />
+      <input type="text" name="WindowTitle" expr="[Window Title]" />
+      <input type="text" name="ProcessName" expr="&quot;msedge&quot;" />
+      <input type="number" name="ProcessID" expr="" />
+      <input type="text" name="Username" expr="" />
+      <input type="number" name="ChildIndex" expr="0" />
+    </inputs>
+    <onsuccess>a50ac0a3-5884-4bd7-b391-d477e469f50a</onsuccess>
+    <resource object="EdgeIEMode (HTML Path)" action="Application-Navigate-AttachApplication" />
+  </stage>
+  <stage stageid="d41bd7de-445b-4ff2-a4a4-56558d7c0015" name="Window Title" type="Calculation">
+    <display x="225" y="-45" />
+    <onsuccess>0f611d8a-9121-4c22-9d5f-afedaca485ac</onsuccess>
+    <calculation expression="[Window Title]&amp;&quot;*Edge&quot;" stage="Window Title" />
+  </stage>
+  <stage stageid="948b0795-12fd-4ab4-94fe-6e7ce2e52660" name="Window Title" type="Calculation">
+    <display x="15" y="-45" />
+    <onsuccess>7c7be0f5-5039-4866-ab8d-bf4c7877214b</onsuccess>
+    <calculation expression="[Window Title]&amp;&quot; - Internet Explorer&quot;" stage="Window Title" />
+  </stage>
+  <stage stageid="8dc9d8ba-5975-4256-87ff-f988763c2d5a" name="IE or Edge Win32::Attach" type="Action">
+    <display x="15" y="45" w="180" h="30" />
+    <font family="Segoe UI" size="10" style="Regular" color="0000FF" />
+    <inputs>
+      <input type="flag" name="IE" expr="True" />
+      <input type="text" name="Window Title" expr="[Window Title]" />
+    </inputs>
+    <onsuccess>4e0b7297-abe0-470e-824b-2cca095701a9</onsuccess>
+    <resource object="IE or Edge Win32" action="Attach" />
+  </stage>
+  <stage stageid="a1958300-6d2a-4a28-86a7-35176a339d3c" name="IE or Edge Win32::Attach" type="Action">
+    <display x="225" y="45" w="180" h="30" />
+    <font family="Segoe UI" size="10" style="Regular" color="0000FF" />
+    <inputs>
+      <input type="flag" name="IE" expr="False" />
+      <input type="text" name="Window Title" expr="[Window Title]" />
+    </inputs>
+    <onsuccess>74e93e99-ae1c-4aee-9737-0beb8875d048</onsuccess>
+    <resource object="IE or Edge Win32" action="Attach" />
+  </stage>
+  <stage stageid="4e0b7297-abe0-470e-824b-2cca095701a9" name="IE or Edge Win32::Resize" type="Action">
+    <display x="15" y="90" w="180" h="30" />
+    <font family="Segoe UI" size="10" style="Regular" color="0000FF" />
+    <inputs>
+      <input type="flag" name="IE" expr="True" />
+      <input type="text" name="Window Title" expr="[Window Title]" />
+    </inputs>
+    <onsuccess>82dec90e-72c9-4bc5-b74b-d5592e8d6028</onsuccess>
+    <resource object="IE or Edge Win32" action="Resize" />
+  </stage>
+  <stage stageid="74e93e99-ae1c-4aee-9737-0beb8875d048" name="IE or Edge Win32::Resize" type="Action">
+    <display x="225" y="90" w="180" h="30" />
+    <font family="Segoe UI" size="10" style="Regular" color="0000FF" />
+    <inputs>
+      <input type="flag" name="IE" expr="False" />
+      <input type="text" name="Window Title" expr="[Window Title]" />
+    </inputs>
+    <onsuccess>d9d20fd1-2840-4d5b-af13-1bf0ef660fc6</onsuccess>
+    <resource object="IE or Edge Win32" action="Resize" />
+  </stage>
+  <stage stageid="045a3f42-63d7-475b-ab98-ec52a0b28ba9" name="Application URL" type="Data">
+    <narrative>1) https://jkorpela.fi/www/testel.html
+2a) https://qa-webpages.azurewebsites.net/BPQATestSite/QAhome.html
+2b) http://localhost:1234/QAhome.html
+</narrative>
+    <display x="-195" y="-30" w="150" h="30" />
+    <datatype>text</datatype>
+    <initialvalue xml:space="preserve">https://qa-webpages.azurewebsites.net/BPQATestSiteForIEMode/QAhome.html</initialvalue>
+    <alwaysinit />
+  </stage>
+  <stage stageid="37081563-469e-45b0-ab30-755c06aea020" name="Window Title" type="Data">
+    <narrative>1) Test display of HTML elements
+2) QATestSite</narrative>
+    <display x="-195" y="30" w="150" h="30" />
+    <datatype>text</datatype>
+    <initialvalue xml:space="preserve">QATestSite</initialvalue>
+    <alwaysinit />
+  </stage>
+  <stage stageid="e0e70b67-0e9a-4a65-88a4-7d1d366744fd" name="IE" type="Data">
+    <display x="-195" y="0" w="150" h="30" />
+    <datatype>flag</datatype>
+    <initialvalue>True</initialvalue>
+    <alwaysinit />
+  </stage>
+  <stage stageid="4ddea655-318a-42ea-adb6-b78aef23b612" name="IE or Edge Win32::Close" type="Action">
+    <display x="15" y="285" w="180" h="30" />
+    <font family="Segoe UI" size="10" style="Regular" color="0000FF" />
+    <inputs>
+      <input type="flag" name="IE" expr="[IE]" />
+    </inputs>
+    <onsuccess>5385cbef-f85f-490e-9807-6dbac41a4f97</onsuccess>
+    <resource object="IE or Edge Win32" action="Close" />
+  </stage>
+  <stage stageid="f0a52cde-450a-479e-8abe-5544e7bf7ee6" name="Block1" type="Block">
+    <display x="-75" y="165" w="390" h="90" />
+    <font family="Segoe UI" size="10" style="Regular" color="7FB2E5" />
+  </stage>
+  <stage stageid="3a195548-7612-4be9-9545-b992d7fd35c0" name="IE or Edge Win32::Close" type="Action">
+    <display x="225" y="285" w="180" h="30" />
+    <font family="Segoe UI" size="10" style="Regular" color="0000FF" />
+    <inputs>
+      <input type="flag" name="IE" expr="[IE]" />
+    </inputs>
+    <onsuccess>b7721460-8d5a-4fb3-8ae4-4ff6e9e2564a</onsuccess>
+    <resource object="IE or Edge Win32" action="Close" />
+  </stage>
+  <stage stageid="b7721460-8d5a-4fb3-8ae4-4ff6e9e2564a" name="Exception1" type="Exception">
+    <display x="225" y="345" />
+    <exception localized="yes" type="" detail="" usecurrent="yes" />
+  </stage>
+  <stage stageid="6a39d4ad-d862-490f-953c-a6bffabfa7d1" name="All Items" type="LoopStart">
+    <subsheetid>1e79efe8-c377-401b-aada-5e385420b9a0</subsheetid>
+    <display x="15" y="150" />
+    <onsuccess>cd101fb9-001b-47e8-a4fa-29cf9df5406d</onsuccess>
+    <groupid>52d88a36-a0f7-411c-9930-62df1e015c14</groupid>
+    <looptype>ForEach</looptype>
+    <loopdata>HTMLGetAllItems</loopdata>
+  </stage>
+  <stage stageid="9545958a-35d9-4beb-8831-4bcb5101cd9a" name="All Items" type="LoopEnd">
+    <subsheetid>1e79efe8-c377-401b-aada-5e385420b9a0</subsheetid>
+    <display x="15" y="330" />
+    <onsuccess>15c2fc6f-ec74-494c-9d1d-3ea249455898</onsuccess>
+    <groupid>52d88a36-a0f7-411c-9930-62df1e015c14</groupid>
+  </stage>
+  <stage stageid="a95cd6c5-b903-44bd-b8db-0c9620cf0c2b" name="EdgeIEMode (HTML Path)::HTML Combo Box-Read-HTMLGetSelectedItemText" type="Action">
+    <subsheetid>1e79efe8-c377-401b-aada-5e385420b9a0</subsheetid>
+    <display x="15" y="240" w="180" h="30" />
+    <outputs>
+      <output type="text" name="HTMLGetSelectedItemText" stage="HTMLGetSelectedItemText" />
+    </outputs>
+    <onsuccess>0d33db87-92eb-43af-844c-770566ab55cb</onsuccess>
+    <resource object="EdgeIEMode (HTML Path)" action="HTML Combo Box-Read-HTMLGetSelectedItemText" />
+  </stage>
+  <stage stageid="0d33db87-92eb-43af-844c-770566ab55cb" name="HTMLGetSelectedItemText?" type="Decision">
+    <subsheetid>1e79efe8-c377-401b-aada-5e385420b9a0</subsheetid>
+    <display x="15" y="285" w="90" h="30" />
+    <decision expression="[HTMLGetSelectedItemText]=[HTMLGetAllItems.Item Text]" />
+    <ontrue>9545958a-35d9-4beb-8831-4bcb5101cd9a</ontrue>
+    <onfalse>de6cb7ab-668a-4d4c-8d8d-4dc923a4705f</onfalse>
+  </stage>
+  <stage stageid="de6cb7ab-668a-4d4c-8d8d-4dc923a4705f" name="Value Exception" type="Exception">
+    <subsheetid>1e79efe8-c377-401b-aada-5e385420b9a0</subsheetid>
+    <display x="180" y="285" w="90" h="30" />
+    <exception type="System Exception" detail="&quot;The ReadCurrentValue value is not as expected&quot;" />
+  </stage>
+  <stage stageid="dfd0949d-c9e3-46cd-b8f6-2161b6dc5857" name="EdgeIEMode (HTML Path)::HTML Combo Box-Navigate-HTMLSelectItem" type="Action">
+    <subsheetid>1e79efe8-c377-401b-aada-5e385420b9a0</subsheetid>
+    <display x="15" y="480" w="180" h="30" />
+    <inputs>
+      <input type="text" name="newtext" expr="" />
+      <input type="number" name="position" expr="[position]" />
+      <input type="text" name="propname" expr="" />
+    </inputs>
+    <onsuccess>2c60a776-ec2d-4be3-b46d-3d9ae9488a75</onsuccess>
+    <resource object="EdgeIEMode (HTML Path)" action="HTML Combo Box-Navigate-HTMLSelectItem" />
+  </stage>
+  <stage stageid="15c2fc6f-ec74-494c-9d1d-3ea249455898" name="All Items" type="LoopStart">
+    <subsheetid>1e79efe8-c377-401b-aada-5e385420b9a0</subsheetid>
+    <display x="15" y="390" />
+    <onsuccess>e810f451-4c61-4d6c-8cc7-27993187f93b</onsuccess>
+    <groupid>b7954616-191c-478a-9f95-80cd4ba43cfd</groupid>
+    <looptype>ForEach</looptype>
+    <loopdata>HTMLGetAllItems</loopdata>
+  </stage>
+  <stage stageid="7b629aee-920e-4e1a-8d54-c180a9f264b9" name="All Items" type="LoopEnd">
+    <subsheetid>1e79efe8-c377-401b-aada-5e385420b9a0</subsheetid>
+    <display x="15" y="615" />
+    <onsuccess>ab437b06-673e-4be7-b8d2-b934a44d8c46</onsuccess>
+    <groupid>b7954616-191c-478a-9f95-80cd4ba43cfd</groupid>
+  </stage>
+  <stage stageid="2c60a776-ec2d-4be3-b46d-3d9ae9488a75" name="EdgeIEMode (HTML Path)::HTML Combo Box-Read-HTMLGetSelectedItemText" type="Action">
+    <subsheetid>1e79efe8-c377-401b-aada-5e385420b9a0</subsheetid>
+    <display x="15" y="525" w="180" h="30" />
+    <outputs>
+      <output type="text" name="HTMLGetSelectedItemText" stage="HTMLGetSelectedItemText" />
+    </outputs>
+    <onsuccess>994f8f0e-7cd4-4668-8465-dfd7b4e4ca8f</onsuccess>
+    <resource object="EdgeIEMode (HTML Path)" action="HTML Combo Box-Read-HTMLGetSelectedItemText" />
+  </stage>
+  <stage stageid="994f8f0e-7cd4-4668-8465-dfd7b4e4ca8f" name="HTMLGetSelectedItemText?" type="Decision">
+    <subsheetid>1e79efe8-c377-401b-aada-5e385420b9a0</subsheetid>
+    <display x="15" y="570" w="90" h="30" />
+    <decision expression="[HTMLGetSelectedItemText]=[HTMLGetAllItems.Item Text]" />
+    <ontrue>7b629aee-920e-4e1a-8d54-c180a9f264b9</ontrue>
+    <onfalse>ea23981f-fdaa-43fa-b7d5-18b52809735d</onfalse>
+  </stage>
+  <stage stageid="ea23981f-fdaa-43fa-b7d5-18b52809735d" name="Value Exception" type="Exception">
+    <subsheetid>1e79efe8-c377-401b-aada-5e385420b9a0</subsheetid>
+    <display x="180" y="570" w="90" h="30" />
+    <exception type="System Exception" detail="&quot;The ReadCurrentValue value is not as expected&quot;" />
+  </stage>
+  <stage stageid="bb5fc534-468b-4457-9da8-b04fd5142856" name="position" type="Data">
+    <subsheetid>1e79efe8-c377-401b-aada-5e385420b9a0</subsheetid>
+    <display x="150" y="390" />
+    <datatype>number</datatype>
+    <initialvalue>0</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="e810f451-4c61-4d6c-8cc7-27993187f93b" name="position" type="Calculation">
+    <subsheetid>1e79efe8-c377-401b-aada-5e385420b9a0</subsheetid>
+    <display x="15" y="435" />
+    <onsuccess>dfd0949d-c9e3-46cd-b8f6-2161b6dc5857</onsuccess>
+    <calculation expression="[position]+1" stage="position" />
+  </stage>
+  <stage stageid="ab437b06-673e-4be7-b8d2-b934a44d8c46" name="EdgeIEMode (HTML Path)::HTML Combo Box-Read-HTMLCountItems" type="Action">
+    <subsheetid>1e79efe8-c377-401b-aada-5e385420b9a0</subsheetid>
+    <display x="15" y="675" w="180" h="30" />
+    <outputs>
+      <output type="number" name="HTMLCountItems" stage="HTMLCountItems" />
+    </outputs>
+    <onsuccess>2e9c039d-9f05-43f1-a66d-9f9afb380f75</onsuccess>
+    <resource object="EdgeIEMode (HTML Path)" action="HTML Combo Box-Read-HTMLCountItems" />
+  </stage>
+  <stage stageid="de55adad-34b5-41fc-a74e-fc6ff14225d5" name="HTMLCountItems" type="Data">
+    <subsheetid>1e79efe8-c377-401b-aada-5e385420b9a0</subsheetid>
+    <display x="150" y="675" />
+    <datatype>number</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="2e9c039d-9f05-43f1-a66d-9f9afb380f75" name="HTMLCountItems?" type="Decision">
+    <subsheetid>1e79efe8-c377-401b-aada-5e385420b9a0</subsheetid>
+    <display x="15" y="720" w="90" h="30" />
+    <decision expression="[HTMLCountItems]=[position]" />
+    <ontrue>425d3582-3389-44dd-a862-98f847fe03e4</ontrue>
+    <onfalse>7d953422-f430-4796-9893-dc87c98cdee8</onfalse>
+  </stage>
+  <stage stageid="7d953422-f430-4796-9893-dc87c98cdee8" name="Value Exception" type="Exception">
+    <subsheetid>1e79efe8-c377-401b-aada-5e385420b9a0</subsheetid>
+    <display x="180" y="720" w="90" h="30" />
+    <exception type="System Exception" detail="&quot;The HTMLCountItems value is not as expected&quot;" />
+  </stage>
+  <stage stageid="3c45d578-fbf8-483d-8aab-cf93cf0ce88b" name="HTMLCountSelectedItems" type="Data">
+    <subsheetid>1e79efe8-c377-401b-aada-5e385420b9a0</subsheetid>
+    <display x="150" y="1080" />
+    <datatype>number</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="ec03b01f-8d54-4dfa-a358-6568aebfba5c" name="EdgeIEMode (HTML Path)::HTML Combo Box-Read-HTMLGetSelectedItems" type="Action">
+    <subsheetid>1e79efe8-c377-401b-aada-5e385420b9a0</subsheetid>
+    <display x="15" y="870" w="180" h="30" />
+    <outputs>
+      <output type="collection" name="HTMLGetSelectedItems" stage="HTMLGetSelectedItems" />
+    </outputs>
+    <onsuccess>b4e2a438-aa92-4074-a0aa-ccc68140065a</onsuccess>
+    <resource object="EdgeIEMode (HTML Path)" action="HTML Combo Box-Read-HTMLGetSelectedItems" />
+  </stage>
+  <stage stageid="64fe3c06-8085-424a-9f23-3fb803205e04" name="HTMLGetSelectedItems" type="Collection">
+    <subsheetid>1e79efe8-c377-401b-aada-5e385420b9a0</subsheetid>
+    <display x="150" y="870" />
+    <datatype>collection</datatype>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="b6a2c062-0118-4bbb-8ec3-9b70572f68ea" name="EdgeIEMode (HTML Path)::HTML Combo Box-Read-HTMLCountSelectedItems" type="Action">
+    <subsheetid>1e79efe8-c377-401b-aada-5e385420b9a0</subsheetid>
+    <display x="15" y="1080" w="180" h="30" />
+    <outputs>
+      <output type="number" name="HTMLCountSelectedItems" stage="HTMLCountSelectedItems" />
+    </outputs>
+    <onsuccess>dcc422df-dc0e-4f1a-b900-db2ecc6efce5</onsuccess>
+    <resource object="EdgeIEMode (HTML Path)" action="HTML Combo Box-Read-HTMLCountSelectedItems" />
+  </stage>
+  <stage stageid="dcc422df-dc0e-4f1a-b900-db2ecc6efce5" name="HTMLCountSelectedItems?" type="Decision">
+    <subsheetid>1e79efe8-c377-401b-aada-5e385420b9a0</subsheetid>
+    <display x="15" y="1125" w="90" h="30" />
+    <decision expression="[HTMLCountSelectedItems]=1" />
+    <ontrue>6c216c32-7aa4-4277-8a85-642d6103ecb6</ontrue>
+    <onfalse>d342220b-41be-4af6-b3e2-ae36c5385e76</onfalse>
+  </stage>
+  <stage stageid="d342220b-41be-4af6-b3e2-ae36c5385e76" name="Value Exception" type="Exception">
+    <subsheetid>1e79efe8-c377-401b-aada-5e385420b9a0</subsheetid>
+    <display x="180" y="1125" w="90" h="30" />
+    <exception type="System Exception" detail="&quot;The HTMLCountSelectedItems value is not as expected&quot;" />
+  </stage>
+  <stage stageid="425d3582-3389-44dd-a862-98f847fe03e4" name="EdgeIEMode (HTML Path)::HTML Combo Box-Navigate-HTMLSelectItem" type="Action">
+    <subsheetid>1e79efe8-c377-401b-aada-5e385420b9a0</subsheetid>
+    <display x="15" y="780" w="180" h="30" />
+    <inputs>
+      <input type="text" name="newtext" expr="" />
+      <input type="number" name="position" expr="1" />
+      <input type="text" name="propname" expr="" />
+    </inputs>
+    <onsuccess>c993c6ca-b7d8-4601-981a-23c5491aff35</onsuccess>
+    <resource object="EdgeIEMode (HTML Path)" action="HTML Combo Box-Navigate-HTMLSelectItem" />
+  </stage>
+  <stage stageid="c993c6ca-b7d8-4601-981a-23c5491aff35" name="EdgeIEMode (HTML Path)::HTML Combo Box-Read-HTMLGetSelectedItemText" type="Action">
+    <subsheetid>1e79efe8-c377-401b-aada-5e385420b9a0</subsheetid>
+    <display x="15" y="825" w="180" h="30" />
+    <outputs>
+      <output type="text" name="HTMLGetSelectedItemText" stage="HTMLGetSelectedItemText" />
+    </outputs>
+    <onsuccess>ec03b01f-8d54-4dfa-a358-6568aebfba5c</onsuccess>
+    <resource object="EdgeIEMode (HTML Path)" action="HTML Combo Box-Read-HTMLGetSelectedItemText" />
+  </stage>
+  <stage stageid="178671fa-1e57-4322-b0b2-a3bbff139f2f" name="Collections::Count Rows" type="Action">
+    <subsheetid>1e79efe8-c377-401b-aada-5e385420b9a0</subsheetid>
+    <display x="15" y="975" />
+    <inputs>
+      <input type="text" name="Collection Name" narrative="The name of the collection to act upon" expr="&quot;HTMLGetSelectedItems&quot;" />
+    </inputs>
+    <outputs>
+      <output type="number" name="Count" narrative="The number of rows counted in the collection" stage="Count" />
+    </outputs>
+    <onsuccess>d146681d-4e5f-478f-bce5-c3d8b5607614</onsuccess>
+    <resource object="Blueprism.AutomateProcessCore.clsCollectionActions" action="Count Rows" />
+  </stage>
+  <stage stageid="2939ed87-0136-4efe-9634-e7810d41092f" name="Count" type="Data">
+    <subsheetid>1e79efe8-c377-401b-aada-5e385420b9a0</subsheetid>
+    <display x="90" y="975" />
+    <datatype>number</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="d146681d-4e5f-478f-bce5-c3d8b5607614" name="Count?" type="Decision">
+    <subsheetid>1e79efe8-c377-401b-aada-5e385420b9a0</subsheetid>
+    <display x="15" y="1020" w="90" h="30" />
+    <decision expression="[Count]=1" />
+    <ontrue>b6a2c062-0118-4bbb-8ec3-9b70572f68ea</ontrue>
+    <onfalse>8bc42096-c3ed-4a58-bd82-d702d347986e</onfalse>
+  </stage>
+  <stage stageid="8bc42096-c3ed-4a58-bd82-d702d347986e" name="Value Exception" type="Exception">
+    <subsheetid>1e79efe8-c377-401b-aada-5e385420b9a0</subsheetid>
+    <display x="180" y="1020" w="90" h="30" />
+    <exception type="System Exception" detail="&quot;The HTMLCountSelectedItems value is not as expected&quot;" />
+  </stage>
+  <stage stageid="b4e2a438-aa92-4074-a0aa-ccc68140065a" name="HTMLGetSelectedItemText?" type="Decision">
+    <subsheetid>1e79efe8-c377-401b-aada-5e385420b9a0</subsheetid>
+    <display x="15" y="915" w="90" h="30" />
+    <decision expression="[HTMLGetSelectedItemText]=[HTMLGetSelectedItems.Item Text]" />
+    <ontrue>178671fa-1e57-4322-b0b2-a3bbff139f2f</ontrue>
+    <onfalse>61289b44-a4dd-479e-b05b-d7a7d1acab04</onfalse>
+  </stage>
+  <stage stageid="61289b44-a4dd-479e-b05b-d7a7d1acab04" name="Value Exception" type="Exception">
+    <subsheetid>1e79efe8-c377-401b-aada-5e385420b9a0</subsheetid>
+    <display x="180" y="915" w="90" h="30" />
+    <exception type="System Exception" detail="&quot;The ReadCurrentValue value is not as expected&quot;" />
+  </stage>
+  <stage stageid="094e46c3-8d79-4a48-91e8-5aee5d1a1a12" name="EdgeIEMode (HTML Path)::HTML Combo Box-Read-HTMLGetSelectedItemText" type="Action">
+    <subsheetid>1e79efe8-c377-401b-aada-5e385420b9a0</subsheetid>
+    <display x="15" y="1590" w="180" h="30" />
+    <outputs>
+      <output type="text" name="HTMLGetSelectedItemText" stage="HTMLGetSelectedItemText" />
+    </outputs>
+    <onsuccess>ffcc4d72-859d-4e2f-8692-9c431ca6af4a</onsuccess>
+    <resource object="EdgeIEMode (HTML Path)" action="HTML Combo Box-Read-HTMLGetSelectedItemText" />
+  </stage>
+  <stage stageid="ffcc4d72-859d-4e2f-8692-9c431ca6af4a" name="HTMLGetSelectedItemText?" type="Decision">
+    <subsheetid>1e79efe8-c377-401b-aada-5e385420b9a0</subsheetid>
+    <display x="15" y="1635" w="90" h="30" />
+    <decision expression="[HTMLGetSelectedItemText]=[HTMLGetAllItems.Item Text]" />
+    <ontrue>358e4183-8d3b-4153-8756-380a017d277d</ontrue>
+    <onfalse>8a9f77a5-5da9-45b5-97b1-8abb322f5160</onfalse>
+  </stage>
+  <stage stageid="8a9f77a5-5da9-45b5-97b1-8abb322f5160" name="Value Exception" type="Exception">
+    <subsheetid>1e79efe8-c377-401b-aada-5e385420b9a0</subsheetid>
+    <display x="180" y="1635" w="90" h="30" />
+    <exception type="System Exception" detail="&quot;The ReadCurrentValue value is not as expected&quot;" />
+  </stage>
+  <stage stageid="4a4cc18e-ef0a-4f80-a95e-3dd922fc9c12" name="Value Exception" type="Exception">
+    <subsheetid>1e79efe8-c377-401b-aada-5e385420b9a0</subsheetid>
+    <display x="180" y="1215" w="90" h="30" />
+    <exception type="System Exception" detail="&quot;The GetOuterHTML value is not as expected&quot;" />
+  </stage>
+  <stage stageid="a5f1d586-404b-4cf4-a16b-06e690717227" name="HTMLGetPath Match Value" type="Data">
+    <subsheetid>1e79efe8-c377-401b-aada-5e385420b9a0</subsheetid>
+    <display x="-105" y="1320" />
+    <datatype>text</datatype>
+    <initialvalue xml:space="preserve">/HTML/BODY(1)/IFRAME(1)/HTML/BODY(1)/FORM(1)/P(2)/SELECT(1)</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="40c74e1e-562e-43ad-89e9-1760b4a91db6" name="Value Exception" type="Exception">
+    <subsheetid>1e79efe8-c377-401b-aada-5e385420b9a0</subsheetid>
+    <display x="180" y="1320" w="90" h="30" />
+    <exception type="System Exception" detail="&quot;The GetOuterHTML value is not as expected&quot;" />
+  </stage>
+  <stage stageid="89109dc6-da8e-4d87-a209-8437f94c2fa1" name="GetElementBounds?" type="Decision">
+    <subsheetid>1e79efe8-c377-401b-aada-5e385420b9a0</subsheetid>
+    <display x="15" y="1770" w="90" h="30" />
+    <decision expression="[GetElementBounds.Left]=8&#xA;AND [GetElementBounds.Right]=109&#xA;AND [GetElementBounds.Width]=101&#xA;AND [GetElementBounds.Height]=19" />
+    <ontrue>5b9efe03-37af-4415-8949-53868f67c125</ontrue>
+    <onfalse>932ef6ce-8fa8-4572-8c73-fa6cbfb6a885</onfalse>
+  </stage>
+  <stage stageid="932ef6ce-8fa8-4572-8c73-fa6cbfb6a885" name="Value Exception" type="Exception">
+    <subsheetid>1e79efe8-c377-401b-aada-5e385420b9a0</subsheetid>
+    <display x="180" y="1770" w="90" h="30" />
+    <exception type="System Exception" detail="&quot;The GetElementBounds value is not as expected&quot;" />
+  </stage>
+  <stage stageid="87fda51d-6e57-4a14-8927-13f97cd8194a" name="GetElementScreenBounds?" type="Decision">
+    <subsheetid>1e79efe8-c377-401b-aada-5e385420b9a0</subsheetid>
+    <display x="15" y="1860" w="90" h="30" />
+    <decision expression="[GetElementScreenBounds.Left]=28&#xA;AND [GetElementScreenBounds.Right]=129&#xA;AND [GetElementScreenBounds.Width]=101&#xA;AND [GetElementScreenBounds.Height]=19" />
+    <ontrue>189ff301-a8c8-43d6-832f-60dba8106c9d</ontrue>
+    <onfalse>065fb027-e0cb-4fe4-a73e-a32a3fc251bd</onfalse>
+  </stage>
+  <stage stageid="065fb027-e0cb-4fe4-a73e-a32a3fc251bd" name="Value Exception" type="Exception">
+    <subsheetid>1e79efe8-c377-401b-aada-5e385420b9a0</subsheetid>
+    <display x="180" y="1860" w="90" h="30" />
+    <exception type="System Exception" detail="&quot;The GetElementScreenBounds value is not as expected&quot;" />
+  </stage>
+  <stage stageid="2e9bf106-c0f4-41a3-a685-306ed4551618" name="GetHTMLIdentifier?" type="Decision">
+    <subsheetid>1e79efe8-c377-401b-aada-5e385420b9a0</subsheetid>
+    <display x="15" y="1950" w="90" h="30" />
+    <decision expression="[GetHTMLIdentifier]=&quot;SELECT&quot;" />
+    <ontrue>4563083e-50f4-42a5-9f3b-e870d42860ff</ontrue>
+    <onfalse>950eb160-1574-47f5-83b3-4566f3b05a4f</onfalse>
+  </stage>
+  <stage stageid="950eb160-1574-47f5-83b3-4566f3b05a4f" name="Value Exception" type="Exception">
+    <subsheetid>1e79efe8-c377-401b-aada-5e385420b9a0</subsheetid>
+    <display x="180" y="1950" w="90" h="30" />
+    <exception type="System Exception" detail="&quot;The button value is not as expected&quot;" />
+  </stage>
+  <stage stageid="6b82a18b-61d7-4696-8236-444fafee7552" name="HTMLGetOuterHTML?" type="Decision">
+    <subsheetid>1e79efe8-c377-401b-aada-5e385420b9a0</subsheetid>
+    <display x="15" y="1215" w="90" h="30" />
+    <decision expression="StartsWith([HTMLGetOuterHTML], &quot;&lt;select&quot;) AND EndsWith([HTMLGetOuterHTML], &quot;select&gt;&quot;)" />
+    <ontrue>dd9673ea-ee43-446e-8e90-376ff70cbc42</ontrue>
+    <onfalse>4a4cc18e-ef0a-4f80-a95e-3dd922fc9c12</onfalse>
+  </stage>
+  <stage stageid="af35c09c-a92f-42a7-85bc-96e91149e880" name="HTMLGetPath?" type="Decision">
+    <subsheetid>1e79efe8-c377-401b-aada-5e385420b9a0</subsheetid>
+    <display x="15" y="1320" w="90" h="30" />
+    <decision expression="[HTMLGetPath]=[HTMLGetPath Match Value]" />
+    <ontrue>776bffeb-5a09-497d-9750-ab338ed1ed92</ontrue>
+    <onfalse>40c74e1e-562e-43ad-89e9-1760b4a91db6</onfalse>
+  </stage>
+  <stage stageid="986c4b24-7a6a-4e8d-bfb6-20ad0b135c16" name="Recover1" type="Recover">
+    <loginhibit />
+    <display x="225" y="210" />
+    <onsuccess>3a195548-7612-4be9-9545-b992d7fd35c0</onsuccess>
+  </stage>
+</process>

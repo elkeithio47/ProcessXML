@@ -1,0 +1,860 @@
+﻿<process name="IE - Edit Process (Mixed)" version="1.0" bpversion="6.4.4.29579" narrative="" byrefcollection="true" preferredid="9108473f-bc7f-4063-9c14-4b3d0cc6cc4d">
+  <view>
+    <camerax>-78</camerax>
+    <cameray>102</cameray>
+    <zoom version="2">1.25</zoom>
+  </view>
+  <preconditions />
+  <endpoint narrative="" />
+  <subsheet subsheetid="f6df94a5-1822-47e7-8cc0-4ac50960c573" type="Normal" published="False">
+    <name>HTML Edit</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>382</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <stage stageid="ba5e66f3-c2ba-41aa-80ec-10a1024e8017" name="Stage1" type="ProcessInfo">
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="4a3d8a8f-4b05-4518-9136-d430225b6124" name="HTML Edit" type="SubSheetInfo">
+    <subsheetid>f6df94a5-1822-47e7-8cc0-4ac50960c573</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="aeba38b0-0963-4043-b8ac-6465a4006a2c" name="Start" type="Start">
+    <subsheetid>f6df94a5-1822-47e7-8cc0-4ac50960c573</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>bed1d310-bf8f-4f8b-b209-5f4e7b7137b1</onsuccess>
+  </stage>
+  <stage stageid="6f0269a3-8f5a-4209-8363-1a04cceb0be5" name="EdgeIEMode (Mixed)::HTML Edit-Navigate-HTMLClickCentre" type="Action">
+    <subsheetid>f6df94a5-1822-47e7-8cc0-4ac50960c573</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>15</displayy>
+    <displaywidth>180</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>ed2f4aff-c0ae-4424-872c-3f200f865ba9</onsuccess>
+    <resource object="EdgeIEMode (Mixed)" action="HTML Edit-Navigate-HTMLClickCentre" />
+  </stage>
+  <stage stageid="8d198457-07c5-425a-b996-1095261ed3c9" name="EdgeIEMode (Mixed)::HTML Edit-Navigate-HTMLDoubleClickCentre" type="Action">
+    <subsheetid>f6df94a5-1822-47e7-8cc0-4ac50960c573</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>60</displayy>
+    <displaywidth>180</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>dcb11daa-9a45-4b97-9162-abdcdb3583ae</onsuccess>
+    <resource object="EdgeIEMode (Mixed)" action="HTML Edit-Navigate-HTMLDoubleClickCentre" />
+  </stage>
+  <stage stageid="7b41b4f2-f4f2-440a-845c-b9a6787ce386" name="ReadCurrentValue" type="Data">
+    <subsheetid>f6df94a5-1822-47e7-8cc0-4ac50960c573</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>150</displayx>
+    <displayy>570</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="bed1d310-bf8f-4f8b-b209-5f4e7b7137b1" name="EdgeIEMode (Mixed)::HTML Edit-Navigate-Verify" type="Action">
+    <subsheetid>f6df94a5-1822-47e7-8cc0-4ac50960c573</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-30</displayy>
+    <displaywidth>180</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="flag" name="highlight" expr="True" />
+    </inputs>
+    <onsuccess>6f0269a3-8f5a-4209-8363-1a04cceb0be5</onsuccess>
+    <resource object="EdgeIEMode (Mixed)" action="HTML Edit-Navigate-Verify" />
+  </stage>
+  <stage stageid="e71bbf70-14ff-4fb1-ad8f-9244e43fc743" name="EdgeIEMode (Mixed)::HTML Edit-Read-GetElementBounds" type="Action">
+    <subsheetid>f6df94a5-1822-47e7-8cc0-4ac50960c573</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>120</displayy>
+    <displaywidth>180</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <outputs>
+      <output type="collection" name="GetElementBounds" stage="GetElementBounds" />
+    </outputs>
+    <onsuccess>1e685918-115f-467f-a410-4bbd14184713</onsuccess>
+    <resource object="EdgeIEMode (Mixed)" action="HTML Edit-Read-GetElementBounds" />
+  </stage>
+  <stage stageid="9a9410ac-3469-4ee5-a174-2dff6b9f790a" name="EdgeIEMode (Mixed)::HTML Edit-Read-GetElementScreenBounds" type="Action">
+    <subsheetid>f6df94a5-1822-47e7-8cc0-4ac50960c573</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>210</displayy>
+    <displaywidth>180</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <outputs>
+      <output type="collection" name="GetElementScreenBounds" stage="GetElementScreenBounds" />
+    </outputs>
+    <onsuccess>f6cdc589-e3ad-47b0-b53b-17e26207ec32</onsuccess>
+    <resource object="EdgeIEMode (Mixed)" action="HTML Edit-Read-GetElementScreenBounds" />
+  </stage>
+  <stage stageid="83276ada-1376-4a53-b803-2481ead20b13" name="EdgeIEMode (Mixed)::HTML Edit-Read-GetHTMLIdentifier" type="Action">
+    <subsheetid>f6df94a5-1822-47e7-8cc0-4ac50960c573</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>300</displayy>
+    <displaywidth>180</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="idname" expr="&quot;TAG NAME&quot;" />
+    </inputs>
+    <outputs>
+      <output type="text" name="GetHTMLIdentifier" stage="GetHTMLIdentifier" />
+    </outputs>
+    <onsuccess>0fb51966-b833-4c5d-84b5-8154aca61485</onsuccess>
+    <resource object="EdgeIEMode (Mixed)" action="HTML Edit-Read-GetHTMLIdentifier" />
+  </stage>
+  <stage stageid="cf45bfd3-00dc-4c57-98b2-f44f5d120938" name="EdgeIEMode (Mixed)::HTML Edit-Read-HTMLGetOuterHTML" type="Action">
+    <subsheetid>f6df94a5-1822-47e7-8cc0-4ac50960c573</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>390</displayy>
+    <displaywidth>180</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <outputs>
+      <output type="text" name="HTMLGetOuterHTML" stage="HTMLGetOuterHTML" />
+    </outputs>
+    <onsuccess>b3ce86bd-f829-4388-9f07-ca591dc5058b</onsuccess>
+    <resource object="EdgeIEMode (Mixed)" action="HTML Edit-Read-HTMLGetOuterHTML" />
+  </stage>
+  <stage stageid="d76f161f-625e-4ba9-b885-e41292ef147b" name="GetElementBounds" type="Collection">
+    <subsheetid>f6df94a5-1822-47e7-8cc0-4ac50960c573</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>150</displayx>
+    <displayy>120</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>collection</datatype>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="f502d84a-b4e5-4ebf-9e43-bc8384552965" name="EdgeIEMode (Mixed)::HTML Edit-Read-HTMLGetPath" type="Action">
+    <subsheetid>f6df94a5-1822-47e7-8cc0-4ac50960c573</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>480</displayy>
+    <displaywidth>180</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <outputs>
+      <output type="text" name="HTMLGetPath" stage="HTMLGetPath" />
+    </outputs>
+    <onsuccess>d642c0ae-0b79-4008-83bb-2f4382717fc0</onsuccess>
+    <resource object="EdgeIEMode (Mixed)" action="HTML Edit-Read-HTMLGetPath" />
+  </stage>
+  <stage stageid="3900f82b-da2d-4bb7-ba79-afb444cd525f" name="GetElementScreenBounds" type="Collection">
+    <subsheetid>f6df94a5-1822-47e7-8cc0-4ac50960c573</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>150</displayx>
+    <displayy>210</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>collection</datatype>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="6bf0d086-fd07-4b10-8946-685b2062d562" name="GetHTMLIdentifier" type="Data">
+    <subsheetid>f6df94a5-1822-47e7-8cc0-4ac50960c573</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>150</displayx>
+    <displayy>300</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="f3f73155-ab4f-4265-8a25-6e3253b0ed44" name="EdgeIEMode (Mixed)::HTML Edit-Read-ReadCurrentValue" type="Action">
+    <subsheetid>f6df94a5-1822-47e7-8cc0-4ac50960c573</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>570</displayy>
+    <displaywidth>180</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <outputs>
+      <output type="text" name="ReadCurrentValue" stage="ReadCurrentValue" />
+    </outputs>
+    <onsuccess>3ad328aa-8992-4eb7-bb6c-4cb778f9385f</onsuccess>
+    <resource object="EdgeIEMode (Mixed)" action="HTML Edit-Read-ReadCurrentValue" />
+  </stage>
+  <stage stageid="bd151b79-d53b-4108-853e-158629b7f2af" name="HTMLGetOuterHTML" type="Data">
+    <subsheetid>f6df94a5-1822-47e7-8cc0-4ac50960c573</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>150</displayx>
+    <displayy>390</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="15fe2faf-8811-4d4b-a065-2a15635e3c1e" name="EdgeIEMode (Mixed)::HTML Edit-Wait-CheckExists" type="Action">
+    <subsheetid>f6df94a5-1822-47e7-8cc0-4ac50960c573</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>660</displayy>
+    <displaywidth>180</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="number" name="Timeout" expr="" />
+      <input type="flag" name="FlagValue" expr="" />
+    </inputs>
+    <onsuccess>78342a4e-bda9-4559-86bf-343d24323797</onsuccess>
+    <resource object="EdgeIEMode (Mixed)" action="HTML Edit-Wait-CheckExists" />
+  </stage>
+  <stage stageid="bd593608-f0e5-4b10-8b90-f13cada8e04d" name="HTMLGetPath" type="Data">
+    <subsheetid>f6df94a5-1822-47e7-8cc0-4ac50960c573</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>150</displayx>
+    <displayy>480</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="78342a4e-bda9-4559-86bf-343d24323797" name="EdgeIEMode (Mixed)::HTML Edit-Wait-CheckHTMLIdentifier" type="Action">
+    <subsheetid>f6df94a5-1822-47e7-8cc0-4ac50960c573</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>705</displayy>
+    <displaywidth>180</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="number" name="Timeout" expr="1" />
+      <input type="text" name="TextValue" expr="&quot;INPUT&quot;" />
+      <input type="text" name="idname" expr="&quot;TAG NAME&quot;" />
+    </inputs>
+    <onsuccess>93804c00-e3bb-4e51-a9dc-04254c8f8e80</onsuccess>
+    <resource object="EdgeIEMode (Mixed)" action="HTML Edit-Wait-CheckHTMLIdentifier" />
+  </stage>
+  <stage stageid="93804c00-e3bb-4e51-a9dc-04254c8f8e80" name="EdgeIEMode (Mixed)::HTML Edit-Wait-HTMLCheckExistsAndDocumentLoaded" type="Action">
+    <subsheetid>f6df94a5-1822-47e7-8cc0-4ac50960c573</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>750</displayy>
+    <displaywidth>180</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="number" name="Timeout" expr="1" />
+      <input type="flag" name="FlagValue" expr="" />
+    </inputs>
+    <onsuccess>8b30b206-2319-4197-9c78-361cece79591</onsuccess>
+    <resource object="EdgeIEMode (Mixed)" action="HTML Edit-Wait-HTMLCheckExistsAndDocumentLoaded" />
+  </stage>
+  <stage stageid="cdf1e2f6-8517-4c56-8398-dac03d0ccf4f" name="End1" type="End">
+    <subsheetid>f6df94a5-1822-47e7-8cc0-4ac50960c573</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>945</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="ff71a0fd-f45e-49f1-980d-e69c5ce50928" name="HTML Edit" type="SubSheet">
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>210</displayy>
+    <displaywidth>90</displaywidth>
+    <displayheight>60</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>c228b02e-b571-4b32-ae99-176a14f9e832</onsuccess>
+    <processid>f6df94a5-1822-47e7-8cc0-4ac50960c573</processid>
+  </stage>
+  <stage stageid="8b30b206-2319-4197-9c78-361cece79591" name="EdgeIEMode (Mixed)::HTML Edit-Write-WriteText" type="Action">
+    <subsheetid>f6df94a5-1822-47e7-8cc0-4ac50960c573</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>795</displayy>
+    <displaywidth>180</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="TextValue" expr="&quot;Hello World&quot;" />
+    </inputs>
+    <onsuccess>d0d02706-e684-4d7b-89a5-19953278a9b5</onsuccess>
+    <resource object="EdgeIEMode (Mixed)" action="HTML Edit-Write-WriteText" />
+  </stage>
+  <stage stageid="eece2262-231f-4031-ae2f-46ca4f7953ac" name="Start" type="Start">
+    <narrative>
+    </narrative>
+    <displayx>120</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="flag" name="IE" stage="IE" />
+    </inputs>
+    <onsuccess>3ea0fe14-db84-4c55-8f4d-301fbb9fcefa</onsuccess>
+  </stage>
+  <stage stageid="40fa4c29-22bf-451e-8c5c-8595d5b61654" name="End" type="End">
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>345</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="d2d70d33-85e8-4099-87b8-2b747f4ce08e" name="EdgeIEMode (Mixed)::Application-Navigate-AttachApplication" type="Action">
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>135</displayy>
+    <displaywidth>180</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="collection" name="WindowTitlesCollection" expr="" />
+      <input type="text" name="WindowTitle" expr="[Window Title]" />
+      <input type="text" name="ProcessName" expr="&quot;iexplore&quot;" />
+      <input type="number" name="ProcessID" expr="" />
+      <input type="text" name="Username" expr="" />
+      <input type="number" name="ChildIndex" expr="0" />
+    </inputs>
+    <onsuccess>ff71a0fd-f45e-49f1-980d-e69c5ce50928</onsuccess>
+    <resource object="EdgeIEMode (Mixed)" action="Application-Navigate-AttachApplication" />
+  </stage>
+  <stage stageid="8e16e8f2-aad2-481c-b1c3-9fd4056ab3a2" name="Launch IE " type="Action">
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>0</displayy>
+    <displaywidth>180</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="Arguments" narrative="Any arguments needed for the app" expr="[Application URL]" />
+      <input type="text" name="Application" narrative="The application or short cut to start" expr="&quot;C:\Program Files\Internet Explorer\iexplore.exe&quot;" />
+    </inputs>
+    <onsuccess>f2600f53-d41f-4a73-b404-c041805f9fbb</onsuccess>
+    <resource object="Utility - Environment" action="Start Process" />
+  </stage>
+  <stage stageid="3ea0fe14-db84-4c55-8f4d-301fbb9fcefa" name="IE?" type="Decision">
+    <narrative>
+    </narrative>
+    <displayx>120</displayx>
+    <displayy>-45</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <decision expression="[IE]=True" />
+    <ontrue>f1d7ad61-16ed-41e3-9696-73968204f156</ontrue>
+    <onfalse>f1e6fc04-0291-4e9f-bc0c-b2e191dee1d5</onfalse>
+  </stage>
+  <stage stageid="8630898a-abfd-4220-9fd3-2115b4dd350e" name="Launch Edge" type="Action">
+    <narrative>
+    </narrative>
+    <displayx>225</displayx>
+    <displayy>0</displayy>
+    <displaywidth>180</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="Arguments" narrative="Any arguments needed for the app" expr="[Application URL]" />
+      <input type="text" name="Application" narrative="The application or short cut to start" expr="&quot;C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe&quot;" />
+    </inputs>
+    <onsuccess>574023ee-99cb-471a-9d91-3f9b7e431cfb</onsuccess>
+    <resource object="Utility - Environment" action="Start Process" />
+  </stage>
+  <stage stageid="e6ef4c6f-3bbc-4ade-b0d2-eac51c765a9f" name="EdgeIEMode (Mixed)::Application-Navigate-AttachApplication" type="Action">
+    <narrative>
+    </narrative>
+    <displayx>225</displayx>
+    <displayy>135</displayy>
+    <displaywidth>180</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="collection" name="WindowTitlesCollection" expr="" />
+      <input type="text" name="WindowTitle" expr="[Window Title]" />
+      <input type="text" name="ProcessName" expr="&quot;msedge&quot;" />
+      <input type="number" name="ProcessID" expr="" />
+      <input type="text" name="Username" expr="" />
+      <input type="number" name="ChildIndex" expr="0" />
+    </inputs>
+    <onsuccess>ff71a0fd-f45e-49f1-980d-e69c5ce50928</onsuccess>
+    <resource object="EdgeIEMode (Mixed)" action="Application-Navigate-AttachApplication" />
+  </stage>
+  <stage stageid="f1e6fc04-0291-4e9f-bc0c-b2e191dee1d5" name="Window Title" type="Calculation">
+    <narrative>
+    </narrative>
+    <displayx>225</displayx>
+    <displayy>-45</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>8630898a-abfd-4220-9fd3-2115b4dd350e</onsuccess>
+    <calculation expression="[Window Title]&amp;&quot;*Edge&quot;" stage="Window Title" />
+  </stage>
+  <stage stageid="f1d7ad61-16ed-41e3-9696-73968204f156" name="Window Title" type="Calculation">
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-45</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>8e16e8f2-aad2-481c-b1c3-9fd4056ab3a2</onsuccess>
+    <calculation expression="[Window Title]&amp;&quot; - Internet Explorer&quot;" stage="Window Title" />
+  </stage>
+  <stage stageid="f2600f53-d41f-4a73-b404-c041805f9fbb" name="IE or Edge Win32::Attach" type="Action">
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>45</displayy>
+    <displaywidth>180</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="0000FF" />
+    <inputs>
+      <input type="flag" name="IE" expr="True" />
+      <input type="text" name="Window Title" expr="[Window Title]" />
+    </inputs>
+    <onsuccess>184adc51-2b28-4f42-95d3-fea0df99a642</onsuccess>
+    <resource object="IE or Edge Win32" action="Attach" />
+  </stage>
+  <stage stageid="574023ee-99cb-471a-9d91-3f9b7e431cfb" name="IE or Edge Win32::Attach" type="Action">
+    <narrative>
+    </narrative>
+    <displayx>225</displayx>
+    <displayy>45</displayy>
+    <displaywidth>180</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="0000FF" />
+    <inputs>
+      <input type="flag" name="IE" expr="False" />
+      <input type="text" name="Window Title" expr="[Window Title]" />
+    </inputs>
+    <onsuccess>0152c961-1e1d-4f8a-9258-4496585908c2</onsuccess>
+    <resource object="IE or Edge Win32" action="Attach" />
+  </stage>
+  <stage stageid="184adc51-2b28-4f42-95d3-fea0df99a642" name="IE or Edge Win32::Resize" type="Action">
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>90</displayy>
+    <displaywidth>180</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="0000FF" />
+    <inputs>
+      <input type="flag" name="IE" expr="True" />
+      <input type="text" name="Window Title" expr="[Window Title]" />
+    </inputs>
+    <onsuccess>d2d70d33-85e8-4099-87b8-2b747f4ce08e</onsuccess>
+    <resource object="IE or Edge Win32" action="Resize" />
+  </stage>
+  <stage stageid="0152c961-1e1d-4f8a-9258-4496585908c2" name="IE or Edge Win32::Resize" type="Action">
+    <narrative>
+    </narrative>
+    <displayx>225</displayx>
+    <displayy>90</displayy>
+    <displaywidth>180</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="0000FF" />
+    <inputs>
+      <input type="flag" name="IE" expr="False" />
+      <input type="text" name="Window Title" expr="[Window Title]" />
+    </inputs>
+    <onsuccess>e6ef4c6f-3bbc-4ade-b0d2-eac51c765a9f</onsuccess>
+    <resource object="IE or Edge Win32" action="Resize" />
+  </stage>
+  <stage stageid="742cb12a-fda0-4828-8eae-b0749a50ef35" name="Application URL" type="Data">
+    <narrative>1) https://jkorpela.fi/www/testel.html
+2a) https://qa-webpages.azurewebsites.net/BPQATestSite/QAhome.html
+2b) http://localhost:1234/QAhome.html
+</narrative>
+    <displayx>-195</displayx>
+    <displayy>-30</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue xml:space="preserve">https://qa-webpages.azurewebsites.net/BPQATestSiteForIEMode/QAhome.html</initialvalue>
+    <alwaysinit />
+  </stage>
+  <stage stageid="36f9404e-998d-46be-a63d-a52056facae2" name="Window Title" type="Data">
+    <narrative>1) Test display of HTML elements
+2) QATestSite</narrative>
+    <displayx>-195</displayx>
+    <displayy>30</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue xml:space="preserve">QATestSite</initialvalue>
+    <alwaysinit />
+  </stage>
+  <stage stageid="ecd7d924-506c-4d94-8154-822dc4e57d63" name="IE" type="Data">
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>0</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>flag</datatype>
+    <initialvalue>True</initialvalue>
+    <alwaysinit />
+  </stage>
+  <stage stageid="c228b02e-b571-4b32-ae99-176a14f9e832" name="IE or Edge Win32::Close" type="Action">
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>285</displayy>
+    <displaywidth>180</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="0000FF" />
+    <inputs>
+      <input type="flag" name="IE" expr="[IE]" />
+    </inputs>
+    <onsuccess>40fa4c29-22bf-451e-8c5c-8595d5b61654</onsuccess>
+    <resource object="IE or Edge Win32" action="Close" />
+  </stage>
+  <stage stageid="6911dc57-3e91-4c2f-8e27-5fd91c3430e6" name="Block1" type="Block">
+    <narrative>
+    </narrative>
+    <displayx>-75</displayx>
+    <displayy>165</displayy>
+    <displaywidth>390</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="7FB2E5" />
+  </stage>
+  <stage stageid="0d2148ee-7cf8-4245-acfe-c56f13bc59f5" name="Recover1" type="Recover">
+    <narrative>
+    </narrative>
+    <displayx>225</displayx>
+    <displayy>210</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>2d9bb3a7-7309-42b6-b1e7-51f6702e60a8</onsuccess>
+    <breakpoint type="0">
+      <condition>
+      </condition>
+    </breakpoint>
+  </stage>
+  <stage stageid="2d9bb3a7-7309-42b6-b1e7-51f6702e60a8" name="IE or Edge Win32::Close" type="Action">
+    <narrative>
+    </narrative>
+    <displayx>225</displayx>
+    <displayy>285</displayy>
+    <displaywidth>180</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="0000FF" />
+    <inputs>
+      <input type="flag" name="IE" expr="[IE]" />
+    </inputs>
+    <onsuccess>a5140fa4-90be-4bbd-b5a0-c8a4cbf83e66</onsuccess>
+    <resource object="IE or Edge Win32" action="Close" />
+  </stage>
+  <stage stageid="a5140fa4-90be-4bbd-b5a0-c8a4cbf83e66" name="Exception1" type="Exception">
+    <narrative>
+    </narrative>
+    <displayx>225</displayx>
+    <displayy>345</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <exception type="" detail="" usecurrent="yes" />
+  </stage>
+  <stage stageid="ed2f4aff-c0ae-4424-872c-3f200f865ba9" name="EdgeIEMode (Mixed)::HTML Element-Wait-CheckHTMLIdentifier" type="Action">
+    <subsheetid>f6df94a5-1822-47e7-8cc0-4ac50960c573</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>210</displayx>
+    <displayy>30</displayy>
+    <displaywidth>180</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="number" name="Timeout" expr="" />
+      <input type="text" name="TextValue" expr="&quot;Click INPUT&quot;" />
+      <input type="text" name="idname" expr="&quot;Value&quot;" />
+    </inputs>
+    <onsuccess>8d198457-07c5-425a-b996-1095261ed3c9</onsuccess>
+    <resource object="EdgeIEMode (Mixed)" action="HTML Element-Wait-CheckHTMLIdentifier" />
+  </stage>
+  <stage stageid="dcb11daa-9a45-4b97-9162-abdcdb3583ae" name="EdgeIEMode (Mixed)::HTML Element-Wait-CheckHTMLIdentifier" type="Action">
+    <subsheetid>f6df94a5-1822-47e7-8cc0-4ac50960c573</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>210</displayx>
+    <displayy>75</displayy>
+    <displaywidth>180</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="number" name="Timeout" expr="" />
+      <input type="text" name="TextValue" expr="&quot;Double Click INPUT&quot;" />
+      <input type="text" name="idname" expr="&quot;Value&quot;" />
+    </inputs>
+    <onsuccess>e71bbf70-14ff-4fb1-ad8f-9244e43fc743</onsuccess>
+    <resource object="EdgeIEMode (Mixed)" action="HTML Element-Wait-CheckHTMLIdentifier" />
+  </stage>
+  <stage stageid="1e685918-115f-467f-a410-4bbd14184713" name="Is GetElementBounds expected?" type="Decision">
+    <subsheetid>f6df94a5-1822-47e7-8cc0-4ac50960c573</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>165</displayy>
+    <displaywidth>120</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <decision expression="[GetElementBounds.Left]=8&#xA;AND [GetElementBounds.Right]=396&#xA;AND [GetElementBounds.Width]=388&#xA;AND [GetElementBounds.Height]=21" />
+    <ontrue>9a9410ac-3469-4ee5-a174-2dff6b9f790a</ontrue>
+    <onfalse>dfcbdde5-90c2-4cbe-93b9-259e2c20bf0f</onfalse>
+  </stage>
+  <stage stageid="dfcbdde5-90c2-4cbe-93b9-259e2c20bf0f" name="Value Exception" type="Exception">
+    <subsheetid>f6df94a5-1822-47e7-8cc0-4ac50960c573</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>180</displayx>
+    <displayy>165</displayy>
+    <displaywidth>90</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <exception type="System Exception" detail="&quot;The GetElementBounds value is not as expected&quot;" />
+  </stage>
+  <stage stageid="f6cdc589-e3ad-47b0-b53b-17e26207ec32" name="Is GetElementScreenBounds expected?" type="Decision">
+    <subsheetid>f6df94a5-1822-47e7-8cc0-4ac50960c573</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>255</displayy>
+    <displaywidth>120</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <decision expression="[GetElementScreenBounds.Left]=16&#xA;AND [GetElementScreenBounds.Right]=404&#xA;AND [GetElementScreenBounds.Width]=388&#xA;AND [GetElementScreenBounds.Height]=21" />
+    <ontrue>83276ada-1376-4a53-b803-2481ead20b13</ontrue>
+    <onfalse>2fb030f8-cf0f-4c7f-ab43-724a6c57dcb7</onfalse>
+  </stage>
+  <stage stageid="2fb030f8-cf0f-4c7f-ab43-724a6c57dcb7" name="Value Exception" type="Exception">
+    <subsheetid>f6df94a5-1822-47e7-8cc0-4ac50960c573</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>180</displayx>
+    <displayy>255</displayy>
+    <displaywidth>90</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <exception type="System Exception" detail="&quot;The GetElementScreenBounds value is not as expected&quot;" />
+  </stage>
+  <stage stageid="0fb51966-b833-4c5d-84b5-8154aca61485" name="GetHTMLIdentifier?" type="Decision">
+    <subsheetid>f6df94a5-1822-47e7-8cc0-4ac50960c573</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>345</displayy>
+    <displaywidth>90</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <decision expression="[GetHTMLIdentifier]=&quot;INPUT&quot;" />
+    <ontrue>cf45bfd3-00dc-4c57-98b2-f44f5d120938</ontrue>
+    <onfalse>2fad251e-fcef-4dfe-87aa-3c8efa20980f</onfalse>
+  </stage>
+  <stage stageid="2fad251e-fcef-4dfe-87aa-3c8efa20980f" name="Value Exception" type="Exception">
+    <subsheetid>f6df94a5-1822-47e7-8cc0-4ac50960c573</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>180</displayx>
+    <displayy>345</displayy>
+    <displaywidth>90</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <exception type="System Exception" detail="&quot;The button value is not as expected&quot;" />
+  </stage>
+  <stage stageid="b3ce86bd-f829-4388-9f07-ca591dc5058b" name="HTMLGetOuterHTML Matches?" type="Decision">
+    <subsheetid>f6df94a5-1822-47e7-8cc0-4ac50960c573</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>435</displayy>
+    <displaywidth>90</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <decision expression="StartsWith([HTMLGetOuterHTML], &quot;&lt;input&quot;) AND EndsWith([HTMLGetOuterHTML], &quot;&gt;&quot;)" />
+    <ontrue>f502d84a-b4e5-4ebf-9e43-bc8384552965</ontrue>
+    <onfalse>b10e9014-bb83-4738-a266-271ccf24754d</onfalse>
+  </stage>
+  <stage stageid="b10e9014-bb83-4738-a266-271ccf24754d" name="Value Exception" type="Exception">
+    <subsheetid>f6df94a5-1822-47e7-8cc0-4ac50960c573</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>180</displayx>
+    <displayy>435</displayy>
+    <displaywidth>90</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <exception type="System Exception" detail="&quot;The GetOuterHTML value is not as expected&quot;" />
+  </stage>
+  <stage stageid="52215a0d-59e3-464d-a8d3-ff0c75446a7c" name="HTMLGetPath Match Value" type="Data">
+    <subsheetid>f6df94a5-1822-47e7-8cc0-4ac50960c573</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-105</displayx>
+    <displayy>525</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue xml:space="preserve">/HTML/BODY(1)/INPUT(1)</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="d642c0ae-0b79-4008-83bb-2f4382717fc0" name="GetOuterHTML Matches?" type="Decision">
+    <subsheetid>f6df94a5-1822-47e7-8cc0-4ac50960c573</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>525</displayy>
+    <displaywidth>90</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <decision expression="[HTMLGetPath]=[HTMLGetPath Match Value]" />
+    <ontrue>f3f73155-ab4f-4265-8a25-6e3253b0ed44</ontrue>
+    <onfalse>66f8bbc6-b004-4c05-9ed6-6144f46bccd3</onfalse>
+  </stage>
+  <stage stageid="66f8bbc6-b004-4c05-9ed6-6144f46bccd3" name="Value Exception" type="Exception">
+    <subsheetid>f6df94a5-1822-47e7-8cc0-4ac50960c573</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>180</displayx>
+    <displayy>525</displayy>
+    <displaywidth>90</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <exception type="System Exception" detail="&quot;The GetOuterHTML value is not as expected&quot;" />
+  </stage>
+  <stage stageid="3ad328aa-8992-4eb7-bb6c-4cb778f9385f" name="ReadCurrentValue?" type="Decision">
+    <subsheetid>f6df94a5-1822-47e7-8cc0-4ac50960c573</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>615</displayy>
+    <displaywidth>90</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <decision expression="[ReadCurrentValue]=&quot;Double Click INPUT&quot;" />
+    <ontrue>15fe2faf-8811-4d4b-a065-2a15635e3c1e</ontrue>
+    <onfalse>3413f8b7-0a49-49d5-a24e-9ec52badf935</onfalse>
+  </stage>
+  <stage stageid="3413f8b7-0a49-49d5-a24e-9ec52badf935" name="Value Exception" type="Exception">
+    <subsheetid>f6df94a5-1822-47e7-8cc0-4ac50960c573</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>180</displayx>
+    <displayy>615</displayy>
+    <displaywidth>90</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <exception type="System Exception" detail="&quot;The ReadCurrentValue value is not as expected&quot;" />
+  </stage>
+  <stage stageid="d0d02706-e684-4d7b-89a5-19953278a9b5" name="EdgeIEMode (Mixed)::HTML Edit-Read-ReadCurrentValue" type="Action">
+    <subsheetid>f6df94a5-1822-47e7-8cc0-4ac50960c573</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>840</displayy>
+    <displaywidth>180</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <outputs>
+      <output type="text" name="ReadCurrentValue" stage="ReadCurrentValue" />
+    </outputs>
+    <onsuccess>45c4b246-8bfd-4f83-8669-0817ccbd9fe5</onsuccess>
+    <resource object="EdgeIEMode (Mixed)" action="HTML Edit-Read-ReadCurrentValue" />
+  </stage>
+  <stage stageid="45c4b246-8bfd-4f83-8669-0817ccbd9fe5" name="ReadCurrentValue?" type="Decision">
+    <subsheetid>f6df94a5-1822-47e7-8cc0-4ac50960c573</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>885</displayy>
+    <displaywidth>90</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <decision expression="[ReadCurrentValue]=&quot;Hello World&quot;" />
+    <ontrue>cdf1e2f6-8517-4c56-8398-dac03d0ccf4f</ontrue>
+    <onfalse>396d735f-2761-4b1a-b2c7-7040c7bc6554</onfalse>
+  </stage>
+  <stage stageid="396d735f-2761-4b1a-b2c7-7040c7bc6554" name="Value Exception" type="Exception">
+    <subsheetid>f6df94a5-1822-47e7-8cc0-4ac50960c573</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>180</displayx>
+    <displayy>885</displayy>
+    <displaywidth>90</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <exception type="System Exception" detail="&quot;The ReadCurrentValue value is not as expected&quot;" />
+  </stage>
+</process>

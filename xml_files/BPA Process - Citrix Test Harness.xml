@@ -1,0 +1,469 @@
+﻿<process name="Citrix Test Harness" version="1.0" bpversion="6.0.0.0" narrative="" byrefcollection="true" preferredid="7260548b-a30f-43b5-be16-f1edaa00ab31">
+  <view>
+    <camerax>0</camerax>
+    <cameray>0</cameray>
+    <zoom version="2">1.25</zoom>
+  </view>
+  <preconditions />
+  <endpoint narrative="" />
+  <subsheet subsheetid="eb7ab558-8e5c-41a6-9de3-344374aaa5a3" type="Normal" published="False">
+    <name>Run tests</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>42</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="f381d28d-99c7-4c01-8e26-322c9fb662c7" type="Normal" published="False">
+    <name>Run local test</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="44696c59-c004-42ed-9bde-1a54b000127f" type="Normal" published="False">
+    <name>Run mocked Citrix test</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="4617c0b1-8bb4-4f01-a6e9-f756c450635b" type="Normal" published="False">
+    <name>Check logs match</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>120</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <stage stageid="50a3ef06-cbcc-4eed-9df9-768b43bdfd42" name="Start" type="Start">
+    <display x="15" y="-105" />
+    <onsuccess>f0de1cc5-1fb5-4fe4-83b0-09f97f85ad9a</onsuccess>
+  </stage>
+  <stage stageid="a640a98f-ef76-4346-87d0-7be96e401d99" name="End" type="End">
+    <display x="15" y="30" />
+  </stage>
+  <stage stageid="c3fb9e81-27ee-4fa7-8fc8-15749b4bb893" name="Stage1" type="ProcessInfo">
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="56c25153-5993-4806-9aee-4ad94e99138d" name="Run local test" type="SubSheetInfo">
+    <subsheetid>f381d28d-99c7-4c01-8e26-322c9fb662c7</subsheetid>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="17d9af4a-2b4d-493a-acb0-4712031a6a20" name="Start" type="Start">
+    <subsheetid>f381d28d-99c7-4c01-8e26-322c9fb662c7</subsheetid>
+    <display x="15" y="-105" />
+    <inputs>
+      <input type="number" name="Message size" stage="Message size" />
+      <input type="number" name="Message count" stage="Message count" />
+    </inputs>
+    <onsuccess>2a6ff152-0890-4a7c-9337-136eff59a207</onsuccess>
+  </stage>
+  <stage stageid="a6ab9dc3-4b92-40c8-997a-e52bccbb6974" name="End" type="End">
+    <subsheetid>f381d28d-99c7-4c01-8e26-322c9fb662c7</subsheetid>
+    <display x="15" y="60" />
+  </stage>
+  <stage stageid="79a2a30c-98e8-43a5-a718-bffd21ef0d6e" name="Run mocked Citrix test" type="SubSheetInfo">
+    <subsheetid>44696c59-c004-42ed-9bde-1a54b000127f</subsheetid>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="130d6092-3ca4-44b9-bd85-5054a826451c" name="Start" type="Start">
+    <subsheetid>44696c59-c004-42ed-9bde-1a54b000127f</subsheetid>
+    <display x="15" y="-105" />
+    <inputs>
+      <input type="number" name="Message size" stage="Message size" />
+      <input type="number" name="Message count" stage="Message count" />
+    </inputs>
+    <onsuccess>88ca7442-3d64-4846-892e-16a3ffe0ea4d</onsuccess>
+  </stage>
+  <stage stageid="d02b6d58-ffc1-4aca-9248-4af8a7653472" name="End" type="End">
+    <subsheetid>44696c59-c004-42ed-9bde-1a54b000127f</subsheetid>
+    <display x="15" y="60" />
+  </stage>
+  <stage stageid="8a719578-59ea-4cd3-bf7c-abe8e9984a06" name="Standard message size" type="Data">
+    <loginhibit onsuccess="true" />
+    <display x="-195" y="-30" w="150" h="30" />
+    <datatype>number</datatype>
+    <initialvalue>1000</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="3ddbd988-fbd0-4cb3-8954-ca963350da1f" name="Run tests" type="SubSheetInfo">
+    <subsheetid>eb7ab558-8e5c-41a6-9de3-344374aaa5a3</subsheetid>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="0c68cac9-69a4-49e4-88ac-e39aad6fdd5b" name="Start" type="Start">
+    <subsheetid>eb7ab558-8e5c-41a6-9de3-344374aaa5a3</subsheetid>
+    <display x="15" y="-105" />
+    <inputs>
+      <input type="number" name="Message size" stage="Message size" />
+      <input type="number" name="Message count" stage="Message count" />
+    </inputs>
+    <onsuccess>905627de-e14c-4edf-9ca1-00a65a9163bc</onsuccess>
+  </stage>
+  <stage stageid="9d23b76e-ac08-4458-8a7a-8832e6428586" name="End" type="End">
+    <subsheetid>eb7ab558-8e5c-41a6-9de3-344374aaa5a3</subsheetid>
+    <display x="15" y="210" />
+  </stage>
+  <stage stageid="46f34bee-fff6-4912-926d-1a7711b53374" name="Message size" type="Data">
+    <subsheetid>eb7ab558-8e5c-41a6-9de3-344374aaa5a3</subsheetid>
+    <display x="105" y="-105" w="90" h="30" />
+    <datatype>number</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="f43a2970-d6fc-4b43-8b8e-43fe348001a3" name="Message count" type="Data">
+    <subsheetid>eb7ab558-8e5c-41a6-9de3-344374aaa5a3</subsheetid>
+    <display x="180" y="-105" w="90" h="30" />
+    <datatype>number</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="2a6ff152-0890-4a7c-9337-136eff59a207" name="Run Test" type="Action">
+    <subsheetid>f381d28d-99c7-4c01-8e26-322c9fb662c7</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="15" y="-45" />
+    <inputs>
+      <input type="text" name="Arguments" friendlyname="Arguments" expr="&quot;-t Local --quiet -c &quot;&amp;[Message count]&amp;&quot; -l &quot;&amp;[Message size]&amp;&quot; -s &quot;&amp;[Seed]" />
+    </inputs>
+    <onsuccess>84d13b66-16de-4a3c-953f-51e1a3a45df8</onsuccess>
+    <resource object="Citrix Test Harness Launcher" action="Launch" />
+  </stage>
+  <stage stageid="905627de-e14c-4edf-9ca1-00a65a9163bc" name="Run local test" type="SubSheet">
+    <subsheetid>eb7ab558-8e5c-41a6-9de3-344374aaa5a3</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="15" y="-45" />
+    <inputs>
+      <input type="number" name="Message size" friendlyname="Message size" expr="[Message size]" />
+      <input type="number" name="Message count" friendlyname="Message count" expr="[Message count]" />
+    </inputs>
+    <onsuccess>4f3e774b-6597-43d9-bd66-8046dbbfc8a9</onsuccess>
+    <processid>f381d28d-99c7-4c01-8e26-322c9fb662c7</processid>
+  </stage>
+  <stage stageid="47fc24f7-97e4-4398-9f87-63b0290d6cc9" name="Run mocked Citrix test" type="SubSheet">
+    <subsheetid>eb7ab558-8e5c-41a6-9de3-344374aaa5a3</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="15" y="45" />
+    <inputs>
+      <input type="number" name="Message size" friendlyname="Message size" expr="[Message size]" />
+      <input type="number" name="Message count" friendlyname="Message count" expr="[Message count]" />
+    </inputs>
+    <onsuccess>06194b63-7a7a-4be4-9e19-1f1e5ebf2fcb</onsuccess>
+    <processid>44696c59-c004-42ed-9bde-1a54b000127f</processid>
+  </stage>
+  <stage stageid="94673ecc-ea84-40d4-94a8-80f56e8553c9" name="Message size" type="Data">
+    <subsheetid>f381d28d-99c7-4c01-8e26-322c9fb662c7</subsheetid>
+    <display x="105" y="-105" w="90" h="30" />
+    <datatype>number</datatype>
+    <initialvalue>1000</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="1cc8fdca-801e-4a25-8e1a-5a25964d9468" name="Message count" type="Data">
+    <subsheetid>f381d28d-99c7-4c01-8e26-322c9fb662c7</subsheetid>
+    <display x="180" y="-105" w="90" h="30" />
+    <datatype>number</datatype>
+    <initialvalue>100</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="88ca7442-3d64-4846-892e-16a3ffe0ea4d" name="Run Test" type="Action">
+    <subsheetid>44696c59-c004-42ed-9bde-1a54b000127f</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="15" y="-45" />
+    <inputs>
+      <input type="text" name="Arguments" friendlyname="Arguments" expr="&quot;-t Citrix --mocked --quiet -c &quot;&amp;[Message count]&amp;&quot; -l &quot;&amp;[Message size]&amp;&quot; -s &quot;&amp;[Seed]" />
+    </inputs>
+    <onsuccess>a4f507da-d9fc-4523-bf09-9a0c65035e1f</onsuccess>
+    <resource object="Citrix Test Harness Launcher" action="Launch" />
+  </stage>
+  <stage stageid="afbd65e4-696f-4d40-b785-3d5716168da6" name="Message size" type="Data">
+    <subsheetid>44696c59-c004-42ed-9bde-1a54b000127f</subsheetid>
+    <display x="105" y="-105" w="90" h="30" />
+    <datatype>number</datatype>
+    <initialvalue>1000</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="7dabf4db-f23d-49b6-b0b0-208e941aa9ac" name="Message count" type="Data">
+    <subsheetid>44696c59-c004-42ed-9bde-1a54b000127f</subsheetid>
+    <display x="180" y="-105" w="90" h="30" />
+    <datatype>number</datatype>
+    <initialvalue>100</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="8eeff55b-76a8-476f-8018-84c2412671ff" name="Check logs match" type="SubSheetInfo">
+    <subsheetid>4617c0b1-8bb4-4f01-a6e9-f756c450635b</subsheetid>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="6e4ebd5c-c85a-4b53-8223-4f1f45673ff9" name="Start" type="Start">
+    <subsheetid>4617c0b1-8bb4-4f01-a6e9-f756c450635b</subsheetid>
+    <display x="15" y="-105" />
+    <onsuccess>9e022dc5-b84e-41dd-87c5-fead598958c0</onsuccess>
+  </stage>
+  <stage stageid="9e022dc5-b84e-41dd-87c5-fead598958c0" name="Citrix Test Harness Launcher::Get log values" type="Action">
+    <subsheetid>4617c0b1-8bb4-4f01-a6e9-f756c450635b</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="15" y="-45" />
+    <inputs>
+      <input type="text" name="File path" friendlyname="File path" expr="&quot;appmanlog_local.log&quot;" />
+    </inputs>
+    <outputs>
+      <output type="collection" name="Logs" friendlyname="Logs" stage="Local logs" />
+    </outputs>
+    <onsuccess>6da796da-a616-4ed1-91e9-b155555a843d</onsuccess>
+    <resource object="Citrix Test Harness Launcher" action="Get log values" />
+  </stage>
+  <stage stageid="1e8b17b2-f474-47f4-8df8-942041a6fb52" name="Local logs" type="Collection">
+    <subsheetid>4617c0b1-8bb4-4f01-a6e9-f756c450635b</subsheetid>
+    <display x="90" y="-45" />
+    <datatype>collection</datatype>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="6da796da-a616-4ed1-91e9-b155555a843d" name="Citrix Test Harness Launcher::Get log values" type="Action">
+    <subsheetid>4617c0b1-8bb4-4f01-a6e9-f756c450635b</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="15" y="0" />
+    <inputs>
+      <input type="text" name="File path" friendlyname="File path" expr="&quot;appmanlog_remote.log&quot;" />
+    </inputs>
+    <outputs>
+      <output type="collection" name="Logs" friendlyname="Logs" stage="Remote logs" />
+    </outputs>
+    <onsuccess>2ee0f49e-7815-4b20-9f12-c64ea3e46c32</onsuccess>
+    <resource object="Citrix Test Harness Launcher" action="Get log values" />
+  </stage>
+  <stage stageid="4dd3ab42-d6de-4b51-941c-0d248550f2a3" name="Remote logs" type="Collection">
+    <subsheetid>4617c0b1-8bb4-4f01-a6e9-f756c450635b</subsheetid>
+    <display x="90" y="0" />
+    <datatype>collection</datatype>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="8356b8f1-388f-498e-8230-b45317f8aa3f" name="Counts match" type="Decision">
+    <subsheetid>4617c0b1-8bb4-4f01-a6e9-f756c450635b</subsheetid>
+    <display x="15" y="165" />
+    <decision expression="[Local log count]=[Remote log count]" />
+    <ontrue>d22289bc-01b2-4416-a43e-422bcdd5a7db</ontrue>
+    <onfalse>839357db-a03e-4c85-81cf-b4d9303972da</onfalse>
+  </stage>
+  <stage stageid="839357db-a03e-4c85-81cf-b4d9303972da" name="Exception1" type="Exception">
+    <subsheetid>4617c0b1-8bb4-4f01-a6e9-f756c450635b</subsheetid>
+    <display x="255" y="165" />
+    <exception localized="yes" type="Test Failure" detail="" />
+  </stage>
+  <stage stageid="2ee0f49e-7815-4b20-9f12-c64ea3e46c32" name="Count local logs" type="Action">
+    <subsheetid>4617c0b1-8bb4-4f01-a6e9-f756c450635b</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="15" y="75" />
+    <inputs>
+      <input type="text" name="Collection Name" friendlyname="Collection Name" narrative="The name of the collection to act upon" expr="&quot;Local logs&quot;" />
+    </inputs>
+    <outputs>
+      <output type="number" name="Count" friendlyname="Count" narrative="The number of rows counted in the collection" stage="Local log count" />
+    </outputs>
+    <onsuccess>10aba3a1-b22a-4f57-a57a-66febfd29c2f</onsuccess>
+    <resource object="Blueprism.AutomateProcessCore.clsCollectionActions" action="Count Rows" />
+  </stage>
+  <stage stageid="10aba3a1-b22a-4f57-a57a-66febfd29c2f" name="Count remote logs" type="Action">
+    <subsheetid>4617c0b1-8bb4-4f01-a6e9-f756c450635b</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="15" y="120" />
+    <inputs>
+      <input type="text" name="Collection Name" friendlyname="Collection Name" narrative="The name of the collection to act upon" expr="&quot;Remote logs&quot;" />
+    </inputs>
+    <outputs>
+      <output type="number" name="Count" friendlyname="Count" narrative="The number of rows counted in the collection" stage="Remote log count" />
+    </outputs>
+    <onsuccess>8356b8f1-388f-498e-8230-b45317f8aa3f</onsuccess>
+    <resource object="Blueprism.AutomateProcessCore.clsCollectionActions" action="Count Rows" />
+  </stage>
+  <stage stageid="67666e66-2144-4af6-a38a-8a11bf20719b" name="Local log count" type="Data">
+    <subsheetid>4617c0b1-8bb4-4f01-a6e9-f756c450635b</subsheetid>
+    <display x="90" y="75" />
+    <datatype>number</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="97f2b90b-dfaf-488b-b5b7-bdb13ad3b381" name="Remote log count" type="Data">
+    <subsheetid>4617c0b1-8bb4-4f01-a6e9-f756c450635b</subsheetid>
+    <display x="90" y="120" />
+    <datatype>number</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="3c70cf42-b987-4839-a025-b5c45407e89f" name="Get logs" type="Block">
+    <subsheetid>4617c0b1-8bb4-4f01-a6e9-f756c450635b</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="-45" y="-75" w="210" h="105" />
+    <font family="Segoe UI" size="10" style="Regular" color="7FB2E5" />
+  </stage>
+  <stage stageid="c11dde32-5661-4b78-99e1-a1e65459d72a" name="Ensure log counts are equal" type="Block">
+    <subsheetid>4617c0b1-8bb4-4f01-a6e9-f756c450635b</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="-45" y="45" w="210" h="150" />
+    <font family="Segoe UI" size="10" style="Regular" color="7FB2E5" />
+  </stage>
+  <stage stageid="d22289bc-01b2-4416-a43e-422bcdd5a7db" name="Citrix Test Harness Launcher::Combine collections" type="Action">
+    <subsheetid>4617c0b1-8bb4-4f01-a6e9-f756c450635b</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="15" y="240" />
+    <inputs>
+      <input type="collection" name="Collection 1" friendlyname="Collection 1" expr="[Local logs]" />
+      <input type="collection" name="Collection 2" friendlyname="Collection 2" expr="[Remote logs]" />
+    </inputs>
+    <outputs>
+      <output type="collection" name="Combined collection" friendlyname="Combined collection" stage="Combined logs" />
+    </outputs>
+    <onsuccess>f521e38b-6313-435b-a9c2-ddf157e8854e</onsuccess>
+    <resource object="Citrix Test Harness Launcher" action="Combine collections" />
+  </stage>
+  <stage stageid="107758df-528a-4cbf-8f29-5ca31d46e92e" name="Combined logs" type="Collection">
+    <subsheetid>4617c0b1-8bb4-4f01-a6e9-f756c450635b</subsheetid>
+    <display x="90" y="240" />
+    <datatype>collection</datatype>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="f521e38b-6313-435b-a9c2-ddf157e8854e" name="Loop Start1" type="LoopStart">
+    <subsheetid>4617c0b1-8bb4-4f01-a6e9-f756c450635b</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="15" y="285" />
+    <onsuccess>c6f92a9b-a0b9-4b47-815a-c0a12e6ea9dc</onsuccess>
+    <groupid>b9a9f196-eab3-4f51-8f55-aa38794ec05e</groupid>
+    <looptype>ForEach</looptype>
+    <loopdata>Combined logs</loopdata>
+  </stage>
+  <stage stageid="ef57b3b4-da17-478c-ae26-d1f782ea52af" name="Loop End1" type="LoopEnd">
+    <subsheetid>4617c0b1-8bb4-4f01-a6e9-f756c450635b</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="15" y="390" />
+    <onsuccess>b633a2c8-d670-46b4-b235-5aef8028216f</onsuccess>
+    <groupid>b9a9f196-eab3-4f51-8f55-aa38794ec05e</groupid>
+  </stage>
+  <stage stageid="c6f92a9b-a0b9-4b47-815a-c0a12e6ea9dc" name="Decision1" type="Decision">
+    <subsheetid>4617c0b1-8bb4-4f01-a6e9-f756c450635b</subsheetid>
+    <display x="15" y="330" />
+    <decision expression="[Combined logs.Collection 1 Value]=[Combined logs.Collection 2 Value]" />
+    <ontrue>ef57b3b4-da17-478c-ae26-d1f782ea52af</ontrue>
+    <onfalse>2813a5fd-6ca9-474d-91de-bdc3e7798230</onfalse>
+  </stage>
+  <stage stageid="2813a5fd-6ca9-474d-91de-bdc3e7798230" name="Exception1" type="Exception">
+    <subsheetid>4617c0b1-8bb4-4f01-a6e9-f756c450635b</subsheetid>
+    <display x="255" y="330" />
+    <exception localized="yes" type="Test Failure" detail="" />
+  </stage>
+  <stage stageid="e7feca1d-87f5-421f-beb3-e78ee7258993" name="Check logs match" type="Block">
+    <subsheetid>4617c0b1-8bb4-4f01-a6e9-f756c450635b</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="-45" y="210" w="210" h="210" />
+    <font family="Segoe UI" size="10" style="Regular" color="7FB2E5" />
+  </stage>
+  <stage stageid="84d13b66-16de-4a3c-953f-51e1a3a45df8" name="Check logs match" type="SubSheet">
+    <subsheetid>f381d28d-99c7-4c01-8e26-322c9fb662c7</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="15" y="0" />
+    <onsuccess>a6ab9dc3-4b92-40c8-997a-e52bccbb6974</onsuccess>
+    <processid>4617c0b1-8bb4-4f01-a6e9-f756c450635b</processid>
+  </stage>
+  <stage stageid="a4f507da-d9fc-4523-bf09-9a0c65035e1f" name="Check logs match" type="SubSheet">
+    <subsheetid>44696c59-c004-42ed-9bde-1a54b000127f</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="15" y="0" />
+    <onsuccess>d02b6d58-ffc1-4aca-9248-4af8a7653472</onsuccess>
+    <processid>4617c0b1-8bb4-4f01-a6e9-f756c450635b</processid>
+  </stage>
+  <stage stageid="b633a2c8-d670-46b4-b235-5aef8028216f" name="End1" type="End">
+    <subsheetid>4617c0b1-8bb4-4f01-a6e9-f756c450635b</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="15" y="450" />
+  </stage>
+  <stage stageid="4f3e774b-6597-43d9-bd66-8046dbbfc8a9" name="Citrix Test Harness Launcher::Copy file" type="Action">
+    <subsheetid>eb7ab558-8e5c-41a6-9de3-344374aaa5a3</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="15" y="0" />
+    <inputs>
+      <input type="text" name="Source path" friendlyname="Source path" expr="&quot;appmanlog_local.log&quot;" />
+      <input type="text" name="Destination path" friendlyname="Destination path" expr="&quot;appmanlog_local_copy.log&quot;" />
+    </inputs>
+    <onsuccess>47fc24f7-97e4-4398-9f87-63b0290d6cc9</onsuccess>
+    <resource object="Citrix Test Harness Launcher" action="Copy file" />
+  </stage>
+  <stage stageid="06194b63-7a7a-4be4-9e19-1f1e5ebf2fcb" name="Citrix Test Harness Launcher::Copy file" type="Action">
+    <subsheetid>eb7ab558-8e5c-41a6-9de3-344374aaa5a3</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="15" y="90" />
+    <inputs>
+      <input type="text" name="Source path" friendlyname="Source path" expr="&quot;appmanlog_local_copy.log&quot;" />
+      <input type="text" name="Destination path" friendlyname="Destination path" expr="&quot;appmanlog_local.log&quot;" />
+    </inputs>
+    <onsuccess>afc464ad-3038-45bd-aed6-374d37246c05</onsuccess>
+    <resource object="Citrix Test Harness Launcher" action="Copy file" />
+  </stage>
+  <stage stageid="afc464ad-3038-45bd-aed6-374d37246c05" name="Check logs match" type="SubSheet">
+    <subsheetid>eb7ab558-8e5c-41a6-9de3-344374aaa5a3</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="15" y="135" />
+    <onsuccess>9d23b76e-ac08-4458-8a7a-8832e6428586</onsuccess>
+    <processid>4617c0b1-8bb4-4f01-a6e9-f756c450635b</processid>
+  </stage>
+  <stage stageid="865f914c-99e8-4b84-8b93-fb80cc4142d6" name="Seed" type="Data">
+    <loginhibit onsuccess="true" />
+    <display x="-195" y="120" w="150" h="30" />
+    <datatype>number</datatype>
+    <initialvalue>1234</initialvalue>
+    <alwaysinit />
+  </stage>
+  <stage stageid="f0de1cc5-1fb5-4fe4-83b0-09f97f85ad9a" name="Run standard tests" type="SubSheet">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="-60" />
+    <inputs>
+      <input type="number" name="Message size" friendlyname="Message size" expr="[Standard message size]" />
+      <input type="number" name="Message count" friendlyname="Message count" expr="[Standard message count]" />
+    </inputs>
+    <onsuccess>2903f43b-c556-43da-a473-c4aa1fbfe2fa</onsuccess>
+    <processid>eb7ab558-8e5c-41a6-9de3-344374aaa5a3</processid>
+  </stage>
+  <stage stageid="10f95404-8e83-4b7f-a595-ae25d4ad93e3" name="Standard message count" type="Data">
+    <loginhibit onsuccess="true" />
+    <display x="-195" y="0" w="150" h="30" />
+    <datatype>number</datatype>
+    <initialvalue>100</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="842826ac-6413-4e48-b6c3-509b9a370f8d" name="Large message size" type="Data">
+    <loginhibit onsuccess="true" />
+    <display x="-195" y="30" w="150" h="30" />
+    <datatype>number</datatype>
+    <initialvalue>100000</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="a05ea504-b668-4de5-ba06-885e8c0a3db5" name="Large message count" type="Data">
+    <loginhibit onsuccess="true" />
+    <display x="-195" y="60" w="150" h="30" />
+    <datatype>number</datatype>
+    <initialvalue>5</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="2903f43b-c556-43da-a473-c4aa1fbfe2fa" name="Run large tests" type="SubSheet">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="-15" />
+    <inputs>
+      <input type="number" name="Message size" friendlyname="Message size" expr="[Large message size]" />
+      <input type="number" name="Message count" friendlyname="Message count" expr="[Large message count]" />
+    </inputs>
+    <onsuccess>a640a98f-ef76-4346-87d0-7be96e401d99</onsuccess>
+    <processid>eb7ab558-8e5c-41a6-9de3-344374aaa5a3</processid>
+  </stage>
+</process>

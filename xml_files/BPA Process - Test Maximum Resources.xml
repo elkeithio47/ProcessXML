@@ -1,0 +1,513 @@
+﻿<process name="Test Maximum Resources" version="1.0" bpversion="7.1.0.46621" narrative="" byrefcollection="true" preferredid="1887b710-b135-465d-a33a-21e6ac27cd36">
+  <view>
+    <camerax>192</camerax>
+    <cameray>282</cameray>
+    <zoom version="2">1.25</zoom>
+  </view>
+  <preconditions />
+  <endpoint narrative="" />
+  <stage stageid="8551d28a-39e4-4bf9-b4fd-d4617ac960cd" name="Start" type="Start">
+    <display x="15" y="-645" />
+    <onsuccess>4f3e3b29-fa5a-49bb-9e98-c239ffbaaf0e</onsuccess>
+  </stage>
+  <stage stageid="f8d018cf-6fe6-49ec-98ae-cf8bb7d98946" name="Stage1" type="ProcessInfo">
+    <display x="-150" y="-600" w="150" h="90" />
+  </stage>
+  <stage stageid="2454fd6c-4ec6-413f-8b61-c4ece16503ef" name="Start ResourcePC 1" type="Action">
+    <display x="15" y="-60" w="90" h="30" />
+    <inputs>
+      <input type="number" name="Port" narrative="The port number on which the resource PC should listen" expr="&quot;9100&quot;" />
+      <input type="flag" name="SSO" narrative="True to login using Active Directory authentication. If this is False and Username is empty, a public resource PC is started" expr="[SSO]" />
+      <input type="text" name="Username" narrative="The username to use for the resource PC. Ignored if SSO is True. If this is empty and SSO is False, this will create a public resource" expr="&quot;admin&quot;" />
+      <input type="password" name="Password" narrative="The password to use for the resource. Only used if Username is given" expr="&quot;admin&quot;" />
+    </inputs>
+    <outputs>
+      <output type="number" name="Process ID" narrative="The PID of the newly created process" stage="" />
+    </outputs>
+    <onsuccess>cf34e196-0525-412d-b33c-d3820fdd58cd</onsuccess>
+    <resource object="Resource Manager" action="Start Resource" />
+  </stage>
+  <stage stageid="ef1f682b-6d40-41e7-b89c-1220bb56ee16" name="Start ResourcePC 2" type="Action">
+    <display x="15" y="30" w="90" h="30" />
+    <inputs>
+      <input type="number" name="Port" narrative="The port number on which the resource PC should listen" expr="&quot;9101&quot;" />
+      <input type="flag" name="SSO" narrative="True to login using Active Directory authentication. If this is False and Username is empty, a public resource PC is started" expr="[SSO]" />
+      <input type="text" name="Username" narrative="The username to use for the resource PC. Ignored if SSO is True. If this is empty and SSO is False, this will create a public resource" expr="&quot;admin&quot;" />
+      <input type="password" name="Password" narrative="The password to use for the resource. Only used if Username is given" expr="&quot;admin&quot;" />
+    </inputs>
+    <outputs>
+      <output type="number" name="Process ID" narrative="The PID of the newly created process" stage="" />
+    </outputs>
+    <onsuccess>c43be115-b4ed-4dad-bd35-28b4f2c843e2</onsuccess>
+    <resource object="Resource Manager" action="Start Resource" />
+  </stage>
+  <stage stageid="8e181c7e-77ae-47a2-82b8-b3f3921c9870" name="Recover1" type="Recover">
+    <display x="810" y="165" w="90" h="30" />
+    <onsuccess>de36917b-5c9f-460e-a027-ee94df102b5a</onsuccess>
+  </stage>
+  <stage stageid="de36917b-5c9f-460e-a027-ee94df102b5a" name="Resume1" type="Resume">
+    <display x="675" y="165" w="90" h="30" />
+    <onsuccess>a0167e37-5b0b-426b-b5db-04b39d7d498e</onsuccess>
+  </stage>
+  <stage stageid="cbb14296-bb0e-40c3-aea9-9a35a09f06a8" name="Should Fail" type="Block">
+    <display x="750" y="75" w="120" h="120" />
+    <font family="Segoe UI" size="10" style="Regular" color="FF6600" />
+  </stage>
+  <stage stageid="02996d32-c815-4d3e-92c3-beb106d7892a" name="FAIL" type="Exception">
+    <display x="900" y="105" w="30" h="30" />
+    <exception type="Bug" detail="&quot;You shouldn't be able to start 4 resource PCs&quot;" />
+  </stage>
+  <stage stageid="129a2c86-f9fe-488f-ae75-1027d67e2b6d" name="Stop ResourcePC 1" type="Action">
+    <display x="15" y="300" w="90" h="30" />
+    <inputs>
+      <input type="number" name="Port" narrative="The port number whose resource should be stopped" expr="&quot;9100&quot;" />
+    </inputs>
+    <onsuccess>6a121167-1850-4c98-a35e-cb07669f9afa</onsuccess>
+    <resource object="Resource Manager" action="Stop Resource" />
+  </stage>
+  <stage stageid="6a121167-1850-4c98-a35e-cb07669f9afa" name="Stop ResourcePC 2" type="Action">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="345" w="90" h="30" />
+    <inputs>
+      <input type="number" name="Port" narrative="The port number of the resource PC to kill" expr="&quot;9101&quot;" />
+    </inputs>
+    <onsuccess>b1d5992c-9c5c-439a-9735-ac91a503072a</onsuccess>
+    <resource object="Resource Manager" action="Kill Resource" />
+  </stage>
+  <stage stageid="017a9581-9119-4424-b96d-5b0833022e72" name="Sign In" type="Action">
+    <display x="15" y="-420" w="90" h="30" />
+    <inputs>
+      <input type="text" name="Username" expr="" />
+      <input type="password" name="Password" expr="" />
+      <input type="password" name="New Password" narrative="If this is your first login it will prompt you to change the password." expr="" />
+    </inputs>
+    <onsuccess>2199cc9b-761a-4394-8683-8b7f51b57eb2</onsuccess>
+    <resource object="Blue Prism" action="Sign In" />
+  </stage>
+  <stage stageid="0d5f0f19-1c02-4f9c-9ec7-acd5026b001b" name="Add License (2)" type="Action">
+    <display x="15" y="-240" w="90" h="30" />
+    <inputs>
+      <input type="text" name="License Name" narrative="The name of your license you wish to add." expr="[License Name (2)]" />
+      <input type="text" name="File Path" narrative="The file path of your license. Eg. &quot;C:\QA\Licenses&quot;" expr="[QA Root]" />
+    </inputs>
+    <onsuccess>c6d3ffd7-46f1-443a-9418-69fc13c44a2a</onsuccess>
+    <resource object="Blue Prism - System - System" action="Add License Key" />
+  </stage>
+  <stage stageid="256def9f-ebbe-4e7c-8718-d5d64a153647" name="License Name (2)" type="Data">
+    <display x="-150" y="-480" w="120" h="30" />
+    <datatype>text</datatype>
+    <initialvalue xml:space="preserve">QA Limited License (2 of Everything) - Internal</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="b0baf6bc-fcf1-4e5c-9bed-b68c7e270634" name="End" type="End">
+    <display x="15" y="525" />
+  </stage>
+  <stage stageid="fc14c426-0ef1-4451-9eea-b9ee0a7a2318" name="Terminate" type="Action">
+    <display x="15" y="480" w="90" h="30" />
+    <onsuccess>b0baf6bc-fcf1-4e5c-9bed-b68c7e270634</onsuccess>
+    <resource object="Blue Prism" action="Exit Application" />
+  </stage>
+  <stage stageid="c6d3ffd7-46f1-443a-9418-69fc13c44a2a" name="Remove License (QA)" type="Action">
+    <display x="15" y="-195" w="90" h="30" />
+    <inputs>
+      <input type="text" name="License Owner Name" narrative="The owner name of the license you wish to delete" expr="&quot;BluePrismQA&quot;" />
+    </inputs>
+    <onsuccess>01feaffb-711e-4487-a57b-bb47ad421fa6</onsuccess>
+    <resource object="Blue Prism - System - System" action="Remove License" />
+  </stage>
+  <stage stageid="b1d5992c-9c5c-439a-9735-ac91a503072a" name="Add Licence (QA)" type="Action">
+    <display x="15" y="390" w="90" h="30" />
+    <inputs>
+      <input type="text" name="License Name" narrative="The name of your license you wish to add." expr="&quot;BluePrismQA&quot;" />
+      <input type="text" name="File Path" narrative="The file path of your license. Eg. &quot;C:\QA\Licenses&quot;" expr="[QA Root]" />
+    </inputs>
+    <onsuccess>13a52095-f13f-45bd-b102-d943d54950e8</onsuccess>
+    <resource object="Blue Prism - System - System" action="Add License Key" />
+  </stage>
+  <stage stageid="13a52095-f13f-45bd-b102-d943d54950e8" name="Remove License (2)" type="Action">
+    <display x="15" y="435" w="90" h="30" />
+    <inputs>
+      <input type="text" name="License Owner Name" narrative="The owner name of the license you wish to delete" expr="[License Name (2)]" />
+    </inputs>
+    <onsuccess>fc14c426-0ef1-4451-9eea-b9ee0a7a2318</onsuccess>
+    <resource object="Blue Prism - System - System" action="Remove License" />
+  </stage>
+  <stage stageid="b6f527c1-f6a5-4033-b92e-954da5dd84f9" name="Create Process 1" type="Action">
+    <display x="120" y="75" w="90" h="30" />
+    <inputs>
+      <input type="text" name="Process Name" expr="[Process Name]" />
+      <input type="text" name="Process Description" expr="" />
+      <input type="flag" name="Open On Creation?" narrative="Do you want the process to open on create? This will default to yes." expr="False" />
+      <input type="text" name="Group To Select" narrative="Group the process will be contained within" expr="" />
+    </inputs>
+    <onsuccess>0cd2cd11-940a-4fad-bf80-95d751870c24</onsuccess>
+    <resource object="Blue Prism - Studio - Process / Object" action="Create Process" />
+  </stage>
+  <stage stageid="a239aa9e-588a-4170-b510-2c277d87ac04" name="Publish Process 1" type="Action">
+    <display x="240" y="15" w="90" h="30" />
+    <inputs>
+      <input type="text" name="Name" narrative="The name of the process to publish" expr="[Process Name]" />
+    </inputs>
+    <onsuccess>aac0a05c-2d54-4d4e-aac4-fac2c3080c63</onsuccess>
+    <resource object="Blue Prism - Studio - Process / Object" action="Publish Process" />
+  </stage>
+  <stage stageid="27bdc6b1-3695-495f-8bd9-753baac71d2c" name="Process Name" type="Data">
+    <display x="-150" y="-300" w="120" h="30" />
+    <datatype>text</datatype>
+    <initialvalue xml:space="preserve">Process TFM-29</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="0cd2cd11-940a-4fad-bf80-95d751870c24" name="Anchor3" type="Anchor">
+    <display x="180" y="75" w="10" h="10" />
+    <onsuccess>12c3b11b-df2a-408c-be83-dfe0c37e0eaa</onsuccess>
+  </stage>
+  <stage stageid="12c3b11b-df2a-408c-be83-dfe0c37e0eaa" name="Anchor4" type="Anchor">
+    <display x="180" y="15" w="10" h="10" />
+    <onsuccess>a239aa9e-588a-4170-b510-2c277d87ac04</onsuccess>
+  </stage>
+  <stage stageid="aa687b16-1059-4b66-88ee-c12655c6d393" name="Anchor5" type="Anchor">
+    <display x="510" y="105" w="10" h="10" />
+    <onsuccess>d8942070-99a5-4167-a604-4c385f30d15a</onsuccess>
+  </stage>
+  <stage stageid="d8942070-99a5-4167-a604-4c385f30d15a" name="Anchor6" type="Anchor">
+    <display x="510" y="15" w="10" h="10" />
+    <onsuccess>6c066c18-cfcf-47b9-b84e-e63df2c2fdf6</onsuccess>
+  </stage>
+  <stage stageid="aac0a05c-2d54-4d4e-aac4-fac2c3080c63" name="Terminate" type="Action">
+    <display x="240" y="60" w="90" h="30" />
+    <onsuccess>605cb903-d9f6-49c8-9305-3e135d52a15b</onsuccess>
+    <resource object="Blue Prism" action="Exit Application" />
+  </stage>
+  <stage stageid="6c066c18-cfcf-47b9-b84e-e63df2c2fdf6" name="Sign In" type="Action">
+    <display x="570" y="15" w="90" h="30" />
+    <inputs>
+      <input type="text" name="Username" expr="" />
+      <input type="password" name="Password" expr="" />
+      <input type="password" name="New Password" narrative="If this is your first login it will prompt you to change the password." expr="" />
+    </inputs>
+    <onsuccess>f1b0fddc-cd96-4122-911d-3c4ea392bdf5</onsuccess>
+    <resource object="Blue Prism" action="Sign In" />
+  </stage>
+  <stage stageid="de1def29-5911-4b62-b917-0fe702ab2d3f" name="Port Number (1)" type="Data">
+    <display x="-150" y="-420" w="120" h="30" />
+    <datatype>number</datatype>
+    <initialvalue>9100</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="01feaffb-711e-4487-a57b-bb47ad421fa6" name="Make ResourceID (1)" type="Calculation">
+    <display x="15" y="-150" w="90" h="30" />
+    <onsuccess>cd2616d6-9365-4885-94e0-b5f4c8b05fe9</onsuccess>
+    <calculation expression="Replace(GetResourceName(),&quot;_debug&quot;,&quot;&quot;)&amp;&quot;:&quot;&amp;[Port Number (1)]" stage="ResourceID (1)" />
+  </stage>
+  <stage stageid="edf1812a-22bb-4c3f-8287-523ef4726c09" name="ResourceID (1)" type="Data">
+    <display x="-150" y="-360" w="120" h="30" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="aed675ce-35cd-4d6c-8430-2bbd01e4d9bf" name="Port Number (2)" type="Data">
+    <display x="-150" y="-390" w="120" h="30" />
+    <datatype>number</datatype>
+    <initialvalue>9101</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="cd2616d6-9365-4885-94e0-b5f4c8b05fe9" name="Make ResourceID (2)" type="Calculation">
+    <display x="15" y="-105" w="90" h="30" />
+    <onsuccess>2454fd6c-4ec6-413f-8b61-c4ece16503ef</onsuccess>
+    <calculation expression="Replace(GetResourceName(), &quot;_debug&quot;, &quot;&quot;)&amp;&quot;:&quot;&amp;[Port Number (2)]" stage="ResourceID (2)" />
+  </stage>
+  <stage stageid="2aebd9fe-4b9a-41c4-b325-ecabec8856b4" name="ResourceID (2)" type="Data">
+    <display x="-150" y="-330" w="120" h="30" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="e7452549-eed5-430f-9ab7-6c150f3136f9" name="Get Current Entitlement " type="Action">
+    <display x="15" y="165" w="90" h="30" />
+    <outputs>
+      <output type="text" name="Maximum Published Processes" narrative="This is the maximum number of processes that can be published using the current license(s). Please note, if unlimited this output will be a string with a value of &quot;Unlimited&quot;." stage="" />
+      <output type="text" name="Maximum Concurrent Sessions" narrative="This is the maximum number of concurrent sessions that can be loaded using the current license(s). Please note, if unlimited this output will be a string with a value of &quot;Unlimited&quot;." stage="" />
+      <output type="text" name="Maximum Runtime Resource" narrative="This is the maximum number of resources that can be in the database when using the current license(s). Please note, if unlimited this output will be a string with a value of &quot;Unlimited&quot;." stage="Maximum Resources" />
+      <output type="text" name="Maximum Process Alerts" narrative="This is the maximum number of process alert machines that can be loaded using the current license(s). Please note, if unlimited this output will be a string with a value of &quot;Unlimited&quot;." stage="" />
+    </outputs>
+    <onsuccess>3c98e14a-6731-42f0-9110-881e381f98f5</onsuccess>
+    <resource object="Blue Prism - System - System" action="Get Current Entitlement" />
+  </stage>
+  <stage stageid="44b39650-4ea7-4175-a065-8b97f31fc35e" name="Maximum Resources" type="Data">
+    <display x="-150" y="-270" w="120" h="30" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="3c98e14a-6731-42f0-9110-881e381f98f5" name="Find Maximum Resources" type="Calculation">
+    <display x="15" y="210" w="90" h="30" />
+    <onsuccess>8b4088c2-6341-4929-95b9-9b11acdf23a0</onsuccess>
+    <calculation expression="Right([Maximum Resources], 1)" stage="Maximum Resources" />
+  </stage>
+  <stage stageid="8b4088c2-6341-4929-95b9-9b11acdf23a0" name="Entitlement Correct?" type="Decision">
+    <display x="15" y="255" w="90" h="30" />
+    <decision expression="[Maximum Resources]=[True Maximum Resources]" />
+    <ontrue>129a2c86-f9fe-488f-ae75-1027d67e2b6d</ontrue>
+    <onfalse>906256c2-be1e-4ef9-b141-763da8bb32a8</onfalse>
+  </stage>
+  <stage stageid="a73c9050-61cd-4f6a-900b-4da2080e5b09" name="True Maximum Resources" type="Data">
+    <display x="-150" y="-240" w="120" h="30" />
+    <datatype>text</datatype>
+    <initialvalue xml:space="preserve">2</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="906256c2-be1e-4ef9-b141-763da8bb32a8" name="FAIL" type="Exception">
+    <display x="90" y="255" w="30" h="30" />
+    <exception type="Bug" detail="&quot;Your entitlement is wrong&quot;" />
+  </stage>
+  <stage stageid="13cd4e23-d645-43a4-9697-cb5eb50ffb51" name="QA Root" type="Data">
+    <display x="-150" y="-510" w="120" h="30" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <exposure>Environment</exposure>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="cf34e196-0525-412d-b33c-d3820fdd58cd" name="Pause" type="Action">
+    <display x="15" y="-15" w="90" h="30" />
+    <inputs>
+      <input type="number" name="Duration (Seconds)" expr="2" />
+    </inputs>
+    <onsuccess>ef1f682b-6d40-41e7-b89c-1220bb56ee16</onsuccess>
+    <resource object="Blue Prism - Basic Actions" action="Pause" />
+  </stage>
+  <stage stageid="c43be115-b4ed-4dad-bd35-28b4f2c843e2" name="Pause" type="Action">
+    <display x="15" y="75" w="90" h="30" />
+    <inputs>
+      <input type="number" name="Duration (Seconds)" expr="2" />
+    </inputs>
+    <onsuccess>368affe8-75af-47d4-b182-3fa2b676af2e</onsuccess>
+    <resource object="Blue Prism - Basic Actions" action="Pause" />
+  </stage>
+  <stage stageid="b450baf7-dd4f-4d2e-b215-ea394f92735e" name="Create Session" type="Action">
+    <display x="570" y="105" w="90" h="30" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="Process Name" narrative="The name of the process of interest - if it is not found, the 'Ungrouped Processes' group will be opened and checked" expr="[Process Name]" />
+      <input type="text" name="Resource Name" narrative="The name of the Resource PC on which to create the session" expr="[ResourceID (1)]" />
+      <input type="text" name="Group to Expand" narrative="Default value is 'Default'." expr="" />
+      <input type="flag" name="Negative Test" narrative="Check for negative testing " expr="" />
+      <input type="text" name="Resource Group to Expand" narrative="Default value is 'Default'" expr="" />
+    </inputs>
+    <outputs>
+      <output type="number" name="Position of Pending Session" narrative="The 1-based index of the newly created session in the Environment list in Control Room" stage="" />
+      <output type="text" name="Error Message (expected)" narrative="Error message returned (negative testing)" stage="" />
+    </outputs>
+    <onsuccess>4d48bea7-bf86-41b1-8e6e-46cc4e5ed42e</onsuccess>
+    <resource object="Blue Prism - Control - Session Management" action="Create Session" />
+  </stage>
+  <stage stageid="f1b0fddc-cd96-4122-911d-3c4ea392bdf5" name="Open Control Tab" type="Action">
+    <display x="570" y="60" w="90" h="30" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="Tab Name" narrative="Name of Tab to Click" expr="&quot;Control&quot;" />
+    </inputs>
+    <onsuccess>b450baf7-dd4f-4d2e-b215-ea394f92735e</onsuccess>
+    <resource object="Blue Prism - Basic Actions" action="Go to Tab" />
+  </stage>
+  <stage stageid="419a3e4b-5c5b-4df7-b50a-b0018ff65e3c" name="Create Session" type="Action">
+    <display x="810" y="105" w="90" h="30" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="Process Name" narrative="The name of the process of interest - if it is not found, the 'Ungrouped Processes' group will be opened and checked" expr="[Process Name]" />
+      <input type="text" name="Resource Name" narrative="The name of the Resource PC on which to create the session" expr="[ResourceID (2)]" />
+      <input type="text" name="Group to Expand" narrative="Default value is 'Default'." expr="" />
+      <input type="flag" name="Negative Test" narrative="Check for negative testing " expr="" />
+      <input type="text" name="Resource Group to Expand" narrative="Default value is 'Default'" expr="" />
+    </inputs>
+    <outputs>
+      <output type="number" name="Position of Pending Session" narrative="The 1-based index of the newly created session in the Environment list in Control Room" stage="" />
+      <output type="text" name="Error Message (expected)" narrative="Error message returned (negative testing)" stage="" />
+    </outputs>
+    <onsuccess>02996d32-c815-4d3e-92c3-beb106d7892a</onsuccess>
+    <resource object="Blue Prism - Control - Session Management" action="Create Session" />
+  </stage>
+  <stage stageid="4d48bea7-bf86-41b1-8e6e-46cc4e5ed42e" name="Open Control Tab" type="Action">
+    <display x="675" y="105" w="90" h="30" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="Tab Name" narrative="Name of Tab to Click" expr="&quot;Control&quot;" />
+    </inputs>
+    <onsuccess>419a3e4b-5c5b-4df7-b50a-b0018ff65e3c</onsuccess>
+    <resource object="Blue Prism - Basic Actions" action="Go to Tab" />
+  </stage>
+  <stage stageid="4f3e3b29-fa5a-49bb-9e98-c239ffbaaf0e" name="Launch Blue Prism" type="Action">
+    <display x="15" y="-600" w="90" h="30" />
+    <outputs>
+      <output type="number" name="pid" narrative="PID of the process" stage="pid" />
+    </outputs>
+    <onsuccess>400e788a-fb0a-4948-8272-309b00234ad3</onsuccess>
+    <resource object="Blue Prism" action="Launch and Get PID" />
+  </stage>
+  <stage stageid="400e788a-fb0a-4948-8272-309b00234ad3" name="Attach Control" type="Action">
+    <display x="15" y="-555" w="90" h="30" />
+    <inputs>
+      <input type="number" name="pid" narrative="PID to attach to" expr="[pid]" />
+    </inputs>
+    <onsuccess>a4975ec9-b3bc-40fb-9c94-ed4764fb71ae</onsuccess>
+    <resource object="Blue Prism - Control Room (Parent)" action="Attach to Pid" />
+  </stage>
+  <stage stageid="a4975ec9-b3bc-40fb-9c94-ed4764fb71ae" name="Attach Studio" type="Action">
+    <display x="15" y="-510" w="90" h="30" />
+    <inputs>
+      <input type="number" name="pid" narrative="PID to attach to" expr="[pid]" />
+    </inputs>
+    <onsuccess>51c9c8ea-5ffc-43bd-821e-458b4eb1228e</onsuccess>
+    <resource object="Blue Prism - Studio (Parent)" action="Attach to Pid" />
+  </stage>
+  <stage stageid="51c9c8ea-5ffc-43bd-821e-458b4eb1228e" name="Attach System" type="Action">
+    <display x="15" y="-465" w="90" h="30" />
+    <inputs>
+      <input type="number" name="pid" narrative="PID to attach to" expr="[pid]" />
+    </inputs>
+    <onsuccess>017a9581-9119-4424-b96d-5b0833022e72</onsuccess>
+    <resource object="Blue Prism - System (Parent)" action="Attach to Pid" />
+  </stage>
+  <stage stageid="d0bb9e1d-5901-42fc-b67f-bbbf57d9cfb6" name="pid" type="Data">
+    <display x="-150" y="-450" w="120" h="30" />
+    <datatype>number</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="605cb903-d9f6-49c8-9305-3e135d52a15b" name="Detach Control" type="Action">
+    <display x="240" y="105" w="90" h="30" />
+    <onsuccess>9666ec41-6653-4dc7-96e8-e583504a9067</onsuccess>
+    <resource object="Blue Prism - Control Room (Parent)" action="Detach" />
+  </stage>
+  <stage stageid="9666ec41-6653-4dc7-96e8-e583504a9067" name="Detach Studio" type="Action">
+    <display x="345" y="105" w="90" h="30" />
+    <onsuccess>7ef799db-3113-4d1b-937e-442b0b45f547</onsuccess>
+    <resource object="Blue Prism - Studio (Parent)" action="Detach" />
+  </stage>
+  <stage stageid="7ef799db-3113-4d1b-937e-442b0b45f547" name="Detach System" type="Action">
+    <display x="345" y="60" w="90" h="30" />
+    <onsuccess>78b02305-9c8b-4dd7-b8a9-a3f1d5271720</onsuccess>
+    <resource object="Blue Prism - System (Parent)" action="Detach" />
+  </stage>
+  <stage stageid="b3e015be-6b7f-4db2-a544-e95deac64bd5" name="Attach Control" type="Action">
+    <display x="450" y="15" w="90" h="30" />
+    <inputs>
+      <input type="number" name="pid" narrative="PID to attach to" expr="[pid]" />
+    </inputs>
+    <onsuccess>0f20c252-d4f5-4dcc-b216-dbdff4e1c763</onsuccess>
+    <resource object="Blue Prism - Control Room (Parent)" action="Attach to Pid" />
+  </stage>
+  <stage stageid="0f20c252-d4f5-4dcc-b216-dbdff4e1c763" name="Attach Studio" type="Action">
+    <display x="450" y="60" w="90" h="30" />
+    <inputs>
+      <input type="number" name="pid" narrative="PID to attach to" expr="[pid]" />
+    </inputs>
+    <onsuccess>ef37e2ca-2ece-4457-82b5-665c953cb01f</onsuccess>
+    <resource object="Blue Prism - Studio (Parent)" action="Attach to Pid" />
+  </stage>
+  <stage stageid="ef37e2ca-2ece-4457-82b5-665c953cb01f" name="Attach System" type="Action">
+    <display x="450" y="105" w="90" h="30" />
+    <inputs>
+      <input type="number" name="pid" narrative="PID to attach to" expr="[pid]" />
+    </inputs>
+    <onsuccess>aa687b16-1059-4b66-88ee-c12655c6d393</onsuccess>
+    <resource object="Blue Prism - System (Parent)" action="Attach to Pid" />
+  </stage>
+  <stage stageid="78b02305-9c8b-4dd7-b8a9-a3f1d5271720" name="Launch Blue Prism" type="Action">
+    <display x="345" y="15" w="90" h="30" />
+    <outputs>
+      <output type="number" name="pid" narrative="PID of the process" stage="pid" />
+    </outputs>
+    <onsuccess>b3e015be-6b7f-4db2-a544-e95deac64bd5</onsuccess>
+    <resource object="Blue Prism" action="Launch and Get PID" />
+  </stage>
+  <stage stageid="2199cc9b-761a-4394-8683-8b7f51b57eb2" name="Go To Home" type="Action">
+    <display x="15" y="-375" w="90" h="30" />
+    <inputs>
+      <input type="text" name="Tab Name" narrative="Name of Tab to Click" expr="&quot;Home&quot;" />
+    </inputs>
+    <onsuccess>9362d2ca-f6b0-46b7-8f2d-a1fa7908ae03</onsuccess>
+    <resource object="Blue Prism - Basic Actions" action="Go to Tab" />
+  </stage>
+  <stage stageid="9362d2ca-f6b0-46b7-8f2d-a1fa7908ae03" name="Go to System" type="Action">
+    <display x="15" y="-330" w="90" h="30" />
+    <inputs>
+      <input type="text" name="Tab Name" narrative="Name of Tab to Click" expr="&quot;System&quot;" />
+    </inputs>
+    <onsuccess>0bad56fa-b30d-4ae9-bd9b-d8deb48e1719</onsuccess>
+    <resource object="Blue Prism - Basic Actions" action="Go to Tab" />
+  </stage>
+  <stage stageid="0bad56fa-b30d-4ae9-bd9b-d8deb48e1719" name="Go to License" type="Action">
+    <display x="15" y="-285" w="90" h="30" />
+    <inputs>
+      <input type="text" name="Tree Name" narrative="Name of the tree to be extended." expr="&quot;System&quot;" />
+      <input type="text" name="Item Name" narrative="Name of the item to be clicked on." expr="&quot;License&quot;" />
+      <input type="flag" name="Select Item Method?" narrative="True by Default. Selects the node from system tab using Select Item approach. If the node is not available (Greyed out) an exception will be thrown. Use this method if you are certain the node is available for selection." expr="True" />
+      <input type="flag" name="Retry MouseClick?" narrative="Default to True. Retries Global Mouse Click up to 3 times." expr="False" />
+      <input type="flag" name="Clean Up?" narrative="False by Default. Set True if clean up is required at the beginning of the Action." expr="False" />
+    </inputs>
+    <onsuccess>0d5f0f19-1c02-4f9c-9ec7-acd5026b001b</onsuccess>
+    <resource object="Blue Prism - System - Basic Actions" action="Click Item From System Tree" />
+  </stage>
+  <stage stageid="368affe8-75af-47d4-b182-3fa2b676af2e" name="Go To Home" type="Action">
+    <loginhibit />
+    <display x="15" y="120" w="90" h="30" />
+    <inputs>
+      <input type="text" name="Tab Name" narrative="Name of Tab to Click" expr="&quot;Home&quot;" />
+    </inputs>
+    <onsuccess>e4e94adb-9f14-4c62-ae62-4e8a1096e6a8</onsuccess>
+    <resource object="Blue Prism - Basic Actions" action="Go to Tab" />
+  </stage>
+  <stage stageid="e4e94adb-9f14-4c62-ae62-4e8a1096e6a8" name="Go To Studio" type="Action">
+    <loginhibit />
+    <display x="120" y="120" w="90" h="30" />
+    <inputs>
+      <input type="text" name="Tab Name" narrative="Name of Tab to Click" expr="&quot;Studio&quot;" />
+    </inputs>
+    <onsuccess>b6f527c1-f6a5-4033-b92e-954da5dd84f9</onsuccess>
+    <resource object="Blue Prism - Basic Actions" action="Go to Tab" />
+  </stage>
+  <stage stageid="1130e525-493a-467c-a8bb-7e8c896df7d3" name="Variables" type="Block">
+    <loginhibit onsuccess="true" />
+    <display x="-225" y="-540" w="150" h="330" />
+    <font family="Segoe UI" size="10" style="Regular" color="7FB2E5" />
+  </stage>
+  <stage stageid="a0167e37-5b0b-426b-b5db-04b39d7d498e" name="Go to System" type="Action">
+    <display x="225" y="165" w="90" h="30" />
+    <inputs>
+      <input type="text" name="Tab Name" narrative="Name of Tab to Click" expr="&quot;System&quot;" />
+    </inputs>
+    <onsuccess>39b6c8b8-55e4-4561-b1fd-ee4f8038627e</onsuccess>
+    <resource object="Blue Prism - Basic Actions" action="Go to Tab" />
+  </stage>
+  <stage stageid="39b6c8b8-55e4-4561-b1fd-ee4f8038627e" name="Go to License" type="Action">
+    <display x="120" y="165" w="90" h="30" />
+    <inputs>
+      <input type="text" name="Tree Name" narrative="Name of the tree to be extended." expr="&quot;System&quot;" />
+      <input type="text" name="Item Name" narrative="Name of the item to be clicked on." expr="&quot;License&quot;" />
+      <input type="flag" name="Select Item Method?" narrative="True by Default. Selects the node from system tab using Select Item approach. If the node is not available (Greyed out) an exception will be thrown. Use this method if you are certain the node is available for selection." expr="True" />
+      <input type="flag" name="Retry MouseClick?" narrative="Default to True. Retries Global Mouse Click up to 3 times." expr="False" />
+      <input type="flag" name="Clean Up?" narrative="False by Default. Set True if clean up is required at the beginning of the Action." expr="False" />
+    </inputs>
+    <onsuccess>e7452549-eed5-430f-9ab7-6c150f3136f9</onsuccess>
+    <resource object="Blue Prism - System - Basic Actions" action="Click Item From System Tree" />
+  </stage>
+  <stage stageid="b65c002f-b932-4d85-b6df-1a1f6b1d48a2" name="SSO" type="Data">
+    <loginhibit onsuccess="true" />
+    <display x="-150" y="-180" w="120" h="30" />
+    <datatype>flag</datatype>
+    <initialvalue />
+    <exposure>Environment</exposure>
+    <private />
+    <alwaysinit />
+  </stage>
+</process>

@@ -1,0 +1,606 @@
+﻿<process name="IE - Checkbox Process (Mixed)" version="1.0" bpversion="7.3.0.8765" narrative="" byrefcollection="true" processrunningmessage="" disableversioning="false" preferredid="8c9b9fef-6329-43d8-80de-8a0596379e06">
+  <view>
+    <camerax>95</camerax>
+    <cameray>163</cameray>
+    <zoom version="2">1.25</zoom>
+  </view>
+  <preconditions />
+  <endpoint narrative="" />
+  <subsheet subsheetid="3f3b33b5-0733-4d12-80c1-1c56ee969f94" type="Normal" published="False">
+    <name>HTML Checkbox</name>
+    <view>
+      <camerax>41</camerax>
+      <cameray>777</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <stage stageid="ba5e66f3-c2ba-41aa-80ec-10a1024e8017" name="Stage1" type="ProcessInfo">
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="0ad0031d-b67f-4f0f-b349-c4d1a161f858" name="HTML Checkbox" type="SubSheet">
+    <display x="15" y="210" w="90" h="60" />
+    <onsuccess>1b838d12-e5ae-4b01-9e11-951117b0429f</onsuccess>
+    <processid>3f3b33b5-0733-4d12-80c1-1c56ee969f94</processid>
+  </stage>
+  <stage stageid="6c16c5de-88e8-49e0-b22c-ff1cc76bb47c" name="HTML Checkbox" type="SubSheetInfo">
+    <subsheetid>3f3b33b5-0733-4d12-80c1-1c56ee969f94</subsheetid>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="33a8362b-b400-477c-9a96-8d91fe066a25" name="Start" type="Start">
+    <subsheetid>3f3b33b5-0733-4d12-80c1-1c56ee969f94</subsheetid>
+    <display x="15" y="-105" />
+    <onsuccess>a50b0c09-888a-42c9-a100-0f8654337d92</onsuccess>
+  </stage>
+  <stage stageid="29ee05a3-ac30-4791-a3b6-09390cf81285" name="EdgeIEMode (Mixed)::HTML Check Box-Navigate-HTMLClickCentre" type="Action">
+    <subsheetid>3f3b33b5-0733-4d12-80c1-1c56ee969f94</subsheetid>
+    <display x="15" y="15" w="180" h="30" />
+    <onsuccess>f5c5855c-3ee5-4a5a-9137-26f2113b45bd</onsuccess>
+    <resource object="EdgeIEMode (Mixed)" action="HTML Check Box-Navigate-HTMLClickCentre" />
+  </stage>
+  <stage stageid="25ce4530-4545-4fd8-8b41-cec5f21a30fd" name="EdgeIEMode (Mixed)::HTML Check Box-Navigate-HTMLDoubleClickCentre" type="Action">
+    <subsheetid>3f3b33b5-0733-4d12-80c1-1c56ee969f94</subsheetid>
+    <display x="15" y="285" w="180" h="30" />
+    <onsuccess>5899d7d6-7733-47cf-9f1f-2a202c5d9878</onsuccess>
+    <resource object="EdgeIEMode (Mixed)" action="HTML Check Box-Navigate-HTMLDoubleClickCentre" />
+  </stage>
+  <stage stageid="a06d0dcc-324a-41f2-9fb6-6fc8ad60ddb8" name="ReadCurrentValue" type="Data">
+    <subsheetid>3f3b33b5-0733-4d12-80c1-1c56ee969f94</subsheetid>
+    <display x="150" y="60" />
+    <datatype>flag</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="307b230c-d514-4e47-aaac-129bd874a3f4" name="EdgeIEMode (Mixed)::HTML Check Box-Navigate-SetChecked" type="Action">
+    <subsheetid>3f3b33b5-0733-4d12-80c1-1c56ee969f94</subsheetid>
+    <display x="15" y="420" w="180" h="30" />
+    <inputs>
+      <input type="text" name="newtext" expr="False" />
+    </inputs>
+    <onsuccess>7fac0a04-f01d-4088-9832-6703802a716e</onsuccess>
+    <resource object="EdgeIEMode (Mixed)" action="HTML Check Box-Navigate-SetChecked" />
+  </stage>
+  <stage stageid="a50b0c09-888a-42c9-a100-0f8654337d92" name="EdgeIEMode (Mixed)::HTML Check Box-Navigate-Verify" type="Action">
+    <subsheetid>3f3b33b5-0733-4d12-80c1-1c56ee969f94</subsheetid>
+    <display x="15" y="-30" w="180" h="30" />
+    <inputs>
+      <input type="flag" name="highlight" expr="True" />
+    </inputs>
+    <onsuccess>29ee05a3-ac30-4791-a3b6-09390cf81285</onsuccess>
+    <resource object="EdgeIEMode (Mixed)" action="HTML Check Box-Navigate-Verify" />
+  </stage>
+  <stage stageid="ba528450-86c8-496c-a282-a6d6fc6963f0" name="EdgeIEMode (Mixed)::HTML Check Box-Read-GetElementBounds" type="Action">
+    <subsheetid>3f3b33b5-0733-4d12-80c1-1c56ee969f94</subsheetid>
+    <display x="15" y="690" w="180" h="30" />
+    <outputs>
+      <output type="collection" name="GetElementBounds" stage="GetElementBounds" />
+    </outputs>
+    <onsuccess>e84a427e-d8ac-4d93-8b12-97a101919cd7</onsuccess>
+    <resource object="EdgeIEMode (Mixed)" action="HTML Check Box-Read-GetElementBounds" />
+  </stage>
+  <stage stageid="06b6ec9e-94a4-4e71-8b95-bbbd9ad64011" name="EdgeIEMode (Mixed)::HTML Check Box-Read-GetElementScreenBounds" type="Action">
+    <subsheetid>3f3b33b5-0733-4d12-80c1-1c56ee969f94</subsheetid>
+    <display x="15" y="780" w="180" h="30" />
+    <outputs>
+      <output type="collection" name="GetElementScreenBounds" stage="GetElementScreenBounds" />
+    </outputs>
+    <onsuccess>a7d624fa-1462-4903-b747-974c530cc67c</onsuccess>
+    <resource object="EdgeIEMode (Mixed)" action="HTML Check Box-Read-GetElementScreenBounds" />
+  </stage>
+  <stage stageid="62609fb2-279f-4d42-a1ed-7c590b7aa98d" name="EdgeIEMode (Mixed)::HTML Check Box-Read-GetHTMLIdentifier" type="Action">
+    <subsheetid>3f3b33b5-0733-4d12-80c1-1c56ee969f94</subsheetid>
+    <display x="15" y="870" w="180" h="30" />
+    <inputs>
+      <input type="text" name="idname" expr="&quot;Tag Name&quot;" />
+    </inputs>
+    <outputs>
+      <output type="text" name="GetHTMLIdentifier" stage="GetHTMLIdentifier" />
+    </outputs>
+    <onsuccess>31b03fb8-4708-46b4-9efd-8a4e0b1c4593</onsuccess>
+    <resource object="EdgeIEMode (Mixed)" action="HTML Check Box-Read-GetHTMLIdentifier" />
+  </stage>
+  <stage stageid="399af2be-828d-4590-a055-723a1caa7328" name="GetElementBounds" type="Collection">
+    <subsheetid>3f3b33b5-0733-4d12-80c1-1c56ee969f94</subsheetid>
+    <display x="150" y="690" />
+    <datatype>collection</datatype>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="4428b50f-1d5d-4855-b76d-b65d734d0e07" name="EdgeIEMode (Mixed)::HTML Check Box-Read-HTMLGetOuterHTML" type="Action">
+    <subsheetid>3f3b33b5-0733-4d12-80c1-1c56ee969f94</subsheetid>
+    <display x="15" y="960" w="180" h="30" />
+    <outputs>
+      <output type="text" name="HTMLGetOuterHTML" stage="HTMLGetOuterHTML" />
+    </outputs>
+    <onsuccess>99e55aa6-dada-4da5-83fe-a2c9439341cb</onsuccess>
+    <resource object="EdgeIEMode (Mixed)" action="HTML Check Box-Read-HTMLGetOuterHTML" />
+  </stage>
+  <stage stageid="f14797ec-0f8b-4467-b8e0-7fb922878fb2" name="GetElementScreenBounds" type="Collection">
+    <subsheetid>3f3b33b5-0733-4d12-80c1-1c56ee969f94</subsheetid>
+    <display x="150" y="780" />
+    <datatype>collection</datatype>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="406cc7b0-2668-4427-9694-14a8d44921a8" name="EdgeIEMode (Mixed)::HTML Check Box-Read-HTMLGetPath" type="Action">
+    <subsheetid>3f3b33b5-0733-4d12-80c1-1c56ee969f94</subsheetid>
+    <display x="15" y="1050" w="180" h="30" />
+    <outputs>
+      <output type="text" name="HTMLGetPath" stage="HTMLGetPath" />
+    </outputs>
+    <onsuccess>5cf95e0b-e371-4518-9b3d-0ff006137678</onsuccess>
+    <resource object="EdgeIEMode (Mixed)" action="HTML Check Box-Read-HTMLGetPath" />
+  </stage>
+  <stage stageid="9a50dc05-0f05-4c7b-b314-bfef030123fd" name="GetHTMLIdentifier" type="Data">
+    <subsheetid>3f3b33b5-0733-4d12-80c1-1c56ee969f94</subsheetid>
+    <display x="150" y="870" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="59d84557-a400-40c6-95f2-503220718473" name="HTMLGetOuterHTML" type="Data">
+    <subsheetid>3f3b33b5-0733-4d12-80c1-1c56ee969f94</subsheetid>
+    <display x="150" y="960" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="5cf574c2-578c-43ff-ad9a-c38dd98f0ba4" name="HTMLGetPath" type="Data">
+    <subsheetid>3f3b33b5-0733-4d12-80c1-1c56ee969f94</subsheetid>
+    <display x="150" y="1050" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="ac01c039-de89-4f42-8267-67ded25b2dca" name="EdgeIEMode (Mixed)::HTML Check Box-Wait-CheckExists" type="Action">
+    <subsheetid>3f3b33b5-0733-4d12-80c1-1c56ee969f94</subsheetid>
+    <display x="15" y="1155" w="180" h="30" />
+    <inputs>
+      <input type="number" name="Timeout" expr="1" />
+      <input type="flag" name="FlagValue" expr="" />
+    </inputs>
+    <onsuccess>2ae30fa0-0bf4-4d2f-8bfe-70d3ad0e9a1f</onsuccess>
+    <resource object="EdgeIEMode (Mixed)" action="HTML Check Box-Wait-CheckExists" />
+  </stage>
+  <stage stageid="2ae30fa0-0bf4-4d2f-8bfe-70d3ad0e9a1f" name="EdgeIEMode (Mixed)::HTML Check Box-Wait-CheckHTMLIdentifier" type="Action">
+    <subsheetid>3f3b33b5-0733-4d12-80c1-1c56ee969f94</subsheetid>
+    <display x="15" y="1200" w="180" h="30" />
+    <inputs>
+      <input type="number" name="Timeout" expr="1" />
+      <input type="text" name="TextValue" expr="&quot;INPUT&quot;" />
+      <input type="text" name="idname" expr="&quot;Tag Name&quot;" />
+    </inputs>
+    <onsuccess>6adb23f7-5174-4698-acec-266708b3025c</onsuccess>
+    <resource object="EdgeIEMode (Mixed)" action="HTML Check Box-Wait-CheckHTMLIdentifier" />
+  </stage>
+  <stage stageid="ec5e707c-139e-4748-a9f6-7f16aa912285" name="End1" type="End">
+    <subsheetid>3f3b33b5-0733-4d12-80c1-1c56ee969f94</subsheetid>
+    <display x="15" y="1590" />
+  </stage>
+  <stage stageid="6adb23f7-5174-4698-acec-266708b3025c" name="EdgeIEMode (Mixed)::HTML Check Box-Wait-HTMLCheckExistsAndDocumentLoaded" type="Action">
+    <subsheetid>3f3b33b5-0733-4d12-80c1-1c56ee969f94</subsheetid>
+    <display x="15" y="1245" w="180" h="30" />
+    <inputs>
+      <input type="number" name="Timeout" expr="1" />
+      <input type="flag" name="FlagValue" expr="" />
+    </inputs>
+    <onsuccess>fdfe97f3-0596-407b-9948-1f6bb340f5c6</onsuccess>
+    <resource object="EdgeIEMode (Mixed)" action="HTML Check Box-Wait-HTMLCheckExistsAndDocumentLoaded" />
+  </stage>
+  <stage stageid="fdfe97f3-0596-407b-9948-1f6bb340f5c6" name="EdgeIEMode (Mixed)::HTML Check Box-Write-WriteFlag" type="Action">
+    <subsheetid>3f3b33b5-0733-4d12-80c1-1c56ee969f94</subsheetid>
+    <display x="15" y="1290" w="180" h="30" />
+    <inputs>
+      <input type="flag" name="FlagValue" expr="False" />
+    </inputs>
+    <onsuccess>98a12d12-861c-4929-9069-d0d0149a5ab1</onsuccess>
+    <resource object="EdgeIEMode (Mixed)" action="HTML Check Box-Write-WriteFlag" />
+  </stage>
+  <stage stageid="36b10468-2d01-49df-830a-12fab0cada80" name="Start" type="Start">
+    <display x="120" y="-105" />
+    <inputs>
+      <input type="flag" name="IE" stage="IE" />
+    </inputs>
+    <onsuccess>f91a4513-cce2-44ea-8334-e533d38c850b</onsuccess>
+  </stage>
+  <stage stageid="e7dcf587-ad50-4237-ac63-49b643c3ce5b" name="End" type="End">
+    <display x="15" y="345" />
+  </stage>
+  <stage stageid="eb2d1018-bdb5-4e5d-9dc2-7f88e6492968" name="EdgeIEMode (Mixed)::Application-Navigate-AttachApplication" type="Action">
+    <display x="15" y="135" w="180" h="30" />
+    <inputs>
+      <input type="collection" name="WindowTitlesCollection" expr="" />
+      <input type="text" name="WindowTitle" expr="[Window Title]" />
+      <input type="text" name="ProcessName" expr="&quot;iexplore&quot;" />
+      <input type="number" name="ProcessID" expr="" />
+      <input type="text" name="Username" expr="" />
+      <input type="number" name="ChildIndex" expr="0" />
+    </inputs>
+    <onsuccess>0ad0031d-b67f-4f0f-b349-c4d1a161f858</onsuccess>
+    <resource object="EdgeIEMode (Mixed)" action="Application-Navigate-AttachApplication" />
+  </stage>
+  <stage stageid="f19ce6d4-7e15-4ae9-8c45-e0bf564bb849" name="Launch IE " type="Action">
+    <display x="15" y="0" w="180" h="30" />
+    <inputs>
+      <input type="text" name="Arguments" narrative="Any arguments needed for the app" expr="[Application URL]" />
+      <input type="text" name="Application" narrative="The application or short cut to start" expr="&quot;C:\Program Files\Internet Explorer\iexplore.exe&quot;" />
+    </inputs>
+    <onsuccess>b7f6eb6e-c426-4ebf-bfc5-dbf354b50ee7</onsuccess>
+    <resource object="Utility - Environment" action="Start Process" />
+  </stage>
+  <stage stageid="f91a4513-cce2-44ea-8334-e533d38c850b" name="IE?" type="Decision">
+    <display x="120" y="-45" />
+    <decision expression="[IE]=True" />
+    <ontrue>7408777b-da17-444c-baca-d060a63baff9</ontrue>
+    <onfalse>79e8b2eb-020d-4dd1-b54f-da9c2bad740b</onfalse>
+  </stage>
+  <stage stageid="00d2fe0e-604e-45eb-bee8-4b160a53f8f1" name="Launch Edge" type="Action">
+    <display x="225" y="0" w="180" h="30" />
+    <inputs>
+      <input type="text" name="Arguments" narrative="Any arguments needed for the app" expr="[Application URL]" />
+      <input type="text" name="Application" narrative="The application or short cut to start" expr="&quot;C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe&quot;" />
+    </inputs>
+    <onsuccess>4892e24d-bb92-4ff5-b8ec-21b56bb73244</onsuccess>
+    <resource object="Utility - Environment" action="Start Process" />
+  </stage>
+  <stage stageid="eb2c5467-e4b7-422a-ac0f-3216d9af6c67" name="EdgeIEMode (Mixed)::Application-Navigate-AttachApplication" type="Action">
+    <display x="225" y="135" w="180" h="30" />
+    <inputs>
+      <input type="collection" name="WindowTitlesCollection" expr="" />
+      <input type="text" name="WindowTitle" expr="[Window Title]" />
+      <input type="text" name="ProcessName" expr="&quot;msedge&quot;" />
+      <input type="number" name="ProcessID" expr="" />
+      <input type="text" name="Username" expr="" />
+      <input type="number" name="ChildIndex" expr="0" />
+    </inputs>
+    <onsuccess>0ad0031d-b67f-4f0f-b349-c4d1a161f858</onsuccess>
+    <resource object="EdgeIEMode (Mixed)" action="Application-Navigate-AttachApplication" />
+  </stage>
+  <stage stageid="79e8b2eb-020d-4dd1-b54f-da9c2bad740b" name="Window Title" type="Calculation">
+    <display x="225" y="-45" />
+    <onsuccess>00d2fe0e-604e-45eb-bee8-4b160a53f8f1</onsuccess>
+    <calculation expression="[Window Title]&amp;&quot;*Edge&quot;" stage="Window Title" />
+  </stage>
+  <stage stageid="7408777b-da17-444c-baca-d060a63baff9" name="Window Title" type="Calculation">
+    <display x="15" y="-45" />
+    <onsuccess>f19ce6d4-7e15-4ae9-8c45-e0bf564bb849</onsuccess>
+    <calculation expression="[Window Title]&amp;&quot; - Internet Explorer&quot;" stage="Window Title" />
+  </stage>
+  <stage stageid="b7f6eb6e-c426-4ebf-bfc5-dbf354b50ee7" name="IE or Edge Win32::Attach" type="Action">
+    <display x="15" y="45" w="180" h="30" />
+    <font family="Segoe UI" size="10" style="Regular" color="0000FF" />
+    <inputs>
+      <input type="flag" name="IE" expr="True" />
+      <input type="text" name="Window Title" expr="[Window Title]" />
+    </inputs>
+    <onsuccess>efafc0d1-9910-4c63-bea7-6e7ba367109a</onsuccess>
+    <resource object="IE or Edge Win32" action="Attach" />
+  </stage>
+  <stage stageid="4892e24d-bb92-4ff5-b8ec-21b56bb73244" name="IE or Edge Win32::Attach" type="Action">
+    <display x="225" y="45" w="180" h="30" />
+    <font family="Segoe UI" size="10" style="Regular" color="0000FF" />
+    <inputs>
+      <input type="flag" name="IE" expr="False" />
+      <input type="text" name="Window Title" expr="[Window Title]" />
+    </inputs>
+    <onsuccess>29ae4ee5-4dc0-4236-80e8-77b5bbd3147a</onsuccess>
+    <resource object="IE or Edge Win32" action="Attach" />
+  </stage>
+  <stage stageid="efafc0d1-9910-4c63-bea7-6e7ba367109a" name="IE or Edge Win32::Resize" type="Action">
+    <display x="15" y="90" w="180" h="30" />
+    <font family="Segoe UI" size="10" style="Regular" color="0000FF" />
+    <inputs>
+      <input type="flag" name="IE" expr="True" />
+      <input type="text" name="Window Title" expr="[Window Title]" />
+    </inputs>
+    <onsuccess>eb2d1018-bdb5-4e5d-9dc2-7f88e6492968</onsuccess>
+    <resource object="IE or Edge Win32" action="Resize" />
+  </stage>
+  <stage stageid="29ae4ee5-4dc0-4236-80e8-77b5bbd3147a" name="IE or Edge Win32::Resize" type="Action">
+    <display x="225" y="90" w="180" h="30" />
+    <font family="Segoe UI" size="10" style="Regular" color="0000FF" />
+    <inputs>
+      <input type="flag" name="IE" expr="False" />
+      <input type="text" name="Window Title" expr="[Window Title]" />
+    </inputs>
+    <onsuccess>eb2c5467-e4b7-422a-ac0f-3216d9af6c67</onsuccess>
+    <resource object="IE or Edge Win32" action="Resize" />
+  </stage>
+  <stage stageid="f290be6d-4659-4005-8911-00c512f8c6c3" name="Application URL" type="Data">
+    <narrative>1) https://jkorpela.fi/www/testel.html
+2a) https://qa-webpages.azurewebsites.net/BPQATestSite/QAhome.html
+2b) http://localhost:1234/QAhome.html
+</narrative>
+    <display x="-195" y="-30" w="150" h="30" />
+    <datatype>text</datatype>
+    <initialvalue xml:space="preserve">https://qa-webpages.azurewebsites.net/BPQATestSiteForIEMode/QAhome.html</initialvalue>
+    <alwaysinit />
+  </stage>
+  <stage stageid="60b44133-976c-4bac-a73d-51ee1e32be7a" name="Window Title" type="Data">
+    <narrative>1) Test display of HTML elements
+2) QATestSite</narrative>
+    <display x="-195" y="30" w="150" h="30" />
+    <datatype>text</datatype>
+    <initialvalue xml:space="preserve">QATestSite</initialvalue>
+    <alwaysinit />
+  </stage>
+  <stage stageid="453e2a09-9162-40ec-8fe4-f6440043be09" name="IE" type="Data">
+    <display x="-195" y="0" w="150" h="30" />
+    <datatype>flag</datatype>
+    <initialvalue>True</initialvalue>
+    <alwaysinit />
+  </stage>
+  <stage stageid="1b838d12-e5ae-4b01-9e11-951117b0429f" name="IE or Edge Win32::Close" type="Action">
+    <display x="15" y="285" w="180" h="30" />
+    <font family="Segoe UI" size="10" style="Regular" color="0000FF" />
+    <inputs>
+      <input type="flag" name="IE" expr="[IE]" />
+    </inputs>
+    <onsuccess>e7dcf587-ad50-4237-ac63-49b643c3ce5b</onsuccess>
+    <resource object="IE or Edge Win32" action="Close" />
+  </stage>
+  <stage stageid="6aec73b0-6a7f-4733-b34c-e4e0d76fca4e" name="Block1" type="Block">
+    <display x="-75" y="165" w="390" h="90" />
+    <font family="Segoe UI" size="10" style="Regular" color="7FB2E5" />
+  </stage>
+  <stage stageid="fe7e7ca7-8920-4a04-8b99-cee24f1ec17e" name="IE or Edge Win32::Close" type="Action">
+    <display x="225" y="285" w="180" h="30" />
+    <font family="Segoe UI" size="10" style="Regular" color="0000FF" />
+    <inputs>
+      <input type="flag" name="IE" expr="[IE]" />
+    </inputs>
+    <onsuccess>39ef9f2c-64cd-4350-a0c0-88b725b609be</onsuccess>
+    <resource object="IE or Edge Win32" action="Close" />
+  </stage>
+  <stage stageid="39ef9f2c-64cd-4350-a0c0-88b725b609be" name="Exception1" type="Exception">
+    <display x="225" y="345" />
+    <exception localized="yes" type="" detail="" usecurrent="yes" />
+  </stage>
+  <stage stageid="f5c5855c-3ee5-4a5a-9137-26f2113b45bd" name="EdgeIEMode (Mixed)::HTML Check Box-Read-ReadCurrentValue" type="Action">
+    <subsheetid>3f3b33b5-0733-4d12-80c1-1c56ee969f94</subsheetid>
+    <display x="15" y="60" w="180" h="30" />
+    <outputs>
+      <output type="text" name="ReadCurrentValue" stage="ReadCurrentValue" />
+    </outputs>
+    <onsuccess>49977b26-8852-4c55-838e-8079b7d96ef4</onsuccess>
+    <resource object="EdgeIEMode (Mixed)" action="HTML Check Box-Read-ReadCurrentValue" />
+  </stage>
+  <stage stageid="49977b26-8852-4c55-838e-8079b7d96ef4" name="ReadCurrentValue?" type="Decision">
+    <subsheetid>3f3b33b5-0733-4d12-80c1-1c56ee969f94</subsheetid>
+    <display x="15" y="105" />
+    <decision expression="[ReadCurrentValue]" />
+    <ontrue>2e02dba3-27ab-4373-9ee9-0d52fbf374ae</ontrue>
+    <onfalse>421b3fbb-2575-491e-ab89-4f9059aedc16</onfalse>
+  </stage>
+  <stage stageid="421b3fbb-2575-491e-ab89-4f9059aedc16" name="Value Exception" type="Exception">
+    <subsheetid>3f3b33b5-0733-4d12-80c1-1c56ee969f94</subsheetid>
+    <display x="165" y="105" w="90" h="30" />
+    <exception type="System Exception" detail="&quot;The ReadCurrentValue value is not as expected&quot;" />
+  </stage>
+  <stage stageid="2e02dba3-27ab-4373-9ee9-0d52fbf374ae" name="EdgeIEMode (Mixed)::HTML Check Box-Navigate-HTMLClickCentre" type="Action">
+    <subsheetid>3f3b33b5-0733-4d12-80c1-1c56ee969f94</subsheetid>
+    <display x="15" y="150" w="180" h="30" />
+    <onsuccess>ecf2b295-2340-49ce-882d-9e8992e2c777</onsuccess>
+    <resource object="EdgeIEMode (Mixed)" action="HTML Check Box-Navigate-HTMLClickCentre" />
+  </stage>
+  <stage stageid="ecf2b295-2340-49ce-882d-9e8992e2c777" name="EdgeIEMode (Mixed)::HTML Check Box-Read-ReadCurrentValue" type="Action">
+    <subsheetid>3f3b33b5-0733-4d12-80c1-1c56ee969f94</subsheetid>
+    <display x="15" y="195" w="180" h="30" />
+    <outputs>
+      <output type="text" name="ReadCurrentValue" stage="ReadCurrentValue" />
+    </outputs>
+    <onsuccess>3d16aecc-12fc-4331-bbf5-b476b48ef094</onsuccess>
+    <resource object="EdgeIEMode (Mixed)" action="HTML Check Box-Read-ReadCurrentValue" />
+  </stage>
+  <stage stageid="3d16aecc-12fc-4331-bbf5-b476b48ef094" name="ReadCurrentValue?" type="Decision">
+    <subsheetid>3f3b33b5-0733-4d12-80c1-1c56ee969f94</subsheetid>
+    <display x="15" y="240" w="90" h="30" />
+    <decision expression="[ReadCurrentValue]=False" />
+    <ontrue>25ce4530-4545-4fd8-8b41-cec5f21a30fd</ontrue>
+    <onfalse>69c9ba80-a1a0-48f6-994e-15658be1e14f</onfalse>
+  </stage>
+  <stage stageid="69c9ba80-a1a0-48f6-994e-15658be1e14f" name="Value Exception" type="Exception">
+    <subsheetid>3f3b33b5-0733-4d12-80c1-1c56ee969f94</subsheetid>
+    <display x="165" y="240" w="90" h="30" />
+    <exception type="System Exception" detail="&quot;The ReadCurrentValue value is not as expected&quot;" />
+  </stage>
+  <stage stageid="5899d7d6-7733-47cf-9f1f-2a202c5d9878" name="EdgeIEMode (Mixed)::HTML Check Box-Read-ReadCurrentValue" type="Action">
+    <subsheetid>3f3b33b5-0733-4d12-80c1-1c56ee969f94</subsheetid>
+    <display x="15" y="330" w="180" h="30" />
+    <outputs>
+      <output type="text" name="ReadCurrentValue" stage="ReadCurrentValue" />
+    </outputs>
+    <onsuccess>6bac4e9f-3743-49cb-9cbe-4dabc364ff03</onsuccess>
+    <resource object="EdgeIEMode (Mixed)" action="HTML Check Box-Read-ReadCurrentValue" />
+  </stage>
+  <stage stageid="6bac4e9f-3743-49cb-9cbe-4dabc364ff03" name="ReadCurrentValue?" type="Decision">
+    <subsheetid>3f3b33b5-0733-4d12-80c1-1c56ee969f94</subsheetid>
+    <display x="15" y="375" w="90" h="30" />
+    <decision expression="[ReadCurrentValue]" />
+    <ontrue>307b230c-d514-4e47-aaac-129bd874a3f4</ontrue>
+    <onfalse>7e218156-9abb-478f-a292-993fa29c4fd6</onfalse>
+  </stage>
+  <stage stageid="7e218156-9abb-478f-a292-993fa29c4fd6" name="Value Exception" type="Exception">
+    <subsheetid>3f3b33b5-0733-4d12-80c1-1c56ee969f94</subsheetid>
+    <display x="165" y="375" w="90" h="30" />
+    <exception type="System Exception" detail="&quot;The ReadCurrentValue value is not as expected&quot;" />
+  </stage>
+  <stage stageid="7fac0a04-f01d-4088-9832-6703802a716e" name="EdgeIEMode (Mixed)::HTML Check Box-Read-ReadCurrentValue" type="Action">
+    <subsheetid>3f3b33b5-0733-4d12-80c1-1c56ee969f94</subsheetid>
+    <display x="15" y="465" w="180" h="30" />
+    <outputs>
+      <output type="text" name="ReadCurrentValue" stage="ReadCurrentValue" />
+    </outputs>
+    <onsuccess>4012f01d-4073-45b1-9ab3-34d0e3f65acb</onsuccess>
+    <resource object="EdgeIEMode (Mixed)" action="HTML Check Box-Read-ReadCurrentValue" />
+  </stage>
+  <stage stageid="4012f01d-4073-45b1-9ab3-34d0e3f65acb" name="[ReadCurrentValue]=False" type="Decision">
+    <subsheetid>3f3b33b5-0733-4d12-80c1-1c56ee969f94</subsheetid>
+    <display x="15" y="510" w="90" h="30" />
+    <decision expression="[ReadCurrentValue]=False" />
+    <ontrue>1db93fd5-fca0-40d1-8316-8a112c2ca42a</ontrue>
+    <onfalse>a58373ca-d9eb-48c6-af5e-21e7c1787d7d</onfalse>
+  </stage>
+  <stage stageid="a58373ca-d9eb-48c6-af5e-21e7c1787d7d" name="Value Exception" type="Exception">
+    <subsheetid>3f3b33b5-0733-4d12-80c1-1c56ee969f94</subsheetid>
+    <display x="165" y="510" w="90" h="30" />
+    <exception type="System Exception" detail="&quot;The ReadCurrentValue value is not as expected&quot;" />
+  </stage>
+  <stage stageid="5bbd8f04-edce-4d6e-8d52-1a0e2ea63330" name="EdgeIEMode (Mixed)::HTML Check Box-Read-ReadCurrentValue" type="Action">
+    <subsheetid>3f3b33b5-0733-4d12-80c1-1c56ee969f94</subsheetid>
+    <display x="15" y="600" w="180" h="30" />
+    <outputs>
+      <output type="text" name="ReadCurrentValue" stage="ReadCurrentValue" />
+    </outputs>
+    <onsuccess>5e06b4b7-4fae-43e0-90ef-87e168bed7be</onsuccess>
+    <resource object="EdgeIEMode (Mixed)" action="HTML Check Box-Read-ReadCurrentValue" />
+  </stage>
+  <stage stageid="5e06b4b7-4fae-43e0-90ef-87e168bed7be" name="ReadCurrentValue?" type="Decision">
+    <subsheetid>3f3b33b5-0733-4d12-80c1-1c56ee969f94</subsheetid>
+    <display x="15" y="645" w="90" h="30" />
+    <decision expression="[ReadCurrentValue]" />
+    <ontrue>ba528450-86c8-496c-a282-a6d6fc6963f0</ontrue>
+    <onfalse>c49823da-c5fa-4087-947d-6f6e01250fd1</onfalse>
+  </stage>
+  <stage stageid="c49823da-c5fa-4087-947d-6f6e01250fd1" name="Value Exception" type="Exception">
+    <subsheetid>3f3b33b5-0733-4d12-80c1-1c56ee969f94</subsheetid>
+    <display x="165" y="645" w="90" h="30" />
+    <exception type="System Exception" detail="&quot;The ReadCurrentValue value is not as expected&quot;" />
+  </stage>
+  <stage stageid="1db93fd5-fca0-40d1-8316-8a112c2ca42a" name="EdgeIEMode (Mixed)::HTML Check Box-Navigate-SetChecked" type="Action">
+    <subsheetid>3f3b33b5-0733-4d12-80c1-1c56ee969f94</subsheetid>
+    <display x="15" y="555" w="180" h="30" />
+    <inputs>
+      <input type="text" name="newtext" expr="True" />
+    </inputs>
+    <onsuccess>5bbd8f04-edce-4d6e-8d52-1a0e2ea63330</onsuccess>
+    <resource object="EdgeIEMode (Mixed)" action="HTML Check Box-Navigate-SetChecked" />
+  </stage>
+  <stage stageid="e84a427e-d8ac-4d93-8b12-97a101919cd7" name="GetElementBounds?" type="Decision">
+    <subsheetid>3f3b33b5-0733-4d12-80c1-1c56ee969f94</subsheetid>
+    <display x="15" y="735" w="90" h="30" />
+    <decision expression="[GetElementBounds.Left]=12&#xA;AND [GetElementBounds.Right]=25&#xA;AND [GetElementBounds.Width]=13&#xA;AND [GetElementBounds.Height]=13" />
+    <ontrue>06b6ec9e-94a4-4e71-8b95-bbbd9ad64011</ontrue>
+    <onfalse>e4328507-ec64-46d3-93be-5a1eb1b7ae28</onfalse>
+  </stage>
+  <stage stageid="e4328507-ec64-46d3-93be-5a1eb1b7ae28" name="Value Exception" type="Exception">
+    <subsheetid>3f3b33b5-0733-4d12-80c1-1c56ee969f94</subsheetid>
+    <display x="180" y="735" w="90" h="30" />
+    <exception type="System Exception" detail="&quot;The GetElementBounds value is not as expected&quot;" />
+  </stage>
+  <stage stageid="a7d624fa-1462-4903-b747-974c530cc67c" name="GetElementScreenBounds?" type="Decision">
+    <subsheetid>3f3b33b5-0733-4d12-80c1-1c56ee969f94</subsheetid>
+    <display x="15" y="825" w="90" h="30" />
+    <decision expression="[GetElementScreenBounds.Left]=32&#xA;AND [GetElementScreenBounds.Right]=45&#xA;AND [GetElementScreenBounds.Width]=13&#xA;AND [GetElementScreenBounds.Height]=13" />
+    <ontrue>62609fb2-279f-4d42-a1ed-7c590b7aa98d</ontrue>
+    <onfalse>16f36c06-1ca9-46a5-882d-38b5e093a0b3</onfalse>
+  </stage>
+  <stage stageid="16f36c06-1ca9-46a5-882d-38b5e093a0b3" name="Value Exception" type="Exception">
+    <subsheetid>3f3b33b5-0733-4d12-80c1-1c56ee969f94</subsheetid>
+    <display x="180" y="825" w="90" h="30" />
+    <exception type="System Exception" detail="&quot;The GetElementScreenBounds value is not as expected&quot;" />
+  </stage>
+  <stage stageid="31b03fb8-4708-46b4-9efd-8a4e0b1c4593" name="GetHTMLIdentifier?" type="Decision">
+    <subsheetid>3f3b33b5-0733-4d12-80c1-1c56ee969f94</subsheetid>
+    <display x="15" y="915" w="90" h="30" />
+    <decision expression="[GetHTMLIdentifier]=&quot;INPUT&quot;" />
+    <ontrue>4428b50f-1d5d-4855-b76d-b65d734d0e07</ontrue>
+    <onfalse>3bcb033c-992b-45c1-963f-50794c4e1dbd</onfalse>
+  </stage>
+  <stage stageid="3bcb033c-992b-45c1-963f-50794c4e1dbd" name="Value Exception" type="Exception">
+    <subsheetid>3f3b33b5-0733-4d12-80c1-1c56ee969f94</subsheetid>
+    <display x="180" y="915" w="90" h="30" />
+    <exception type="System Exception" detail="&quot;The button value is not as expected&quot;" />
+  </stage>
+  <stage stageid="99e55aa6-dada-4da5-83fe-a2c9439341cb" name="HTMLGetOuterHTML?" type="Decision">
+    <subsheetid>3f3b33b5-0733-4d12-80c1-1c56ee969f94</subsheetid>
+    <display x="15" y="1005" w="90" h="30" />
+    <decision expression="StartsWith([HTMLGetOuterHTML], &quot;&lt;input&quot;) AND EndsWith([HTMLGetOuterHTML], &quot;&gt;&quot;)" />
+    <ontrue>406cc7b0-2668-4427-9694-14a8d44921a8</ontrue>
+    <onfalse>c911c593-aecb-4b9c-aed3-595bb65608c1</onfalse>
+  </stage>
+  <stage stageid="c911c593-aecb-4b9c-aed3-595bb65608c1" name="Value Exception" type="Exception">
+    <subsheetid>3f3b33b5-0733-4d12-80c1-1c56ee969f94</subsheetid>
+    <display x="180" y="1005" w="90" h="30" />
+    <exception type="System Exception" detail="&quot;The GetOuterHTML value is not as expected&quot;" />
+  </stage>
+  <stage stageid="c9598195-0958-4f79-bf30-5cd7b17a9f60" name="HTMLGetPath Match Value" type="Data">
+    <subsheetid>3f3b33b5-0733-4d12-80c1-1c56ee969f94</subsheetid>
+    <display x="-150" y="1050" />
+    <datatype>text</datatype>
+    <initialvalue xml:space="preserve">/HTML/BODY(1)/IFRAME(1)/HTML/BODY(1)/P(7)/INPUT(1)</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="5cf95e0b-e371-4518-9b3d-0ff006137678" name="HTMLGetPath?" type="Decision">
+    <subsheetid>3f3b33b5-0733-4d12-80c1-1c56ee969f94</subsheetid>
+    <display x="15" y="1095" w="90" h="30" />
+    <decision expression="[HTMLGetPath]=[HTMLGetPath Match Value]" />
+    <ontrue>ac01c039-de89-4f42-8267-67ded25b2dca</ontrue>
+    <onfalse>c24fc489-53fe-486a-8284-cb98b4b7059c</onfalse>
+  </stage>
+  <stage stageid="c24fc489-53fe-486a-8284-cb98b4b7059c" name="Value Exception" type="Exception">
+    <subsheetid>3f3b33b5-0733-4d12-80c1-1c56ee969f94</subsheetid>
+    <display x="180" y="1095" w="90" h="30" />
+    <exception type="System Exception" detail="&quot;The HTMLGetPath value is not as expected&quot;" />
+  </stage>
+  <stage stageid="8b5fe1bb-2184-4a61-963b-f28383d87e52" name="ReadCurrentValue?" type="Decision">
+    <subsheetid>3f3b33b5-0733-4d12-80c1-1c56ee969f94</subsheetid>
+    <display x="15" y="1380" w="90" h="30" />
+    <decision expression="[ReadCurrentValue]=False" />
+    <ontrue>633bb3c9-d4b5-4d67-9a4e-cfd7eef1deac</ontrue>
+    <onfalse>d19057b1-f430-403e-b2c5-4467cb484fb2</onfalse>
+  </stage>
+  <stage stageid="d19057b1-f430-403e-b2c5-4467cb484fb2" name="Value Exception" type="Exception">
+    <subsheetid>3f3b33b5-0733-4d12-80c1-1c56ee969f94</subsheetid>
+    <display x="165" y="1380" w="90" h="30" />
+    <exception type="System Exception" detail="&quot;The ReadCurrentValue value is not as expected&quot;" />
+  </stage>
+  <stage stageid="633bb3c9-d4b5-4d67-9a4e-cfd7eef1deac" name="EdgeIEMode (Mixed)::HTML Check Box-Write-WriteFlag" type="Action">
+    <subsheetid>3f3b33b5-0733-4d12-80c1-1c56ee969f94</subsheetid>
+    <display x="15" y="1425" w="180" h="30" />
+    <inputs>
+      <input type="flag" name="FlagValue" expr="True" />
+    </inputs>
+    <onsuccess>02b29db5-17ee-443e-80c5-6d77ac5b7ea5</onsuccess>
+    <resource object="EdgeIEMode (Mixed)" action="HTML Check Box-Write-WriteFlag" />
+  </stage>
+  <stage stageid="7c5f3b29-3b82-40d8-a84a-908dceda0e33" name="ReadCurrentValue?" type="Decision">
+    <subsheetid>3f3b33b5-0733-4d12-80c1-1c56ee969f94</subsheetid>
+    <display x="15" y="1515" w="90" h="30" />
+    <decision expression="[ReadCurrentValue]" />
+    <ontrue>ec5e707c-139e-4748-a9f6-7f16aa912285</ontrue>
+    <onfalse>d4f6b10b-1df6-445a-be60-14f90ede7386</onfalse>
+  </stage>
+  <stage stageid="d4f6b10b-1df6-445a-be60-14f90ede7386" name="Value Exception" type="Exception">
+    <subsheetid>3f3b33b5-0733-4d12-80c1-1c56ee969f94</subsheetid>
+    <display x="165" y="1515" w="90" h="30" />
+    <exception type="System Exception" detail="&quot;The ReadCurrentValue value is not as expected&quot;" />
+  </stage>
+  <stage stageid="98a12d12-861c-4929-9069-d0d0149a5ab1" name="EdgeIEMode (Mixed)::HTML Check Box-Read-ReadCurrentValue" type="Action">
+    <subsheetid>3f3b33b5-0733-4d12-80c1-1c56ee969f94</subsheetid>
+    <display x="15" y="1335" w="180" h="30" />
+    <outputs>
+      <output type="text" name="ReadCurrentValue" stage="ReadCurrentValue" />
+    </outputs>
+    <onsuccess>8b5fe1bb-2184-4a61-963b-f28383d87e52</onsuccess>
+    <resource object="EdgeIEMode (Mixed)" action="HTML Check Box-Read-ReadCurrentValue" />
+  </stage>
+  <stage stageid="02b29db5-17ee-443e-80c5-6d77ac5b7ea5" name="EdgeIEMode (Mixed)::HTML Check Box-Read-ReadCurrentValue" type="Action">
+    <subsheetid>3f3b33b5-0733-4d12-80c1-1c56ee969f94</subsheetid>
+    <display x="15" y="1470" w="180" h="30" />
+    <outputs>
+      <output type="text" name="ReadCurrentValue" stage="ReadCurrentValue" />
+    </outputs>
+    <onsuccess>7c5f3b29-3b82-40d8-a84a-908dceda0e33</onsuccess>
+    <resource object="EdgeIEMode (Mixed)" action="HTML Check Box-Read-ReadCurrentValue" />
+  </stage>
+  <stage stageid="3576ec8d-c1db-4365-8e39-60044f43ce8d" name="Recover1" type="Recover">
+    <loginhibit />
+    <display x="225" y="210" />
+    <onsuccess>fe7e7ca7-8920-4a04-8b99-cee24f1ec17e</onsuccess>
+  </stage>
+</process>
